@@ -1,10 +1,10 @@
 # [sli.dev](https://sli.dev)
 
-Documentation for [Slidev](https://github.com/slidevjs/slidev)
+Dokumentation für [Slidev](https://github.com/slidevjs/slidev)
 
-## Translations
+## Übersetzungen
 
-| | Repo | Site | Maintainers |
+| | Repo | Seite | Maintainers |
 |---|---|---:|---|
 | English | [docs](https://github.com/slidevjs/docs) | [sli.dev](https://sli.dev) | [@antfu](https://github.com/antfu) |
 | 简体中文 | [docs-cn](https://github.com/slidevjs/docs-cn) | [cn.sli.dev](https://cn.sli.dev) | [@QC-L](https://github.com/QC-L) [@Ivocin](https://github.com/Ivocin) |
@@ -13,7 +13,7 @@ Documentation for [Slidev](https://github.com/slidevjs/slidev)
 | Русский | [docs-ru](https://github.com/slidevjs/docs-ru) | [ru.sli.dev](https://ru.sli.dev) | [@xesjkeee](https://github.com/xesjkeee) |
 | Việt Nam | [docs-vn](https://github.com/slidevjs/docs-vn) | [vn.sli.dev](https://vn.sli.dev) | [@bongudth](https://github.com/bongudth) |
 
-## Start Server Locally
+## Server lokal starten
 
 ```
 npm i -g pnpm
@@ -22,10 +22,10 @@ pnpm i
 pnpm run dev
 ```
 
-And then visit `http://localhost:3000`
+Und besuche `http://localhost:3000`
 
-Or install the [Vite extension for VS Code](https://marketplace.visualstudio.com/items?itemName=antfu.vite) to edit side-by-side.
+Oder installiere die [Vite extension for VS Code](https://marketplace.visualstudio.com/items?itemName=antfu.vite) um Seite an Seite zu editieren.
 
-## Help on Translating
+## Hilf beim Übersetzen
 
-See [TRANSLATIONS.md](/TRANSLATIONS.md)
+Siehe [TRANSLATIONS.md](/TRANSLATIONS.md)
