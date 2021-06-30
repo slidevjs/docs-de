@@ -1,70 +1,71 @@
-# Why Slidev
+# Warum Slidev
 
-There are a lot of feature-rich, general-purpose, WYSIWYG slides makers like [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) and [Apple Keynote](https://www.apple.com/keynote/). They work pretty well for making nice slides with animations, charts, and many other things, while being very intuitive and easy to learn. So why bother making Slidev?
+Es gibt eine Menge funktionsreiche, universelle, WYSIWYG (man kriegt was man sieht) Programme zum erstellen von Präsentationen, wie zum Beispiel [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) und [Apple Keynote](https://www.apple.com/keynote/). Mit ihnen kann man super Präsentationen mit Animationen, Diagrammen und viele anderen tollen Funktionen erstellen. Dazu sind sie noch intuitiv und einfach zu lernen. Warum sollte man sich da die Mühe machen und Slidev entwickeln?
 
-Slidev aims to provide the flexibility and interactivity for developers to make their presentations even more interesting, expressive, and attractive by using the tools and technologies they are already familiar with. 
+Slidev versucht Entwicklern Flexibilität und Interaktivität zu bieten und hilft ihnen dabei ihre Präsentationen noch interessanter, ausdrucksvoller und attraktiver zu gestalten, indem man die Technologien und Tools zur Verfügung stellt, die sie bereits kennen.
 
-When working with WYSIWYG editors, it is easy to get distracted by the styling options. Slidev remedies that by separating the content and visuals. This allows you to focus on one thing at a time, while also being able to reuse the themes from the community. Slidev does not seek to replace other slide deck builders entirely. Rather, it focuses on catering to the developer community.
+Bei der Arbeit mit WYSIWYG Programmen kann man sich schnell in den ganzen Styling-Optionen verlieren. Slidev eliminiert solche Ablenkungen, indem Inhalt und Styling strikt getrennt sind. Dadurch kannst du dich besser auf nur eine Sache konzentrieren und gleichzeitig Themes aus der Community wiederverwenden. Slidev versucht nicht alle anderen Programme zu ersetzen, sondern konzentriert sich vielmehr darauf, die Entwickler Community zu bedienen.
 
 ## Slidev
 
 ![](/screenshots/cover.png)
 
-Here are a few of the coolest features of Slidev:
+Hier sind ein paar Slidev's bester Funktionen:
 
-## Markdown-based
+## Markdown-basiert
 
-Slidev uses an extended Markdown format to store and organize your slides in a single plain text file. This lets you focus on making the content. And since the content and styles are separated, this also made it possible to switch between different themes effortlessly.
+Slidev nutzt ein erweitertes Markdown Format, um deine Folien in einer einzelnen Textdatei zu organisieren und speichern. Dadurch kannst du dich allein auf den Inhalt deiner Folien konzentrieren. Da Inhalt und Styles voneinander getrennt sind, kann man super einfach zwischen verschiedenen Themes wechseln.
 
-Learn more about [Slidev's Markdown Syntax](/guide/syntax).
+Erfahre mehr über [Slidev's Markdown Syntax](/guide/syntax).
 
 ## Themable
 
-Themes for Slidev can be shared and installed using npm packages. You then apply them with only one line of config.
+Themes für Slidev können geteilt und via npm packages installiert werden. Installierte Themes können mit nur einer Konfigurationszeile verwendet werden.
 
-Check out the [theme gallery](/themes/gallery) or [learn how to write a theme](/themes/write-a-theme).
+Besuche die [Themengalerie](/themes/gallery) oder erstelle [dein eigenes Theme](/themes/write-a-theme).
 
-## Developer Friendly
+## Entwickler freundlich
 
-Slidev provides first-class support for code snippets for developers. It supports both [Prism](https://prismjs.com/) and [Shiki](https://github.com/shikijs/shiki) to get pixel perfect syntax highlighting, while still being able to modify the code at any time. With [Monaco editor](https://microsoft.github.io/monaco-editor/) built-in, it also empowers you to do live coding / demonstration in your presentation with autocompletion, type hovering, and even TypeScript type check support.
+Slidev liefert erstklassige Unterstützung für Code Blöcke. Slidev unterstützt [Prism](https://prismjs.com/) und [Shiki](https://github.com/shikijs/shiki) für perfekte Syntax Hervorhebung, während der Code die ganze Zeit editierbar bleibt. Der [Monaco Editor](https://microsoft.github.io/monaco-editor/) mit Autovervollständigung, Typprüfung und sogar Typescript Unterstützung bildet eine einwandfreie Basis für live Conding oder Demonstrationen in deiner Präsentation.
 
-Learn more about [highlighters](/custom/highlighters) and [Monaco configuration](/custom/config-monaco).
+Lerne mehr über [Highlighters](/custom/highlighters) und die Konfiguration des [Monaco Editors](/custom/config-monaco).
 
-## Fast
+## Blitzschnell
 
-Slidev is powered by [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) and [Windi CSS](https://windicss.org/), which give you the most wonderful authoring experience. Every change you made will reflect to your slides **instantly**.
+Slidev läuft über [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) und [Windi CSS](https://windicss.org/). Diese Tools sorgen für eine wundervollste Autoreferfahrung. Jede Änderung wird **sofort** auf den Folien sichtbar.
 
-Find more about [our tech stack](/guide/#tech-stack).
+Entdecke unseren [Tech-Stack](/guide/#tech-stack).
 
-## Interactive & Expressive
+## Interaktiv & Ausdrucksvoll
 
-You can write custom Vue components and use them directly inside your markdown file. You can also interact with them inside the presentation to express your idea in a more interesting and intuitive way.
+Erstelle deine eigenen Vue Komponenten und nutze sie direkt in deiner Markdown Datei. Außerdem kann mit den Komponenten in der Präsentation interagiert werden. Damit kannst du deine Ideen in der Präsentation auf eine noch interessantere und intuitivere Art und Weiße rüber zu bringen. 
 
-## Recording Support
+## Aufnahmeunterstützung
 
-Slidev provides built-in recording and camera view. You can share your presentation with your camera view inside, or record and save them separately for your screen and camera. All with one go, no additional tools are needed.
+Slidev bietet eine integrierte Aufnahme und Kameraansicht. Teile deine Präsentation mit deinem Kamerabild oder zeichne deine Präsentation auf und speichere deinen Bildschirm und Kameraaufzeichnung separat. Alles ist mit einem Handgriff erledigt.
 
-Learn more about [recording here](/guide/recording).
+Erfahre [hier mehr über Aufzeichnungen](/guide/recording).
 
-## Portable
+## Portabel
 
-Export your slides into PDF, PNGs, or even a hostable Single-page Application (SPA) with a single command, and share them anywhere.
+Exportiere deine Präsentation mit einem einzigen Befehl in PDF, PNG oder sogar hostbare Single-Page-Anwendungen (SPA) und teile sie überall.
 
-Read more about that in the [exporting docs](/guide/exporting).
+Erfahre hier mehr über das [Exportieren von Präsentationen](/guide/exporting).
 
-## Hackable
+## Hackbar
 
-Being powered by web technologies, anything that can be done in a web app is also possible with Slidev. For example, WebGL, API requests, iframes, or even live sharing. It's up to your imagination!
+Angetrieben von Webtechnologien alles, was im Web möglich ist, ist auch mit Slidev möglich. Zum Beispiel WebGL, API-Anfragen, iframes, oder sogar Live-Sharing. Der Fantasie sind keine Grenzen gesetzt.
 
-## Give it a Try
+## Versuche es doch mal
 
-Playing around with Slidev will tell you more than a thousand words. You are just one command away:
+
+Slidev selbst auszuprobieren und etwas herumzuspielen erzählt mehr als tausend Wörter. Alles nur ein Befehl entfernt:
 
 ```bash
 $ npm init slidev
 ```
 
-Or have a quick preview of it:
+Oder sieh dir eine kurze Vorschau an:
 
 <div class="aspect-9/16 relative">
 <iframe class="rounded w-full shadow-md border-none" src="https://www.youtube.com/embed/eW7v-2ZKZOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

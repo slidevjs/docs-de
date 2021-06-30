@@ -35,8 +35,8 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ### builtin/
 
-- [ ] `components.md` - Use [Vue components](https://v3.vuejs.org/guide/component-basics.html) inside Slidev
-- [ ] `layouts.md` - Use Vue layouts inside Slidev
+- [x] `components.md` - Use [Vue components](https://v3.vuejs.org/guide/component-basics.html) inside Slidev
+- [x] `layouts.md` - Use Vue layouts inside Slidev
 
 ### custom/
 
@@ -65,7 +65,7 @@ In case it's already been translated but you're wondering how to maintain it, sk
 - [ ] `presenter-mode.md`- Toggling presenter mode
 - [ ] `recording.md`- Recording your presentation
 - [ ] `syntax.md` - Markdown syntax
-- [ ] `why.md` - _Why Slidev?_
+- [x] `why.md` - _Why Slidev?_
 
 ### resources/
 

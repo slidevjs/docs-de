@@ -2,14 +2,14 @@
 
 ## Built-in Layouts
 
-> The documentations of this section is still working in progress. Before that, you can take a look at the [source code](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts) directly.
+> Die Dokumentation ist in diesem Bereich noch in Bearbeitung. Schaue dir doch den [Quellcode](https://github.com/slidevjs/slidev/blob/main/packages/client/builtin) selbst an, bevor die Dokumentation fertig ist.
 
-## Custom Layouts
+## Eigene Layouts
 
-Create a directory `layouts/` under your project root, and simply put your custom Vue layout components under it.
+Erstelle einen Ordner `layouts/` im Ursprung deines Projektverzeichnises. Dort können eigene Vue Layout Komponenten erstellt werden.
 
-Read more in the [Customization](/custom/directory-structure#layouts) section.
+Erfahre mehr unter [Individualisierung](/custom/directory-structure#layouts)
 
-## Theme-provided Layouts
+## Layouts bereitgestellt von Themes
 
-Themes can provide layouts or override existing ones. Please read their documentation for what they have provided.
+Themes können auch eigene Layouts bereitstellen oder bestehende ändern. Diese sind in der Dokumentation der jeweiligen Themes aufgelistet und erklärt.
