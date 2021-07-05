@@ -56,15 +56,16 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ### guide/
 
-- [ ] `animations.md` - Animations and transitions
-- [ ] `editors.md` - Editor integrations
-- [ ] `exporting.md`- Exporting your slides
-- [ ] `faq.md` - Frequent Answered Questions
-- [ ] `index.md` - Getting started with Slidev
-- [ ] `navigation.md` - Navigation across slides
-- [ ] `presenter-mode.md`- Toggling presenter mode
-- [ ] `recording.md`- Recording your presentation
-- [ ] `syntax.md` - Markdown syntax
+- [x] `animations.md` - Animations and transitions
+- [x] `editors.md` - Editor integrations
+- [x] `exporting.md`- Exporting your slides
+- [x] `faq.md` - Frequent Answered Questions
+- [x] `index.md` - Getting started with Slidev
+- [x] `install.md`- Install Slidev
+- [x] `navigation.md` - Navigation across slides
+- [x] `presenter-mode.md`- Toggling presenter mode
+- [x] `recording.md`- Recording your presentation
+- [x] `syntax.md` - Markdown syntax
 - [x] `why.md` - _Why Slidev?_
 
 ### resources/

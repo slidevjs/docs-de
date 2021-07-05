@@ -1,10 +1,10 @@
 # Warum Slidev
 
-Es gibt eine Menge funktionsreiche, universelle, WYSIWYG (man kriegt was man sieht) Programme zum erstellen von Präsentationen, wie zum Beispiel [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) und [Apple Keynote](https://www.apple.com/keynote/). Mit ihnen kann man super Präsentationen mit Animationen, Diagrammen und viele anderen tollen Funktionen erstellen. Dazu sind sie noch intuitiv und einfach zu lernen. Warum sollte man sich da die Mühe machen und Slidev entwickeln?
+Es gibt eine Menge funktionsreiche, universelle, WYSIWYG (man kriegt was man sieht) Programme zum erstellen von Präsentationen, wie zum Beispiel [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) und [Apple Keynote](https://www.apple.com/keynote/). Mit ihnen kann man super Präsentationen mit Animationen, Diagrammen und vielen anderen tollen Funktionen erstellen. Dazu sind sie noch intuitiv und einfach zu lernen. Warum sollte man sich da die Mühe machen und Slidev entwickeln?
 
 Slidev versucht Entwicklern Flexibilität und Interaktivität zu bieten und hilft ihnen dabei ihre Präsentationen noch interessanter, ausdrucksvoller und attraktiver zu gestalten, indem man die Technologien und Tools zur Verfügung stellt, die sie bereits kennen.
 
-Bei der Arbeit mit WYSIWYG Programmen kann man sich schnell in den ganzen Styling-Optionen verlieren. Slidev eliminiert solche Ablenkungen, indem Inhalt und Styling strikt getrennt sind. Dadurch kannst du dich besser auf nur eine Sache konzentrieren und gleichzeitig Themes aus der Community wiederverwenden. Slidev versucht nicht alle anderen Programme zu ersetzen, sondern konzentriert sich vielmehr darauf, die Entwickler Community zu bedienen.
+Bei der Arbeit mit WYSIWYG Programmen kann man sich schnell in den ganzen Styling-Optionen verlieren. Slidev eliminiert solche Ablenkungen, indem Inhalt und Styling strikt getrennt sind. Dadurch kann man sich besser auf nur eine Sache konzentrieren und gleichzeitig Themes aus der Community wiederverwenden. Slidev versucht nicht alle anderen Programme zu ersetzen, sondern konzentriert sich vielmehr darauf, die Entwickler Community zu bedienen.
 
 ## Slidev
 
@@ -14,7 +14,7 @@ Hier sind ein paar Slidev's bester Funktionen:
 
 ## Markdown-basiert
 
-Slidev nutzt ein erweitertes Markdown Format, um deine Folien in einer einzelnen Textdatei zu organisieren und speichern. Dadurch kannst du dich allein auf den Inhalt deiner Folien konzentrieren. Da Inhalt und Styles voneinander getrennt sind, kann man super einfach zwischen verschiedenen Themes wechseln.
+Slidev nutzt ein erweitertes Markdown Format, um deine Folien in einer einzelnen Textdatei zu organisieren und speichern. Dadurch kann man sich allein auf den Inhalt der Folien konzentrieren. Da Inhalt und Styles voneinander getrennt sind, kann man auch super einfach zwischen verschiedenen Themes wechseln.
 
 Erfahre mehr über [Slidev's Markdown Syntax](/guide/syntax).
 
@@ -38,23 +38,23 @@ Entdecke unseren [Tech-Stack](/guide/#tech-stack).
 
 ## Interaktiv & Ausdrucksvoll
 
-Erstelle deine eigenen Vue Komponenten und nutze sie direkt in deiner Markdown Datei. Außerdem kann mit den Komponenten in der Präsentation interagiert werden. Damit kannst du deine Ideen in der Präsentation auf eine noch interessantere und intuitivere Art und Weiße rüber zu bringen. 
+Erstelle deine eigenen Vue Komponenten und nutze sie direkt in deiner Markdown Datei. Außerdem kann mit den Komponenten in der Präsentation interagiert werden. Damit kann man seine Ideen in der Präsentation auf eine noch interessantere und intuitivere Art und Weiße rüber bringen. 
 
 ## Aufnahmeunterstützung
 
 Slidev bietet eine integrierte Aufnahme und Kameraansicht. Teile deine Präsentation mit deinem Kamerabild oder zeichne deine Präsentation auf und speichere deinen Bildschirm und Kameraaufzeichnung separat. Alles ist mit einem Handgriff erledigt.
 
-Erfahre [hier mehr über Aufzeichnungen](/guide/recording).
+Erfahre [mehr über Aufzeichnungen](/guide/recording).
 
 ## Portabel
 
 Exportiere deine Präsentation mit einem einzigen Befehl in PDF, PNG oder sogar hostbare Single-Page-Anwendungen (SPA) und teile sie überall.
 
-Erfahre hier mehr über das [Exportieren von Präsentationen](/guide/exporting).
+Mehr über das [Exportieren von Präsentationen](/guide/exporting)
 
 ## Hackbar
 
-Angetrieben von Webtechnologien alles, was im Web möglich ist, ist auch mit Slidev möglich. Zum Beispiel WebGL, API-Anfragen, iframes, oder sogar Live-Sharing. Der Fantasie sind keine Grenzen gesetzt.
+Angetrieben von Webtechnologien ist alles, was im Web möglich ist, auch mit Slidev möglich. Zum Beispiel WebGL, API-Anfragen, iframes, oder sogar Live-Sharing. Der Fantasie sind keine Grenzen gesetzt.
 
 ## Versuche es doch mal
 

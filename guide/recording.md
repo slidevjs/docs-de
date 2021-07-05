@@ -1,17 +1,17 @@
-# Recording
+# Präsentation aufzeichnen
 
-Slidev has a built-in recording and camera view. You can use them to record your presentation easily in one place.
+Slidev hat eine integrierte Aufnhame- und Kameraansicht. Diese kann genutzt werden, um die eigenen Präsentationen aufzuzeichnen. Alles ganz einfach an einem Ort.
 
-## Camera View
+## Kameraansicht
 
-Click the <carbon-user-avatar class="inline-icon-btn"/> button in the navigation panel to show your camera view in the presentation. You can drag to move it, and use the handler on the right bottom corner to resize it. The size and position will persist in `localStorage` and will therefore be consistent across multiple refreshes, so no need to worry about that.
+Klicke den <carbon-user-avatar class="inline-icon-btn"/> Button in der Navigationsleiste um die Kameraansicht in der Präsentation zu öffnen. Die Kameraansicht kann auf dem Bildschirm umher geschoben werden und mittels des Handlers in der rechten unteren Ecke in der Größe verändert werden. Die Größe und Position wird im `localStorage` gespeichert und bei den nächsten Präsentation erneut angewendet.
 
 <Tweet id="1395006771027120133" />
 
-## Recording
+## Aufzeichnung
 
-Clicking the <carbon-video class="inline-icon-btn"/> button in the navigation panel will bring up a dialog for you. Here you can choose to either record your camera embedded in your slides or to separate them into two video files.
+Klicke den <carbon-video class="inline-icon-btn"/> Button inder NAvigationsleiste und es öffnet sich ein Dialog. Hier kann man zwischen der Aufnahme der Präsentation oder des Kamerabilds oder beidem entscheiden. Außerdem kann man angeben, ob beide Videos in eine Datei oder in 2 getrennte Datein gespeichert werden soll.
 
-This feature is powered by [RecordRTC](https://github.com/muaz-khan/RecordRTC) and uses the [WebRTC API](https://webrtc.org/).
+Diese Funktion läuft über [RecordRTC](https://github.com/muaz-khan/RecordRTC) und nutzt die [WebRTC API](https://webrtc.org/).
 
 ![](/screenshots/recording.png)

@@ -1,29 +1,29 @@
-# Exporting
+# Exportieren
 
 ## PDF
 
-> Exporting to PDF or PNG relies on [Playwright](https://playwright.dev) for rendering. You will therefore need to install [`playwright-chromium`](https://playwright.dev/docs/installation#download-single-browser-binary) to use this feature.
-> If you are doing exporting in a CI environment, [the playwright CI guide](https://playwright.dev/docs/ci) can be helpful.
+> Exportieren in PDF oder PNGs benötigt [Playwright](https://playwright.dev) zum rendern. Dafür muss [`playwright-chromium`](https://playwright.dev/docs/installation#download-single-browser-binary) installiert sein.
+> Falls das exportiren in einer CI Umgebung passiert, kann der [playright CI Guide](https://playwright.dev/docs/ci) hilfreich sein.
 
-Install `playwright-chromium`
+Installiere `playwright-chromium`
 
 ```bash
 $ npm i -D playwright-chromium
 ```
 
-Now export your slides to PDF using the following command
+Jetzt kann die Präsentation in PDF mit folgenden Befehl exportiert werden:
 
 ```bash
 $ slidev export
 ```
 
-After a few seconds, your slides will be ready at `./slides-exports.pdf`.
+Nach ein paar Sekunden wird die fertige Präsentation unter `./slides-exports.pdf` erscheinen.
 
-### Export Clicks Steps
+### Animationsschritte exportieren
 
-> Available since v0.21
+> Verfügbar seit v0.21
 
-By default, Slidev exports 1 page per slide with clicks animations disabled. If you want export slides with multiple steps intro multiple pages, pass the `--with-clicks` options.
+Standartmäßig exportiert Slidev Präsentationen mit einer Seite pro Folie und deaktivierten Klickanimationen. Wenn die Präsentation mit mehreren Schritten pro Folien exportiert werden soll, muss die `--with-clicks` Option übergeben werden.
 
 ```bash
 $ slidev export --with-clicks
@@ -31,7 +31,7 @@ $ slidev export --with-clicks
 
 ## PNGs
 
-When passing in the `--format png` option, Slidev will export PNG images for each slide instead of a PDF.
+Wenn die Option `--format png` überreicht wird, exportiert Slidev PNG Bilder für jeden Folie der Präsentation anstatt einer PDF.
 
 ```bash
 $ slidev export --format png
@@ -39,27 +39,27 @@ $ slidev export --format png
 
 ## Single-Page Application (SPA)
 
-You can also build the slides into a self-hostable SPA:
+Slidev Präsentationen können auch in eine selbst-hostbare SPA exportiert werden:
 
 ```bash
 $ slidev build
 ```
 
-The generated application will be available under `dist/` and then you can host it on [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), or whatever you want. Now you can share your slides with the rest of the world with a single link.
+Die generierte Applikation befindet sich unter `dist/` und kann auf [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), oder wo auch immer man will gehosted werden. Jetzt kann man die Präsetation mit der ganzen Welt in nur einem Link teilen.
 
-### Base Path
+### Basispfad
 
-To deploy your slides under sub-routes, you will need to pass the `--base` option. For example:
+Wenn die SPA auf Unterouten gehosted werden soll, muss die Option `--base` mit einem Pfad überrreicht werden:
 
 ```bash
-$ slidev build --base /talks/my-cool-talk/
+$ slidev build --base /präsentationen/meine-coole-präsentation/
 ```
 
-Refer to [Vite's documentation](https://vitejs.dev/guide/build.html#public-base-path) for more details.
+Mehr Details gibt es auf der [Vite Dokumentation](https://vitejs.dev/guide/build.html#public-base-path).
 
-### Provide Downloadable PDF
+### Heruterladbares PDF bereitstellen
 
-You can provide a downloadable PDF to the viewers of your SPA. You can enable it by the following config:
+Man kann eine herunterladbare PDF für die Zuschauer der SPA bereitstellen. Mit der folgenden konfiguration wird diese Funktion aktiviert:
 
 ```md
 ---
@@ -67,19 +67,19 @@ download: true
 ---
 ```
 
-Now, Slidev will generate a pdf file along with the build and a download button will appear in the SPA.
+Jetzt generiert Slidev eine PDF mit der SPA und ein Herunterladen-Button erscheint in der SPA.
 
-You can also provide a custom url to the PDF. In that case, the rendering process will be skipped.
+Man kann eine eigene URL zum herunterladen der PDF angeben. In diesem Fall wird das Generieren der PDF übersprungen.
 
 ```md
 ---
-download: 'https://myside.com/my-talk.pdf'
+download: 'https://meineseite.com/meine-präsentation.pdf'
 ---
 ```
 
-### Examples
+### Beispiele
 
-Here are a few examples of the exported SPA:
+Hier sind ein paar Beispiele einer exportieren SPA:
 
 - [Starter Template](https://sli.dev/demo/starter)
-- [Composable Vue](https://talks.antfu.me/2021/composable-vue) by [Anthony Fu](https://github.com/antfu)
+- [Composable Vue](https://talks.antfu.me/2021/composable-vue) von [Anthony Fu](https://github.com/antfu)

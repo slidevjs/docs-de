@@ -1,38 +1,38 @@
 # Markdown Syntax
 
-Slides are written within **a single markdown file** (by default `./slides.md`). 
+Alle Folien der Präsentation sind in einer **einzelnen Markdown Datei** untergebracht (Standartweiße `./slides.md`).
 
-You can use [the Markdown features](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) as you normally would, with the additional support of inlined HTML and Vue Components. Styling using [Windi CSS](https://windicss.org) is also supported. Use `---` padded with a new line to separate your slides. 
+Es können alle [Markdown Funktionen](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), wie normal genutzt werden. Zusätzlich können auch noch HTML und Vue Komponenten oder Styles mit der Hilfe von [Windi CSS](https://windicss.org) genutzt werden. Folien sind durch `---` zusammen mit einer neuen Zeile getrennt.
 
 ~~~md
 # Slidev
 
-Hello, World!
+Hallo, Welt!
 
 ---
 
-# Page 2
+# Folie 2
 
-Directly use code blocks for highlighting
+Codeblöcke zum direkten hervorheben verwenden
 
 //```ts
-console.log('Hello, World!')
+console.log('Hallo, Welt!')
 //```
 
 ---
 
-# Page 3
+# Folie 3
 
-You can directly use Windi CSS and Vue components to style and enrich your slides.
+Nutze Windi CSS und Vue Komponenten um deine Folien zu stylen.
 
 <div class="p-3">
   <Tweet id="20" />
 </div>
 ~~~
 
-## Front Matter & Layouts
+## Titelseite & Layouts
 
-You can specify layouts and other metadata for each slide by converting the separators into [front matter blocks](https://jekyllrb.com/docs/front-matter/). Each front matter starts with a triple-dash and ends with another. Texts between them are data objects in [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/) format. For example:
+Layouts und andere Metadaten können für Folien mit dem Umwandeln der Trennzeichen in [Frontmatter-Blöcke](https://jekyllrb.com/docs/front-matter/) angegeben werden. Jeder Frontmatter-Block startet  mit einem Dreifachstrich (`---`) und ended mit einem weiterem. Texte dazwischen sind Datenobjekte im [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/) Format. Zum Beispiel:
 
 ~~~md
 ---
@@ -41,7 +41,7 @@ layout: cover
 
 # Slidev
 
-This is the cover page.
+Das ist die Titelseite.
 
 ---
 layout: center
@@ -49,36 +49,36 @@ background: './images/background-1.png'
 class: 'text-white'
 ---​
 
-# Page 2
+# Folie 2
 
-This is a page with the layout `center` and a background image.
+Diese Folie hat ein layout `center` und ein Hintergrundbild.
 
 ---
 
-# Page 3
+# Folie 3
 
-This is a default page without any additional metadata.
+Das ist eine Standartfolie ohne weiteren Metadaten.
 ~~~
 
-Refer to [customization](/custom/) for more details.
+Schaue unter [Individualisierung](/custom/) für mehr Informationen nach.
 
-## Code Blocks
+## Codeblöcke
 
-One big reason I am building Slidev is needing to make my code look just right in the slides. So just as you expected, you can use Markdown flavored code block to highlight your code.
+Ein großer Grund, warum ich Slidev entwickle, ist damit mein Code auf den Folien gut aussieht. So, wie erwartet, können Codeblöcke mit Markdown-Flavor genutzt werden, damit der Syntax ordentlich hervorgehoben wird.
 
 ~~~ts
 //```ts
-console.log('Hello, World!')
+console.log('Hallo, Welt!')
 //```
 ~~~
 
-### Line Highlighting
+### Zeilen Hervorhebung
 
-To highlight specific lines, simply add line numbers within bracket `{}`. Line numbers start counting from 1.
+Um bestimmte Zeilen im Code hervorzuheben, muss man nur die Zeilen, die hervorgehoben werden sollen, in geschwungenen Klammern (`{}`) notieren. Zeilen werden von 1 aufwärts gezählt.
 
 ~~~ts
 //```ts {2,3}
-function add(
+function addiere(
   a: Ref<number> | number,
   b: Ref<number> | number
 ) {
@@ -87,7 +87,7 @@ function add(
 //```
 ~~~
 
-To change the highlight in multiple steps, you can use `|` to separate them. For example
+Um die Hervorhebung in mehreren Schritten zu änderen, können mehrere Angaben mit `|` getrennt angegeben werden. Zum Beispiel:
 
 ~~~ts
 //```ts {2-3|5|all}
@@ -100,26 +100,26 @@ function add(
 //```
 ~~~
 
-This will first highlight `a: Ref<number> | number` and `b: Ref<number> | number`, and then `return computed(() => unref(a) + unref(b))` after one click, and lastly, the whole block. Learn more in the [clicks animations guide](/guide/animations).
+Hier wird zuerst `a: Ref<number> | number` und `b: Ref<number> | number`, einen Klick später `return computed(() => unref(a) + unref(b))` und nach dem letzten Klick wird der ganze Block hervorgehoben. Erfahre mehr über [Klicks und Animationen](/guide/animations).
 
 ### Monaco Editor
 
-Whenever you want to do some modification in the presentation, simply add `{monaco}` after the language id — it turns the block into a fully-featured Monaco editor!
+Wenn man Änderung am Code während der Präsentation machen möchte, kann der Monaco Editor genutzt werden. Ein einfaches `{monaco}` nach der Programmiersprache und der Codeblock wandelt sich in einen komplett ausgestatteten Monaco Editor um!
 
 ~~~ts
 //```ts {monaco}
-console.log('HelloWorld')
+console.log('Hallo, Welt!')
 //```
 ~~~
 
-Learn more about [configuring Monaco](/custom/config-monaco).
+Wie man [Monaco konfiguriert](/custom/config-monaco).
 
 ## Embedded Styles
 
-You can use `<style>` tag in your Markdown directly to override styles for the **current slide**.
+Man kann den `<style>` Tag nutzen, um direkt in der Markdowndatei Styles für die **aktuelle Folie** zu überschreiben.
 
 ```md
-# This is Red
+# Das ist Rot.
 
 <style>
 h1 {
@@ -129,17 +129,18 @@ h1 {
 
 ---
 
-# Next slide is not affected
+# Die nächste Folie wird nicht beeinflusst
 ```
 
-`<style>` tag in Markdown is always [scoped](https://vue-loader.vuejs.org/guide/scoped-css.html). To have global style overrides, check out the [customization section](/custom/directory-structure#style).
+Der `<style>` Tag ist immer [bereichtsbezogen](https://vue-loader.vuejs.org/guide/scoped-css.html). Mehr über das Überschreiben von globalen Styles gibt es im Abschnitt [Individualisierung](/custom/directory-structure#style).
 
-Powered by [Windi CSS](https://windicss.org), you can directly use nested css and [directives](https://windicss.org/features/directives.html) (e.g. `@apply`)
+
+Durch [Windi CSS](https://windicss.org), kann dirket verschachteltes CSS oder [Direktiven](https://windicss.org/features/directives.html) (z.B. `@apply`) genutzt werden.
 
 ```md
 # Slidev
 
-> Hello `world`
+> Hallo, `Welt!`
 
 <style>
 blockquote {
@@ -150,76 +151,76 @@ blockquote {
 </style>
 ```
 
-## Static Assets
+## Statische Assets
 
-Just like you would do in markdown, you can use images pointing to a remote or local url.
+Wie man es auch in Markdown machen würde, kann man Bilder mit der Hilfe von remoten oder lokalen Urls definieren.
 
-For remote assets, the built-in [`vite-plugin-remote-assets`](https://github.com/antfu/vite-plugin-remote-assets) will cache them into the disk at the first run so you can have instant loading even for large images later on.
-
-```md
-![Remote Image](https://sli.dev/favicon.png)
-```
-
-For local assets, put them into the [`public` folder](/custom/directory-structure.html#public) and reference them with **leading slash**.
+Für remote Assets kann man das integrierte [`vite-plugin-remote-assets`](https://github.com/antfu/vite-plugin-remote-assets) Plugin nutzten. Dieses Plugin speichert Bilder direkt auf der Festplatte, sodass selbst große Bilder später in der Präsentation sofort laden.
 
 ```md
-![Local Image](/pic.png)
+![Remotes Bild](https://sli.dev/favicon.png)
 ```
 
-For you want to apply custom sizes or styles, you can convert them to the `<img>` tag 
+Lokale Assets können direkt im [`public` Ordner](/custom/directory-structure.html#public) abgelegt werden und mit **führendem Schrägstrich** genutzt werden.
+
+```md
+![Lokales Bild](/pic.png)
+```
+
+Falls man eigene Styles auf Bilder anwenden möchte, kann man den Markdown in einen `<img>` Tag umwandeln.
 
 ```html
 <img src="/pic.png" class="m-40 h-40 rounded shadow" />
 ```
 
-## Notes
+## Notizen
 
-You can also take notes for each slide. They will show up in [Presenter Mode](/guide/presenter-mode) for you to reference during presentations.
+Für jede Folie kann man Notizen anlegen. Diese erscheinen dann im [Moderatoren Modus](/guide/presenter-mode), damit man sie in den Präsentationen nutzen kann.
 
-In Markdown, the last comment block in each slide will be treated as a note.
+In Markdown wird der letzte Kommentar in einer Folie in eine Notiz umgewandelt.
 
 ~~~md
 ---
 layout: cover
 ---
 
-# Page 1
+# Folie 1
 
-This is the cover page.
+Das ist die Titelseite.
 
-<!-- This is a note -->
+<!-- Das ist eine Notiz -->
 
 ---
 
-# Page 2
+# Folie 2
 
-<!-- This is NOT a note because it precedes the content of the slide -->
+<!-- Das ist keine Notiz, weil es vor dem Inhalt der Folie steht  -->
 
-The second page
+Die 2. Folie
 
 <!--
-This is another note
+Das ist eine weitere Notiz
 -->
 ~~~
 
 ## Icons
 
-Slidev allows you to have the accessing to almost all the popular open-source iconsets **directly** in your markdown. Powered by [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) and [Iconify](https://iconify.design/).
+In Slidev können fast alle Open-Source Inconsets dank [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) und [Iconify](https://iconify.design/) **direkt** in der Markdown Datei genutzt werden. 
 
-The naming follows [Iconify](https://iconify.design/)'s conversion `{collection-name}-{icon-name}`. For example:
+Die Benenung folgt den [Iconify](https://iconify.design/) Namenskonventionen `{iconset-name}-{icon-name}`. Zum Beispiel:
 
-- `<mdi-account-circle />` - <mdi-account-circle /> from [Material Design Icons](https://github.com/Templarian/MaterialDesign)
-- `<carbon-badge />` - <carbon-badge /> from [Carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons)
-- `<uim-rocket />` - <uim-rocket /> from [Unicons Monochrome](https://github.com/Iconscout/unicons)
-- `<twemoji-cat-with-tears-of-joy />` - <twemoji-cat-with-tears-of-joy /> from [Twemoji](https://github.com/twitter/twemoji)
-- `<logos-vue />` - <logos-vue /> from [SVG Logos](https://github.com/gilbarbara/logos)
-- And much more...
+- `<mdi-account-circle />` - <mdi-account-circle /> von [Material Design Icons](https://github.com/Templarian/MaterialDesign)
+- `<carbon-badge />` - <carbon-badge /> von [Carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons)
+- `<uim-rocket />` - <uim-rocket /> von [Unicons Monochrome](https://github.com/Iconscout/unicons)
+- `<twemoji-cat-with-tears-of-joy />` - <twemoji-cat-with-tears-of-joy /> von [Twemoji](https://github.com/twitter/twemoji)
+- `<logos-vue />` - <logos-vue /> von [SVG Logos](https://github.com/gilbarbara/logos)
+- Und viele mehr...
 
-You can browse and search for all the icons available with [Icônes](https://icones.js.org/).
+All verfügbaren Icons können mit [Icônes](https://icones.js.org/) durchsucht werden.
 
-### Styling Icons
+### Icons Stylen
 
-You can style the icons just like other HTML elements. For example:
+Icons können genau, wie alle anderen HTML Elemente gestylt werden:
 
 ```html
 <uim-rocket />
@@ -233,11 +234,11 @@ You can style the icons just like other HTML elements. For example:
 
 ## Slots
 
-> Available since v0.18
+> Verfügbar seit v0.18
 
-Some layouts can provide multiple contributing points using [Vue's named slots](https://v3.vuejs.org/guide/component-slots.html).
+Einige Layouts können mithilfe von [Vue's benannten Slots](https://v3.vuejs.org/guide/component-slots.html) mehrere Basispunkte bereitstellen.
 
-For example, in [`two-cols` layout](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts/two-cols.vue), you can have two columns left (`default` slot) and right (`right` slot) side by side.
+Zum Beispiel, im [`two-cols` Layout](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts/two-cols.vue) hat man zwei Spalten, links (`default` Slot) und rechts (`right` slot), nebeneinander.
 
 ```md
 ---
@@ -246,50 +247,50 @@ layout: two-cols
 
 <template v-slot:default>
 
-# Left
+# Links
 
-This shows on the left
+Dieser Text steht links
 
 </template>
 <template v-slot:right>
 
-# Right
+# Rechts
 
-This shows on the right
+Dieser Text steht rechts
 
 <template>
 ```
 
 <div class="grid grid-cols-2 rounded border border-gray-400 border-opacity-50 px-10 pb-4">
 <div>
-<h3>Left</h3>
-<p>This shows on the left</p>
+<h3>Links</h3>
+<p>Dieser Text steht links</p>
 </div>
 <div>
-<h3>Right</h3>
-<p>This shows on the right</p>
+<h3>Rechts</h3>
+<p>Dieser Text steht rechts</p>
 </div>
 </div>
 
-We also provide a shorthand syntax sugar `::name::` for slot name. The following example works exactly the same as the previous one.
+Wir bieten außerdem abgekürzten Syntax Zucker `::name::` für Slot Namen. Das folgende Beispiel funktioniert genau das wie das letzte.
 
 ```md
 ---
 layout: two-cols
 ---
 
-# Left
+# Links
 
-This shows on the left
+Dieser Text steht links
 
 ::right::
 
-# Right
+# Rechts
 
-This shows on the right
+Dieser Text steht rechts
 ```
 
-You can also explicitly specify the default slot and provide in custom order
+Der Standart-Slot kann explizit und in eigener Reihenfolge angegeben werden
 
 ```md
 ---
@@ -298,20 +299,20 @@ layout: two-cols
 
 ::right::
 
-# Right
+# Rechts
 
-This shows on the right
+Dieser Text steht rechts
 
 ::default::
 
-# Left
+# Links
 
-This shows on the left
+Dieser Text steht links
 ```
 
-## Configurations
+## Konfigurationen
 
-All configurations needed can be defined in the Markdown file. For example:
+Alle benötigten Konfigurationen können in der Markdown Datei definiert werden. Zum Beispiel:
 
 ```md
 ---
@@ -322,20 +323,20 @@ background: 'https://source.unsplash.com/1600x900/?nature,water'
 
 # Slidev
 
-This is the cover page.
+Das ist die Titelfolie.
 ```
 
-Learn more about [frontmatter configurations](/custom/#frontmatter-configures).
+Erfahre mehr über [Frontmatter-Konfigurationen](/custom/#frontmatter-configures).
 
 ## LaTeX
 
-Slidev comes with LaTeX support out-of-box, powered by [KaTeX](https://katex.org/).
+Slidev kommt mit out-of-box LaTeX Unterstützung von [KaTeX](https://katex.org/).
 
 <Tweet id="1392246507793915904" />
 
 ### Inline
 
-Surround your LaTeX with a single `$` on each side for inline rendering.
+Umgebe den LaTeX Syntax mit einem einzelnen `$` auf jeder Seite für das rendern in der Zeile.
 
 ```md
 $\sqrt{3x-1}+(1+x)^2$
@@ -343,8 +344,7 @@ $\sqrt{3x-1}+(1+x)^2$
 
 ### Block
 
-Use two (`$$`) for block rendering. This mode uses bigger symbols and centers
-the result.
+Nutze zwei (`$$`) für das Rendern im Block. Dieser Modus nutzt größere Symbole und zentriert den Text.
 
 ```md
 $$
@@ -361,67 +361,67 @@ $$
 $$
 ```
 
-Learn more: [Demo](https://sli.dev/demo/starter/8) | [KaTeX](https://katex.org/) | [`markdown-it-katex`](https://github.com/waylonflinn/markdown-it-katex)
+Erfahre mehr: [Demo](https://sli.dev/demo/starter/8) | [KaTeX](https://katex.org/) | [`markdown-it-katex`](https://github.com/waylonflinn/markdown-it-katex)
 
-## Diagrams
+## Diagramme
 
-You can also create diagrams / graphs from textual descriptions in your Markdown, powered by [Mermaid](https://mermaid-js.github.io/mermaid).
+Man kann außerdem Diagramme / Graphen aus Textbeschreibungen in der Markdowndatei mit der Hilfe von [Mermaid](https://mermaid-js.github.io/mermaid) erstellen. 
 
-Code blocks marked as `mermaid` will be converted to digrams, for example:
+Codeblöcke, welche mit `mermaid` markiert sind, werden in Diagramme umgewandelt:
 
 ~~~md
 //```mermaid
 sequenceDiagram
-  Alice->John: Hello John, how are you?
-  Note over Alice,John: A typical interaction
+  Alice->John: Hallo John, wie geht es dir?
+  Note over Alice,John: Eine typische Konversation.
 //```
 ~~~
 
-You can further pass an options object to it to specify the scaling and theming. The syntax of the object is a JavaScript object literal, you will need to add quotes (`'`) for strings and use comma (`,`) between keys.
+Des Weiteren kann ein Objekt übergeben werden, dass Optionen wie Skalierung oder Themierung definiert. Der Syntax dieses Objekts ist ein Javascript-Objektliteral. Für String müssen Anführungszeichen (`'`) genutzt werden und Kommas (`,`) zwischen Keys.  
 
 ~~~md
 //```mermaid {theme: 'neutral', scale: 0.8}
 graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
+B[Text] --> C{Entscheidung}
+C -->|Eins| D[Ergebnis 1]
+C -->|Zwei| E[Ergebnis 2]
 //```
 ~~~
 
-Learn more: [Demo](https://sli.dev/demo/starter/9) | [Mermaid](https://mermaid-js.github.io/mermaid)
+Erfahre mehr: [Demo](https://sli.dev/demo/starter/9) | [Mermaid](https://mermaid-js.github.io/mermaid)
 
-## Multiple Entries
+## Mehrere Dateien
 
-> Available since v0.15
+> Verfügbar seit v0.15
 
-You can split your `slides.md` into multiple files and organize them as you want.
+Man kann die Hauptdatei (`slides.md`) in mehrere Dateien aufteilen.
 
 `slides.md` :
 
 ```md
-# Page 1
+# Folie 1
 
-This is a normal page
+Das ist eine normale Folie.
 
 ---
 src: ./subpage2.md
 ---
 
-<!-- this page will be loaded from './subpage2.md' -->
-Inline content will be ignored
+<!-- Diese Folie wird von './subpage2.md' geladen. -->
+geschriebene Inhalte werden ignoriert
 ```
 
 `subpage2.md` :
 
 ```md
-# Page 2
+# Folie 2
 
-This page is from another file
+Diese Folie ist von einer anderen Datei
 ```
 
-### Frontmatter Merging
+### Frontmatter Zusammenführung
 
-You can provide frontmatters from both your main entry and external markdown pages. If there are the same keys in them, the ones from the **main entry have the higher priority**. For example
+Man kann Formatter von der Hauptdatei oder anderen Markdownseiten nutzen. Falls mehrere gleiche Attribute enthalten sind, werden die Attribute der **Einstiegsdatei** genutzt, da diese immer die **höhere Priorität** hat. Zum Beispiel:
 
 `slides.md` :
 
@@ -441,12 +441,12 @@ layout: cover
 background: https://sli.dev/foo.png
 ---
 
-# Cover
+# Titelseite
 
-Cover Page
+Titelseite
 ```
 
-They will end up being equivalent of the following page:
+Diesen Folien werden genau, wie die folgenden Aussehen:
 
 ```md
 ---
@@ -455,14 +455,14 @@ background: https://sli.dev/bar.png
 class: text-center
 ---
 
-# Cover
+# Titelseite
 
-Cover Page
+Titelseite
 ```
 
-### Page Reusing
+### Folienwiederverwendung
 
-With the multi-entries support, reusing pages could be straightforward. For example:
+Mit Mehrfach-Eintrag Unterstützung ist das Wiederverwenden von Folien super einfach:
 
 ```yaml
 ---
@@ -478,7 +478,7 @@ src: ./content.md
 ---
 
 ---
-# reuse
+# Wiederverwenden
 src: ./content.md
 ---
 ```

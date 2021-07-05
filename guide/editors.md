@@ -1,18 +1,18 @@
-# Editor Support
+# Editor Unterstützung
 
-Since Slidev is using Markdown as the source entry, you can use ANY editors you love to write it.
+Da Slidev Markdon als Informationsquelle nutzt, kann JEDER Editor genutzt werden.
 
-If you want some high-level management to your slides, we have provided the following editor integrations for you!
+Für das beste Folienmanagement, bieten wir auch folgende Editor Integrationen:
 
-## Integrated Editor
+## Integrierter Editor
 
-Slidev comes with an integrated [CodeMirror](https://codemirror.net/) editor that will instantly reload and save the changes to your file. 
+Slidev wird mit einem integrierten [CodeMirror](https://codemirror.net/) Editor gelifert, in dem Änderungen an der Präsentation sofort nach dem Speichern sichtabr sind. 
 
-Click the <carbon-edit class="inline-icon-btn"/> button to open it.
+Klicke den <carbon-edit class="inline-icon-btn"/> Button, um den CodeMirror Editor zu öffnen.
 
 ![](/screenshots/integrated-editor.png)
 
-## VS Code Extension
+## VS Code Erweiterung
 
 <p align="center">
     <a href="https://github.com/slidevjs/slidev" target="_blank">
@@ -28,15 +28,15 @@ Click the <carbon-edit class="inline-icon-btn"/> button to open it.
     </a>
 </p>
 
-The VS Code extension provides some features to help you better organize your slides and have a quick overview of them.
+Die VS Code Erweiterung bietet ein paar Funktionen, die dabei helfen, die Folien besser zu organisieren und einen besseren Überblick zu behalten.
 
-### Features
+### Funktionen
 
-- View slides in the side panel
-- Go to next / prev buttons
-- Re-ordering slides
-- Folding for slide blocks
-- Convert Markdown to HTML
+- Folien werden im Seitenbereich angezeigt
+- Nächste / Vorherige Folien Buttons
+- Folien umsorteiren
+- Code Folding für Folien Blöcke
+- Wandle Markdown in HTML um
 
 ![](https://user-images.githubusercontent.com/11247099/116809994-cc2caa00-ab73-11eb-879f-60585747c3c9.png)
 
