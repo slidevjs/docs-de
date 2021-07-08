@@ -1,24 +1,24 @@
-# Configure Monaco
+# Konfiguriere Monaco
 
 <Environment type="client" />
 
-> By default, Monaco only is enabled only on dev mode. To make it work on SPA build, add `monaco: true` to your frontmatter configs.
+> Standardmäßig ist Monaco nur im Development-Modus altiviert. Damit Monaco auch in einer SPA funktioniert, muss `monaco: true` in den Frontmatter Konfigurationen gesetzt werden.
 
-Create `./setup/monaco.ts` with the following content:
+Erstelle eine `./setup/monaco.ts` Datei mit dem folgendem Inhalt:
 
 ```ts
 import { defineMonacoSetup } from '@slidev/types'
 
 export default defineMonacoSetup(async (monaco) => {
-  // use `monaco` to configure
+  // nutzte `monaco` zum konfigurieren
 })
 ```
 
-Learn more about [configuring Monaco](https://github.com/Microsoft/monaco-editor).
+Erfahre mehr über die [Konfiguration von Monaco](https://github.com/Microsoft/monaco-editor).
 
-## Usage
+## Verwendung
 
-To use Monaco in your slides, simply append `{monaco}` to your code snippets:
+Um Monaco in den Folien zu nutzen, muss nur `{monaco}` zu einem Code Snipped hinzugefügt werden.
 
 ~~~js
 //```js
@@ -31,7 +31,7 @@ plusOne.value++ // error
 //```
 ~~~
 
-To
+zu
 
 ~~~js
 //```js {monaco}
@@ -44,19 +44,19 @@ plusOne.value++ // error
 //```
 ~~~
 
-## Exporting
+## Exportieren
 
-By default, Monaco will ONLY work on `dev` mode. If you would also like to have it available in the exported SPA, you can configure it in your frontmatter:
+Standardmäßig ist Monaco nur im Development-Modus altiviert. Damit Monaco auch in einer SPA funktioniert, muss `monaco: true` in den Frontmatter Konfigurationen gesetzt werden:
 
 ```yaml
 ---
-monaco: true # default "dev"
+monaco: true # standart: "dev"
 ---
 ```
 
-## Types Auto Installing
+## Automatische Typen Installation
 
-When you use TypeScript with Monaco, types for dependencies will be installed to the client-side automatically.
+Wenn TypeScript mit Monaco genutzt wird, werden Typen für Abhängigkeiten automatisch auf der Clientseite installiert.
 
 ~~~ts
 //```ts {monaco}
@@ -67,4 +67,4 @@ const counter = ref(0)
 //```
 ~~~
 
-In the example above, just make sure `vue` and `@vueuse/core` are installed locally as dependencies / devDependencies, Slidev will handle the rest and your editor will just work!
+Im obigen Beispiel muss man nur sicher gehen, dass `vue` und `@vueuse/core` local installiert sind (dependencies oder devDependencies) und Slidev handelt den Rest, damit der Editor funktioniert!

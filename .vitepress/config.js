@@ -53,7 +53,7 @@ const Theme = [
     link: '/themes/use',
   },
   {
-    text: 'Theme Gallerie',
+    text: 'Themen Gallerie',
     link: '/themes/gallery',
   },
   {
@@ -145,11 +145,11 @@ const Customizations = [
 
 const Resources = [
   {
-    text: 'Vorzeigeprojekte',
+    text: 'Beispielprojekte',
     link: '/showcases',
   },
   {
-    text: 'Kuratierte Cover',
+    text: 'Gesammelte Titelbilder',
     link: '/resources/covers',
   },
 ]

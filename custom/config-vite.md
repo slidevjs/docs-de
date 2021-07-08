@@ -1,12 +1,12 @@
-# Configure Vite
+# Konfiguriere Vite
 
 <Environment type="node" />
 
-Slidev is powered by [Vite](http://vitejs.dev/) under the hood. This means you can leverage Vite's great plugin system to customize your slides even further.
+Slidev läuft mit [Vite](http://vitejs.dev/) unter der Haube. Somit kann das großartige Plugin-System von Vite genutzt werden, um Präsentationen noch besser anzupassen.
 
-The `vite.config.ts` will be respected if you have one.
+Die `vite.config.ts` Datei wird genutzt, falls eine vorhanden ist.
 
-Slidev has the following plugins preconfigured:
+Slidev hat die folgenden Plugins vorkonfiguriert:
 
 - [@vitejs/plugin-vue](https://github.com/vitejs/vite/tree/main/packages/plugin-vue)
 - [vite-plugin-md](https://github.com/antfu/vite-plugin-md)
@@ -15,13 +15,13 @@ Slidev has the following plugins preconfigured:
 - [vite-plugin-icons](https://github.com/antfu/vite-plugin-icons)
 - [vite-plugin-remote-assets](https://github.com/antfu/vite-plugin-remote-assets)
 
-Learn more about the [pre-configurations here](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/plugins/preset.ts).
+Erfahre mehr über [Vorkonfigurationen hier](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/plugins/preset.ts).
 
-## Configure Internal Plugins
+## Konfiguriere Interne Plugins
 
-> Available since v0.21
+> Verfügbar seit v0.21
 
-To configure the built-in plugins list above, create `vite.config.ts` with the following content. Please note Slidev has some preconfigure options for those plugins, this usage will override some of them, which could potentially cause the app to break. Please treat this as **an advanced feature**, make sure you know what you are doing before moving on.
+Um integrierte Plugins zu konfigurieren, muss eine `vite.config.ts` Datei mit folgendem Inhalt erstellt werden. Bitte beachte, dass Slidev einige Vorkonfigurationsoptionen für diese Plugins hat. Diese Verwendung überschreibt einige von den Vorkonfigurationsoptionen, was möglicherweise dazu führen kann, dass die App beschädigt wird. Das ist **eine erweiterte Funktion**, die mit Vorsicht beachtet werden sollte und nur genutzt werden sollte, wenn man weiß, was man tut.
 
 ```ts
 import { defineConfig } from 'vite'
@@ -43,4 +43,4 @@ export default defineConfig({
 })
 ```
 
-See the [type declarations](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/options.ts#L50) for more options.
+Weitere Optionen sind in den [Typdeklarationen](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/options.ts#L50) zu finden.

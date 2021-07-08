@@ -40,12 +40,12 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ### custom/
 
-- [ ] `config-katex.md` - Configuring Katex
-- [ ] `config-mermaid.md` - Configuring Mermaid
-- [ ] `config-monaco.md` - Configuring Monaco
-- [ ] `config-shortcuts.md` - Configuring Shortcuts
-- [ ] `config-vite.md` - Configuring Vite
-- [ ] `config-vue.md` - Configuring Vue
+- [x] `config-katex.md` - Configuring Katex
+- [x] `config-mermaid.md` - Configuring Mermaid
+- [x] `config-monaco.md` - Configuring Monaco
+- [x] `config-shortcuts.md` - Configuring Shortcuts
+- [x] `config-vite.md` - Configuring Vite
+- [x] `config-vue.md` - Configuring Vue
 - [ ] `config-windicss.md`- Configuring Windicss
 - [ ] `directory-structure.md` - Configuring the directory structure
 - [ ] `fonts.md` - Configuring fonts
@@ -70,13 +70,13 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ### resources/
 
-- [ ] `covers.md` - Curated covers for Slidev
+- [x] `covers.md` - Curated covers for Slidev
 
 ### themes/
 
-- [ ] `gallery.md` - Theme gallery
-- [ ] `use.md` - How to use Slidev themes
-- [ ] `write-a-theme.md` - Write your own theme
+- [x] `gallery.md` - Themengallery
+- [x] `use.md` - How to use Slidev themes
+- [x] `write-a-theme.md` - Write your own theme
 
 ## Publishing your translations
 

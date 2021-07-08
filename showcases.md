@@ -2,7 +2,7 @@
 sidebar: false
 ---
 
-# Vorzeigeprojekte
+# Beispielprojekte
 
 Vorträge und Präsentationen mit Slidev.
 
