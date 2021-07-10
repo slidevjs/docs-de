@@ -12,7 +12,7 @@ Wenn man den Server startet, fragt Slidev einen automatisch, ob man das ausgewä
 
 <div class="language-md">
 <pre>
-<span class="token keyword">?</span> Das Theme <span class="token string">"@slidev/theme-seriph"</span> was not found in your project, do you want to install it now? › (Y/n)
+<span class="token keyword">?</span> The Theme <span class="token string">"@slidev/theme-seriph"</span> was not found in your project, do you want to install it now? › (Y/n)
 </pre>
 </div>
 
@@ -24,13 +24,13 @@ $ npm install @slidev/theme-seriph
 
 Das wars! Viel spaß beim Benutzen deines neuen Themas!
 
-Für mehr informationen bezüglich das Benutzen eines Themas ist es am Besten, sich an das README des jeweiligen Themas zu richten.
+Für mehr Informationen bezüglich des Benutzens eines Themas ist es am Besten, sich an das README des jeweiligen Themas zu richten.
 
 Wollen Sie ihr eigenes Thema entwerfen? Dann können Sie [lernen, wie man ein Thema entwirft](/themes/write-a-theme).
 
 ## Thema "Eject"-en
 
-Sollten Sie die volle Kontrolle über ihr aktuelles Thema haben wollen, dann können Sie das Thema mithilfe des foldendem Befehles in Ihr lokales Dateisystem kopieren:
+Sollten man die volle Kontrolle über das aktuelles Thema haben wollen, dann kann man das Thema mithilfe des foldendem Befehles in das lokales Dateisystem kopieren:
 
 ```bash
 $ slidev theme eject

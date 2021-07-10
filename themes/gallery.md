@@ -1,8 +1,8 @@
 # Themengallerie
 
-Hier können Sie varschedene Themen (Designvarianten) aussuchen.
+Hier kann man sich verschiedene Themen (Designvarianten) aussuchen.
 
-Sie können hier auch darüber lesen, [wie man eine Thema benutzt](/themes/use), oder [wie Sie ihr eigenes Thema entwerfen können](/themes/write-a-theme), und sie dann mit Anderen teilen.
+Hier kan man auch darüber lesen, [wie man eine Thema benutzt](/themes/use), oder [wie man sein eigenes Thema entwirft](/themes/write-a-theme) und dann mit Anderen teilt.
 
 ## Offizielle Themen
 
@@ -10,9 +10,9 @@ Sie können hier auch darüber lesen, [wie man eine Thema benutzt](/themes/use),
   <ThemeGallery collection="official"/>
 </ClientOnly>
 
-## Gemeinschaftsthemen
+## Community Themen
 
-Hier sind ein paar auserwählte Themen, die von Gemeinschaftsmitgliedern entworfen wurden.
+Hier sind ein paar auserwählte Themen, die von der Community entworfen wurden.
 
 <!-- In ./docs/.vitepress/themes.ts ändern -->
 <ClientOnly>
@@ -21,4 +21,4 @@ Hier sind ein paar auserwählte Themen, die von Gemeinschaftsmitgliedern entworf
 
 ## Mehr Themen
 
-Sie können alle die restlichen Themen direkt auf [NPM](https://www.npmjs.com/search?q=keywords%3Aslidev-theme) finden.
+Man kann alle restlichen Themen direkt auf [NPM](https://www.npmjs.com/search?q=keywords%3Aslidev-theme) finden.
