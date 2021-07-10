@@ -26,7 +26,7 @@ Hey!
 
 ### `v-after`
 
-Die Verwendung von `v-after` ist ähnlich wie `v-click`, aber diesmal wird das Elemt sichtbar, wenn der Vorherige `v-click`ausgelöst wird.
+Die Verwendung von `v-after` ist ähnlich wie `v-click`, aber diesmal wird das Element sichtbar, wenn der Vorherige `v-click`ausgelöst wird.
 
 ```md
 <div v-click>Hallo</div>

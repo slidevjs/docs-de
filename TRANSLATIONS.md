@@ -46,13 +46,13 @@ In case it's already been translated but you're wondering how to maintain it, sk
 - [x] `config-shortcuts.md` - Configuring Shortcuts
 - [x] `config-vite.md` - Configuring Vite
 - [x] `config-vue.md` - Configuring Vue
-- [ ] `config-windicss.md`- Configuring Windicss
-- [ ] `directory-structure.md` - Configuring the directory structure
-- [ ] `fonts.md` - Configuring fonts
-- [ ] `global-layers.md` - Configuring the global layers
-- [ ] `highlighters.md` - Configuring code highlighters
-- [ ] `index.md`- Customizations index page
-- [ ] `vue-context.md` - The Vue global context
+- [x] `config-windicss.md`- Configuring Windicss
+- [x] `directory-structure.md` - Configuring the directory structure
+- [x] `fonts.md` - Configuring fonts
+- [x] `global-layers.md` - Configuring the global layers
+- [x] `highlighters.md` - Configuring code highlighters
+- [x] `index.md`- Customizations index page
+- [x] `vue-context.md` - The Vue global context
 
 ### guide/
 
@@ -80,7 +80,7 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ## Publishing your translations
 
-- [ ] When you finish the translation (at least 90%), `@antfu` in the Discord and we will invite you to the org and make the translation official.
+- [x] When you finish the translation (at least 90%), `@antfu` in the Discord and we will invite you to the org and make the translation official.
 - [ ] Once the transferring is done, we will set up the subdomain, auto-deployment, and a daily sync-up bot to keep the translation up-to-date with the latest English docs.
 - [ ] The site is live, and we will send a shout-out tweet on [our Twitter account](https://twitter.com/Slidevjs).
 

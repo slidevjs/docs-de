@@ -32,7 +32,7 @@ Lerne mehr über [Highlighters](/custom/highlighters) und die Konfiguration des 
 
 ## Blitzschnell
 
-Slidev läuft über [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) und [Windi CSS](https://windicss.org/). Diese Tools sorgen für eine wundervollste Autoreferfahrung. Jede Änderung wird **sofort** auf den Folien sichtbar.
+Slidev läuft über [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) und [Windi CSS](https://windicss.org/). Diese Tools sorgen für eine wundervollste Autorenerfahrung. Jede Änderung wird **sofort** auf den Folien sichtbar.
 
 Entdecke unseren [Tech-Stack](/guide/#tech-stack).
 

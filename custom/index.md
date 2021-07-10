@@ -1,69 +1,68 @@
-# Customizations
+# Anpassungen
 
-Slidev is fully customizable, from styling to tooling configurations. It allows you to configure the tools underneath ([Vite](/custom/config-vite), [Windi CSS](/custom/config-windicss), [Monaco](/custom/config-monaco), etc.)
+Slidev ist vollständig anpassbar, vom Styling bis zur Tools-konfiguration. Slidev ermöglicht darunter liegende Tools zu konfigurieren ([Vite](/custom/config-vite), [Windi CSS](/custom/config-windicss), [Monaco](/custom/config-monaco), etc.)
 
-## Frontmatter Configures
+## Frontmatter Konfigurationen
 
-You can configure Slidev in the frontmatter of your first slide, the following shows the default value for each option.
+Slidev kann im Frontmatterblock der ersten Folie konfiguriert werden. Folgende Liste zeigt die Standartwerte:
 
 ```yaml
 ---
-# theme id or package name
+# theme id oder package name
 theme: 'default'
-# title of your slide, will auto infer from the first header if not specified
+# Titel der Folie (wird automatisch aus der ersten Überschrift abgeleited, wenn nicht angegeben)
 title: ''
-# titleTemplate for the webpage, `%s` will be replaced by the page's title
+# titleTemplate für die Webseite, `%s` wird mit dem Folientitel ersetzt
 titleTemplate: '%s - Slidev'
 
-# enabled pdf downloading in SPA build, can also be a custom url
+# erlaube das Herunterladen einer PDF aus der SPA, kann auch ein eigener URL sein
 download: true
-# syntax highlighter, can be 'prism' or 'shiki'
+# Syntaxhervorheber, entweder 'prism' oder 'shiki'
 highlighter: 'prism'
-# enable monaco editor, default to dev only
+# Monaco-Editor aktivieren, standardmäßig nur dev
 monaco: 'dev'
 
-# force color schema for the slides, could be 'auto', 'light', or 'dark'
+# Farbschema für die Folien erzwingen, kann 'auto', 'light' oder 'dark' sein
 colorSchema: 'auto'
-# router mode for vue-router, could be "history" or "hash"
+# Router-Modus für Vue-Router, entwedere "history" oder "hash"
 routerMode: 'history'
-# aspect ratio for the slides
+# Seitenverhältnis der Folien
 aspectRatio: '16/9'
-# real width of the canvas, unit in px
+# tatsächliche Breite des Canvases (Einheit in px)
 canvasWidth: 980
 
-# fonts will be auto imported from Google fonts
-# Learn more: https://sli.dev/custom/fonts
+# Schriften werden automatisch von Google Fonts importiert
+# Erfahre mehr: https://sli.dev/custom/fonts
 fonts:
   sans: 'Roboto'
   serif: 'Roboto Slab'
   mono: 'Fira Code'
 
-# default frontmatter applies to all slides
+# Standard-Frontmatter, gilt für alle Folien
 defaults:
   layout: 'default'
   # ...
 
-# information for your slides, can be a markdown string
+# Informationen für die Folien (Markdown string möglich)
 info: |
   ## Slidev
   My first [Slidev](http://sli.dev/) presentations!
 ---
 ```
 
-Check out the [type definitions](https://github.com/slidevjs/slidev/blob/main/packages/types/src/types.ts#L29) for more options.
+Weitere Infornationen sind in den [Typdefinitionen](https://github.com/slidevjs/slidev/blob/main/packages/types/src/types.ts#L29) zu finden.
 
-## Directory Structure
+## Ordner Struktur
 
-Slidev uses directory structure conventions to minimalize the configuration surface and make extensions in functionality flexible and intuitive.
+Slidev nutzt  Ordner-Struktur-Konvetionen, um die Konfigurationspberfläche minimal zu halten und Erweiterungen flexibel und intuitiv zu gestalten.
 
-Refer to the [Directory Structure](/custom/directory-structure) section.
-
-## Config Tools
+Siehe Abschnitt [Ordner Struktur](/custom/directory-structure).
+## Tools Konfigurieren
 
 - [Highlighters](/custom/highlighters)
-- [Configure Vue](/custom/config-vue)
-- [Configure Vite](/custom/config-vite)
-- [Configure Windi CSS](/custom/config-windicss)
-- [Configure Monaco](/custom/config-monaco)
-- [Configure KaTeX](/custom/config-katex)
-- [Configure Mermaid](/custom/config-mermaid)
+- [Vue konfigurieren](/custom/config-vue)
+- [Vite konfigurieren](/custom/config-vite)
+- [Windi CSS konfigurieren](/custom/config-windicss)
+- [Monaco konfigurieren](/custom/config-monaco)
+- [KaTeX konfigurieren](/custom/config-katex)
+- [Mermaid konfigurieren](/custom/config-mermaid)

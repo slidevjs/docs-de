@@ -1,56 +1,56 @@
-# Global Layers
+# Globale Ebnen
 
-> Available since v0.17
+> Verfügbar seit v0.17
 
-Global layers allow you to have custom components that **persistent** across slides. This could be useful for having footers, cross-slides animations, global effects, etc.
+Globale Ebenen erlauben es, Komponenten zu nutzten, die über Folien **bestehend** bleiben. Solche können zu Beispiel für Kopf- oder Fußzeilen, Folienübergreifende Animationen oder Globale Effekte nützlich sein. 
 
-Slidev provides two layers for this usage, create `global-top.vue` or `global-bottom.vue` under your project root and it will pick up automatically.
+Slidev bietet dafür 2 Ebenen. Erstelle eine `global-top.vue` oder `global-bottom.vue` Datei unter dem Projektstamm und die Ebenen werden automatisch aufgenommen.
 
-Layers relationship:
+Ebenenbeziehung:
 
 - Global Top (`global-top.vue`)
 - Slides
 - Global Bottom (`global-bottom.vue`)
 
-## Example
+## Beispiel
 
 ```html
 <!-- global-top.vue -->
 <template>
-  <footer class="absolute bottom-0 left-0 right-0 p-2">Your Name</footer>
+  <footer class="absolute bottom-0 left-0 right-0 p-2">Dein Name</footer>
 </template>
 ```
 
-The text `Your Name` will appear to all your slides.
+Der Text `Dein Name` wird auf allen Folien erscheinen.
 
-To enabled it conditionally, you can apply it with the [Vue Global Context](/custom/vue-context).
+Um es bedingt zu aktivieren, kann der [Vue Global Context](/custom/vue-context) angewendet werden.
 
 ```html
-<!-- hide the footer from Page 4 -->
+<!-- Fußzeile von Seite 4 ausblenden -->
 <template>
   <footer
     v-if="$slidev.nav.currentPage !== 4"
     class="absolute bottom-0 left-0 right-0 p-2"
   >
-    Your Name
+    Dein Name
   </footer>
 </template>
 ```
 
 ```html
-<!-- hide the footer from "cover" layout -->
+<!-- Fußzeile vom "cover"-Layout ausblenden -->
 <template>
   <footer
     v-if="$slidev.nav.currentLayout !== 'cover'"
     class="absolute bottom-0 left-0 right-0 p-2"
   >
-    Your Name
+    Dein Name
   </footer>
 </template>
 ```
 
 ```html
-<!-- an example footer for pages -->
+<!-- eine Beispiel-Fußzeile für Folien -->
 <template>
   <footer
     v-if="$slidev.nav.currentLayout !== 'cover'"

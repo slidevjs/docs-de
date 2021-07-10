@@ -2,7 +2,7 @@
 
 Alle Folien der Präsentation sind in einer **einzelnen Markdown Datei** untergebracht (Standartweiße `./slides.md`).
 
-Es können alle [Markdown Funktionen](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), wie normal genutzt werden. Zusätzlich können auch noch HTML und Vue Komponenten oder Styles mit der Hilfe von [Windi CSS](https://windicss.org) genutzt werden. Folien sind durch `---` zusammen mit einer neuen Zeile getrennt.
+Es können alle [Markdown Funktionen](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) wie normal genutzt werden. Zusätzlich können auch noch HTML und Vue Komponenten oder Styles mit der Hilfe von [Windi CSS](https://windicss.org) genutzt werden. Folien sind durch `---` zusammen mit einer neuen Zeile getrennt.
 
 ~~~md
 # Slidev
@@ -132,7 +132,7 @@ h1 {
 # Die nächste Folie wird nicht beeinflusst
 ```
 
-Der `<style>` Tag ist immer [bereichtsbezogen](https://vue-loader.vuejs.org/guide/scoped-css.html). Mehr über das Überschreiben von globalen Styles gibt es im Abschnitt [Individualisierung](/custom/directory-structure#style).
+Der `<style>` Tag ist immer [bereichsbezogen](https://vue-loader.vuejs.org/guide/scoped-css.html). Mehr über das Überschreiben von globalen Styles gibt es im Abschnitt [Individualisierung](/custom/directory-structure#style).
 
 
 Durch [Windi CSS](https://windicss.org), kann dirket verschachteltes CSS oder [Direktiven](https://windicss.org/features/directives.html) (z.B. `@apply`) genutzt werden.
@@ -218,7 +218,7 @@ Die Benenung folgt den [Iconify](https://iconify.design/) Namenskonventionen `{i
 
 All verfügbaren Icons können mit [Icônes](https://icones.js.org/) durchsucht werden.
 
-### Icons Stylen
+### Icons stylen
 
 Icons können genau, wie alle anderen HTML Elemente gestylt werden:
 

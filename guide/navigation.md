@@ -22,7 +22,7 @@ Bewege deine Maus zur linken unteren Ecke der Slidev Seite, damit die Navigation
 | - | <carbon-download class="inline-icon-btn"/> | Präsentation herunterladen (nur in [SPA Version](/guide/exporting#single-page-application-spa) sichtabr) |
 | - | <carbon-information class="inline-icon-btn"/> | Informationen über die Präsentation anzeigen |
 | - | <carbon-settings-adjust class="inline-icon-btn"/> | Einstellungen öffnen |
-| <kbd>g</kbd> | - | zeige Gehe ... hin |
+| <kbd>g</kbd> | - | zeige "Gehe zu ..." |
 
 <br>
 

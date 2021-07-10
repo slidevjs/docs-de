@@ -10,7 +10,7 @@ Klicke den <carbon-user-avatar class="inline-icon-btn"/> Button in der Navigatio
 
 ## Aufzeichnung
 
-Klicke den <carbon-video class="inline-icon-btn"/> Button inder NAvigationsleiste und es öffnet sich ein Dialog. Hier kann man zwischen der Aufnahme der Präsentation oder des Kamerabilds oder beidem entscheiden. Außerdem kann man angeben, ob beide Videos in eine Datei oder in 2 getrennte Datein gespeichert werden soll.
+Klicke den <carbon-video class="inline-icon-btn"/> Button inder Navigationsleiste und es öffnet sich ein Dialog. Hier kann man zwischen der Aufnahme der Präsentation oder des Kamerabilds oder beidem entscheiden. Außerdem kann man angeben, ob beide Videos in eine Datei oder in 2 getrennte Datein gespeichert werden soll.
 
 Diese Funktion läuft über [RecordRTC](https://github.com/muaz-khan/RecordRTC) und nutzt die [WebRTC API](https://webrtc.org/).
 

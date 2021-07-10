@@ -1,37 +1,38 @@
-# Directory Structure
+# Ordner Struktur
 
-Slidev employs some directory structure conventions to minimize the configuration surface and to make the functionality extensions flexible and intuitive.
+Slidev verwendet einige Verzeichnisstruktur-Konventionen, um die Konfigurationsoberfläche zu minimieren und die Erweiterungen flexibel und intuitiv zu gestalten.
 
-The basic structure is as follows:
+
+Der Grundaufbau ist wie folgt:
 
 ```bash
 your-slidev/
-  ├── components/       # custom components
-  ├── layouts/          # custom layouts
-  ├── public/           # static assets
-  ├── setup/            # custom setup / hooks
-  ├── styles/           # custom style
-  ├── index.html        # injections to index.html
-  ├── slides.md         # the main slides entry
-  └── vite.config.ts   # extending vite config
+  ├── components/       # eigene Komponenten
+  ├── layouts/          # eigene Layouts
+  ├── public/           # statische Assets
+  ├── setup/            # eigenes Setup / Hooks
+  ├── styles/           # eigene Styles
+  ├── index.html        # injektionen in index.html
+  ├── slides.md         # Haupt-Eingangspunkt
+  └── vite.config.ts    # vite-Konfiguration erweitern
 ```
 
-All of them are optional.
+Alle sind optional.
 
 ## Components
 
-Conventions: `./components/*.{vue,js,ts,jsx,tsx,md}`
+Konventionen: `./components/*.{vue,js,ts,jsx,tsx,md}`
 
-Components inside this directory can be directly used in the slides Markdown with the same component name as the file name.
+Komponenten innerhalb dieses Ordners können direkt in den Folien Markdown mit dem gleichen Komponentennamen wie der Dateiname verwendet werden.
 
-For example:
+Zum Beispiel:
 
 ```bash
 your-slidev/
   ├── ...
   └── components/
-      ├── MyComponent.vue
-      └── HelloWorld.ts
+      ├── MeineKomponente.vue
+      └── HalloWelt.ts
 ```
 
 ```md
@@ -39,42 +40,43 @@ your-slidev/
 
 # My Slide
 
-<MyComponent :count="4"/>
+<MeineKomponente :count="4"/>
 
-<!-- both namings work -->
+<!-- beide Namen funktionieren -->
 
-<hello-world foo="bar">
+<hallo-welt foo="bar">
   Slot
-</hello-world>
+</hallo-welt>
 ```
 
-This feature is powered by [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components), learn more there.
+Diese Funktion wird von [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components) bereitgestellt, erfahre dort mehr darüber.
 
-Slidev also provides some [built-in components](/builtin/components) for you to use.
+Slidev stellt auch einige [eingebaute Komponenten](/builtin/components) zur Verfügung, die man verwenden kann.
 
 ## Layouts
 
-Conventions: `./layouts/*.{vue,js,ts,jsx,tsx}`
+Konventionen: `./layouts/*.{vue,js,ts,jsx,tsx}`
 
 ```
 your-slidev/
   ├── ...
   └── layouts/
       ├── cover.vue
-      └── my-cool-theme.vue
+      └── mein-tolles-theme.vue
 ```
 
-You can use any filename for your layout. You then reference your layout in you YAML header using the filename.
+Man kann einen beliebigen Dateinamen für das Layout verwenden. Verwende das Layout dann in dem YAML-Header über den Dateinamen.
+
 
 ```yaml
 ---
-layout: my-cool-theme
+layout: mein-tolles-theme
 ---
 ```
 
-If the layout you provide has the same name as a built-in layout or a theme layout, your custom layout will take precedence over the built-in/theme layout. The priority order is `local > theme > built-in`.
+Wenn das eigene Layout den gleichen Namen, wie ein integriertes Layout oder ein Themenlayout hat, dann hat das benutzerdefinierte Layout den Vorrang vor deM Integrierten- oder Themenlayout. Die Prioritätsreihenfolge ist `Lokal > Theme > Integriert`.
 
-In the layout component, use `<slot/>` for the slide content. For example:
+Verwende `<slot />` in der Layoutkomponente für den Folieninhalt. Zum Beispiel:
 
 ```html
 <!-- default.vue -->
@@ -87,15 +89,15 @@ In the layout component, use `<slot/>` for the slide content. For example:
 
 ## Public
 
-Conventions: `./public/*`
+Konvetionen: `./public/*`
 
-Assets in this directory will be served at root path `/` during dev, and copied to the root of the dist directory as-is. Read more about [Vite's `public` directory](https://vitejs.dev/guide/assets.html#the-public-directory).
+Assets in diesem Verzeichnis werden nach der Umwandlung in eine SPA im Wurzelpfad `/` bereitgestellt und in das Wurzelverzeichnis des Dist-Verzeichnisses kopiert. Lesen mehr über [Vites `public`-Verzeichnis](https://vitejs.dev/guide/assets.html#the-public-directory).
 
 ## Style
 
-Conventions: `./style.css` | `./styles/index.{css,js,ts}`
+Koventionen: `./style.css` | `./styles/index.{css,js,ts}`
 
-Files following this convention will be injected to the App root. If you need to import multiple css entries, you can create the following structure and managing the import order yourself.
+Dateien, die dieser Konvention folgen, werden in das Stammverzeichnis der App injiziert. Wenn man mehrere css-Einträge importieren möchte, kann man die folgende Struktur erstellen und die Importreihenfolge selbst verwalten.
 
 ```bash
 your-slidev/
@@ -115,7 +117,8 @@ import './code.css'
 import './layouts.css'
 ```
 
-Styles will be processed by [Windi CSS](http://windicss.org/) and [PostCSS](https://postcss.org/), so you can use css nesting and [at-directives](https://windicss.org/features/directives.html) out-of-box. For example:
+Stile werden von [Windi CSS](http://windicss.org/) und [PostCSS](https://postcss.org/) verarbeitet, so dass man css-Schachtelungen und [at-Direktiven](https://windicss.org/features/directives.html) out-of-box verwenden kann. Zum Beispiel:
+
 
 ```less
 .slidev-layout {
@@ -135,15 +138,15 @@ Styles will be processed by [Windi CSS](http://windicss.org/) and [PostCSS](http
 }
 ```
 
-[Learn more about the syntax](https://windicss.org/features/directives.html).
+[Erfahre mehr über den Syntax](https://windicss.org/features/directives.html).
 
 ## `index.html`
 
-Conventions: `index.html`
+Konvetionen: `index.html`
 
-The `index.html` provides the ability to inject meta tags and/or scripts to the main `index.html`
+Die `index.html` bietet die Möglichkeit, Meta-Tags und/oder Skripte in die Haupt-`index.html` zu injizieren.
 
-For example, for the following custom `index.html`:
+Zum Beispiel für die folgende eigene `index.html`:
 
 ```html
 <!-- ./index.html -->
@@ -157,7 +160,7 @@ For example, for the following custom `index.html`:
 </body>
 ```
 
-The final hosted `index.html` will be:
+Die fertig gehostete `index.html` wird sein:
 
 ```html
 <!DOCTYPE html>
@@ -179,9 +182,9 @@ The final hosted `index.html` will be:
 </html>
 ```
 
-## Global Layers
+## Globale Ebenen
 
-Conventions: `global-top.vue` | `global-bottom.vue`
+Konvetionen: `global-top.vue` | `global-bottom.vue`
 
-Learn more: [Global Layers](/custom/global-layers)
+Erfahre mehr: [Globale Ebenen](/custom/global-layers)
 

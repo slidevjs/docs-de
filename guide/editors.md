@@ -6,7 +6,7 @@ Für das beste Folienmanagement, bieten wir auch folgende Editor Integrationen:
 
 ## Integrierter Editor
 
-Slidev wird mit einem integrierten [CodeMirror](https://codemirror.net/) Editor gelifert, in dem Änderungen an der Präsentation sofort nach dem Speichern sichtabr sind. 
+Slidev wird mit einem integrierten [CodeMirror](https://codemirror.net/) Editor geliefert, in dem Änderungen an der Präsentation sofort nach dem Speichern sichtabr sind. 
 
 Klicke den <carbon-edit class="inline-icon-btn"/> Button, um den CodeMirror Editor zu öffnen.
 

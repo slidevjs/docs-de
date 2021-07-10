@@ -1,73 +1,76 @@
-# Vue Global Context
+# Vue Globaler Kontext
 
-Slidev injected a [global Vue context](https://v3.vuejs.org/api/application-config.html#globalproperties) `$slidev` for advanced conditions or navigation controls.
+Slidev injiziert einen [globalen Vue-Kontext](https://v3.vuejs.org/api/application-config.html#globalproperties) `$slidev` für erweiterte Bedingungen oder Navigationssteuerungen.
+## Verwendung
 
-## Usage
+Man kann überall im Markdown- und Vue-Template mit dem ["Mustache"-Syntax](https://v3.vuejs.org/guide/template-syntax.html#interpolations) darauf zugreifen.
 
-You can access it anywhere in your markdown and Vue template, with the ["Mustache" syntax](https://v3.vuejs.org/guide/template-syntax.html#interpolations).
 
 ```md
 <!-- slides.md -->
 
-# Page 1
+# Folie 1
 
-Current page is: {{ $slidev.nav.currentPage }}
+Die aktuelle Folie ist: {{ $slidev.nav.currentPage }}
 ```
 
 ```html
 <!-- Foo.vue -->
 
 <template>
-  <div>Title: {{ $slidev.configs.title }}</div>
-  <button @click="$slidev.nav.next">Next Page</button>
+  <div>Titel: {{ $slidev.configs.title }}</div>
+  <button @click="$slidev.nav.next">Nächste Folie</button>
 </template>
 ```
 
-## Properties
+## Eigenschaften
 
 ### `$slidev.nav`
 
-A reactive object holding the properties and controls of the slides navigation. For examples:
+Ein reaktives Objekt, das die Eigenschaften und Steuerelemente der Foliennavigation enthält. Zum Beispiel:
+
 
 ```js
-$slidev.nav.next() // go next step
+$slidev.nav.next() // nächster Schritt
 
-$slidev.nav.nextSlide() // go next slide (skip v-clicks)
+$slidev.nav.nextSlide() // nächste Folie (überspringe v-clicks)
 
-$slidev.nav.go(10) // go slide #10
+$slidev.nav.go(10) // gehe zu Folie #10
 ```
 
 ```js
-$slidev.nav.currentPage // current slide number
+$slidev.nav.currentPage // aktuelle Foliennummer
 
-$slidev.nav.currentLayout // current layout id
+$slidev.nav.currentLayout // aktuelle Layout-ID
 
-$slidev.nav.clicks // current clicks count
+$slidev.nav.clicks // aktuelle Anzahl der Klicks
 ```
 
-For more properties available, refer to the [nav.ts](https://github.com/slidevjs/slidev/blob/main/packages/client/logic/nav.ts) exports.
+Weitere verfügbare Eigenschaften sind in den [nav.ts](https://github.com/slidevjs/slidev/blob/main/packages/client/logic/nav.ts) Exporten zu finden.
+
 
 ### `$slidev.configs`
 
-A reactive object holding the parsed [configurations in the first frontmatter](/custom/#frontmatter-configures) of your `slides.md`. For example
+Ein reaktives Objekt, das die geparsten [Konfigurationen im ersten Frontmatter](/custom/#frontmatter-configures) der `slides.md` Datei enthält. Zum Beispiel:
+
 
 ```yaml
 ---
-title: My First Slidev!
+title: Meine erste Slidev!
 ---
 ```
 
 ```
-{{ $slidev.configs.title }} // 'My First Slidev!'
+{{ $slidev.configs.title }} // 'Meine erste Slidev!'
 ```
 
 ### `$slidev.themeConfigs`
 
-A reactive object holding the parsed theme configurations.
+Ein reaktives Objekt, das die geparsten Themenkonfigurationen enthält.
 
 ```yaml
 ---
-title: My First Slidev!
+title: Meine erste Slidev!
 themeConfig:
   primary: #213435
 ---

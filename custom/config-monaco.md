@@ -2,7 +2,7 @@
 
 <Environment type="client" />
 
-> Standardmäßig ist Monaco nur im Development-Modus altiviert. Damit Monaco auch in einer SPA funktioniert, muss `monaco: true` in den Frontmatter Konfigurationen gesetzt werden.
+> Standardmäßig ist Monaco nur im Development-Modus aktiviert. Damit Monaco auch in einer SPA funktioniert, muss `monaco: true` in den Frontmatter Konfigurationen gesetzt werden.
 
 Erstelle eine `./setup/monaco.ts` Datei mit dem folgendem Inhalt:
 
@@ -46,7 +46,7 @@ plusOne.value++ // error
 
 ## Exportieren
 
-Standardmäßig ist Monaco nur im Development-Modus altiviert. Damit Monaco auch in einer SPA funktioniert, muss `monaco: true` in den Frontmatter Konfigurationen gesetzt werden:
+Standardmäßig ist Monaco nur im Development-Modus aktiviert. Damit Monaco auch in einer SPA funktioniert, muss `monaco: true` in den Frontmatter Konfigurationen gesetzt werden:
 
 ```yaml
 ---

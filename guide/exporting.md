@@ -81,5 +81,5 @@ download: 'https://meineseite.com/meine-präsentation.pdf'
 
 Hier sind ein paar Beispiele einer exportieren SPA:
 
-- [Starter Template](https://sli.dev/demo/starter)
+- [Starter Vorlage](https://sli.dev/demo/starter)
 - [Composable Vue](https://talks.antfu.me/2021/composable-vue) von [Anthony Fu](https://github.com/antfu)

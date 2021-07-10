@@ -109,7 +109,7 @@ html:not(.dark) {
 }
 
 html.dark {
-  /* Darkmode CSS here */
+  /* Darkmode CSS hier */
 }
 ```
 
@@ -117,7 +117,7 @@ Slidev schaltet die `dark` CSS Klasse am `html` Element der Seite um, um das Far
 
 ### Highlighter
 
-Syntaxhervorhebungs-Farben können auch im Theme bereit gestellt werden. Wir unterstützen sowohl [Prism](https://prismjs.com/) als auch [Shiki](https://github.com/shikijs/shiki). Weitere Informationen sind in den [Syntax-Highlighting Docs](/custom/highlighters).
+Syntaxhervorhebungs-Farben können auch im Theme bereit gestellt werden. Wir unterstützen sowohl [Prism](https://prismjs.com/) als auch [Shiki](https://github.com/shikijs/shiki). Weitere Informationen sind in den [Syntax-Highlighting Dokumentationen](/custom/highlighters).
 
 Dein Theme kann entweder einen der beide oder beide unterstützen. Konfigurationsbeispiele sind im Standard-Theme [`./styles/prism.css`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/styles/prism.css) / [ `./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/theme-default/setup/shiki.ts) zu finden. 
 
