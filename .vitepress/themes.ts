@@ -293,12 +293,12 @@ export const community: ThemeInfo[] = [
       'light',
     ],
   },
-  // Add yours here!
+  // Füge deins hier hinzu!
   {
     id: '',
     link: 'https://github.com/slidevjs/docs/edit/main/.vitepress/themes.ts',
-    name: 'Yours?',
-    description: 'Submit your theme to be list here!',
+    name: 'Deins?',
+    description: 'Reiche dein Thema zur Aufnahme in der Liste ein!',
     author: {
       name: '',
     },
