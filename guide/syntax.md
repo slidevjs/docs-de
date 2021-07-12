@@ -216,7 +216,7 @@ Die Benenung folgt den [Iconify](https://iconify.design/) Namenskonventionen `{i
 - `<logos-vue />` - <logos-vue /> von [SVG Logos](https://github.com/gilbarbara/logos)
 - Und viele mehr...
 
-All verfügbaren Icons können mit [Icônes](https://icones.js.org/) durchsucht werden.
+Alle verfügbaren Icons können mit [Icônes](https://icones.js.org/) durchsucht werden.
 
 ### Icons stylen
 
@@ -258,7 +258,7 @@ Dieser Text steht links
 
 Dieser Text steht rechts
 
-<template>
+</template>
 ```
 
 <div class="grid grid-cols-2 rounded border border-gray-400 border-opacity-50 px-10 pb-4">

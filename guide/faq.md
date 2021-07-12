@@ -122,7 +122,7 @@ canvasWidth: 800
 Wir bieten eine integrierte Komponente `<Transform />`, welcher ein Wrapper der CSS `transform` Eigenschaft ist.
 
 ```md
-<Tranform :scale="1.4">
+<Transform :scale="1.4">
 
 - Item 1
 - Item 2
