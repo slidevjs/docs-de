@@ -2,8 +2,6 @@
 
 <Environment type="client" />
 
-> Standardmäßig ist Monaco nur im Development-Modus aktiviert. Damit Monaco auch in einer SPA funktioniert, muss `monaco: true` in den Frontmatter Konfigurationen gesetzt werden.
-
 Erstelle eine `./setup/monaco.ts` Datei mit dem folgendem Inhalt:
 
 ```ts

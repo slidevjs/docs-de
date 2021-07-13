@@ -72,6 +72,8 @@ console.log('Hallo, Welt!')
 //```
 ~~~
 
+Wir unterstützen [Prism](http://prismjs.com) und [Shiki](https://github.com/shiki/shiki) zu Syntaxhervorhebung. Mehr Informationen gibt es im [Abschnitt Highlighters](/custom/highlighters).
+
 ### Zeilen Hervorhebung
 
 Um bestimmte Zeilen im Code hervorzuheben, muss man nur die Zeilen, die hervorgehoben werden sollen, in geschwungenen Klammern (`{}`) notieren. Zeilen werden von 1 aufwärts gezählt.
