@@ -10,8 +10,8 @@ Erstelle einen Ordner `components/` im Ursprung deines Projektverzeichnises. Dor
 
 Erfahre mehr über [Individualisierung](/custom/directory-structure#components)
 
-## Komponenten bereitgestellt von Themes
+## Komponenten bereitgestellt von Themen
 
-Themes können auch eigene Komponenten bereitstellen. Diese sind in der Dokumentation der jeweiligen Themes aufgelistet und erklärt.
+Themen können auch eigene Komponenten bereitstellen. Diese sind in der Dokumentation der jeweiligen Themen aufgelistet und erklärt.
 
 Mehr Informationen über die [Ordner Struktur](/custom/directory-structure)

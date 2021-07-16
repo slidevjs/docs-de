@@ -4,7 +4,7 @@ Es gibt eine Menge funktionsreiche, universelle, WYSIWYG (man kriegt was man sie
 
 Slidev versucht Entwicklern Flexibilität und Interaktivität zu bieten und hilft ihnen dabei ihre Präsentationen noch interessanter, ausdrucksvoller und attraktiver zu gestalten, indem man die Technologien und Tools zur Verfügung stellt, die sie bereits kennen.
 
-Bei der Arbeit mit WYSIWYG Programmen kann man sich schnell in den ganzen Styling-Optionen verlieren. Slidev eliminiert solche Ablenkungen, indem Inhalt und Styling strikt getrennt sind. Dadurch kann man sich besser auf nur eine Sache konzentrieren und gleichzeitig Themes aus der Community wiederverwenden. Slidev versucht nicht alle anderen Programme zu ersetzen, sondern konzentriert sich vielmehr darauf, die Entwickler Community zu bedienen.
+Bei der Arbeit mit WYSIWYG Programmen kann man sich schnell in den ganzen Styling-Optionen verlieren. Slidev eliminiert solche Ablenkungen, indem Inhalt und Styling strikt getrennt sind. Dadurch kann man sich besser auf nur eine Sache konzentrieren und gleichzeitig Themen aus der Community wiederverwenden. Slidev versucht nicht alle anderen Programme zu ersetzen, sondern konzentriert sich vielmehr darauf, die Entwickler Community zu bedienen.
 
 ## Slidev
 
@@ -14,15 +14,15 @@ Hier sind ein paar Slidev's bester Funktionen:
 
 ## Markdown-basiert
 
-Slidev nutzt ein erweitertes Markdown Format, um deine Folien in einer einzelnen Textdatei zu organisieren und speichern. Dadurch kann man sich allein auf den Inhalt der Folien konzentrieren. Da Inhalt und Styles voneinander getrennt sind, kann man auch super einfach zwischen verschiedenen Themes wechseln.
+Slidev nutzt ein erweitertes Markdown Format, um deine Folien in einer einzelnen Textdatei zu organisieren und speichern. Dadurch kann man sich allein auf den Inhalt der Folien konzentrieren. Da Inhalt und Styles voneinander getrennt sind, kann man auch super einfach zwischen verschiedenen Themen wechseln.
 
 Erfahre mehr über [Slidev's Markdown Syntax](/guide/syntax).
 
-## Themable
+## Anpassbarer Stil
 
-Themes für Slidev können geteilt und via npm packages installiert werden. Installierte Themes können mit nur einer Konfigurationszeile verwendet werden.
+Themen für Slidev können geteilt und via npm packages installiert werden. Installierte Themen können mit nur einer Konfigurationszeile verwendet werden.
 
-Besuche die [Themengalerie](/themes/gallery) oder erstelle [dein eigenes Theme](/themes/write-a-theme).
+Besuche die [Themengalerie](/themes/gallery) oder erstelle [dein eigenes Thema](/themes/write-a-theme).
 
 ## Entwickler freundlich
 

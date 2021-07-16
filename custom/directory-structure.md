@@ -62,7 +62,7 @@ your-slidev/
   ├── ...
   └── layouts/
       ├── cover.vue
-      └── mein-tolles-theme.vue
+      └── mein-tolles-thema.vue
 ```
 
 Man kann einen beliebigen Dateinamen für das Layout verwenden. Verwende das Layout dann in dem YAML-Header über den Dateinamen.
@@ -70,11 +70,11 @@ Man kann einen beliebigen Dateinamen für das Layout verwenden. Verwende das Lay
 
 ```yaml
 ---
-layout: mein-tolles-theme
+layout: mein-tolles-thema
 ---
 ```
 
-Wenn das eigene Layout den gleichen Namen, wie ein integriertes Layout oder ein Themenlayout hat, dann hat das benutzerdefinierte Layout den Vorrang vor deM Integrierten- oder Themenlayout. Die Prioritätsreihenfolge ist `Lokal > Theme > Integriert`.
+Wenn das eigene Layout den gleichen Namen, wie ein integriertes Layout oder ein Themenlayout hat, dann hat das benutzerdefinierte Layout den Vorrang vor deM Integrierten- oder Themenlayout. Die Prioritätsreihenfolge ist `Lokal > Thema > Integriert`.
 
 Verwende `<slot />` in der Layoutkomponente für den Folieninhalt. Zum Beispiel:
 

@@ -10,6 +10,6 @@ Erstelle einen Ordner `layouts/` im Ursprung deines Projektverzeichnises. Dort k
 
 Erfahre mehr unter [Individualisierung](/custom/directory-structure#layouts)
 
-## Layouts bereitgestellt von Themes
+## Layouts bereitgestellt von Themen
 
-Themes können auch eigene Layouts bereitstellen oder bestehende ändern. Diese sind in der Dokumentation der jeweiligen Themes aufgelistet und erklärt.
+Themen können auch eigene Layouts bereitstellen oder bestehende ändern. Diese sind in der Dokumentation der jeweiligen Themen aufgelistet und erklärt.

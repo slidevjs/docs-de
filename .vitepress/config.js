@@ -49,7 +49,7 @@ const Guide = [
 
 const Theme = [
   {
-    text: 'Theme benutzen',
+    text: 'Thema benutzen',
     link: '/themes/use',
   },
   {
@@ -57,7 +57,7 @@ const Theme = [
     link: '/themes/gallery',
   },
   {
-    text: 'Theme erstellen',
+    text: 'Thema erstellen',
     link: '/themes/write-a-theme',
   },
 ]
@@ -164,7 +164,7 @@ const slidebars = [
     children: Guide,
   },
   {
-    text: 'Themes',
+    text: 'Themen',
     children: Theme,
   },
   {
@@ -227,7 +227,7 @@ module.exports = {
         items: Guide,
       },
       {
-        text: 'Theme',
+        text: 'Thema',
         items: Theme,
       },
       {
