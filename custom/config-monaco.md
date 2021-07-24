@@ -65,15 +65,27 @@ const counter = ref(0)
 //```
 ~~~
 
+<<<<<<< HEAD
 Im obigen Beispiel muss man nur sicher gehen, dass `vue` und `@vueuse/core` local installiert sind (dependencies oder devDependencies) und Slidev handelt den Rest, damit der Editor funktioniert!
 
 ## Themen Konfigurieren
 
 Das Thema wird von Slidev basierend auf dem Hell-/Dunkelmodus gesteuert. Wenn man es anpassen möchte, kann die Themen-ID in der Setup-Funktion übergeben werden. 
+=======
+In the example above, make sure `vue` and `@vueuse/core` are installed locally as dependencies / devDependencies, Slidev will handle the rest to get the types working for the editor automatically!
+
+## Configure Themes
+
+The theme is controlled by Slidev based on the light/dark theme. If you want to customize it, you can pass the theme id to the setup function:
+>>>>>>> 2afefee64ac67bac36a521f6fcda3a7af165d377
 
 ```ts
 // ./setup/monaco.ts
 import { defineMonacoSetup } from '@slidev/types'
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2afefee64ac67bac36a521f6fcda3a7af165d377
 export default defineMonacoSetup(() => {
   return {
     theme: {
@@ -84,6 +96,7 @@ export default defineMonacoSetup(() => {
 })
 ```
 
+<<<<<<< HEAD
 Wenn man benutzerdefinierte Themen laden möchte:
 
 ```ts
@@ -94,6 +107,21 @@ import light from 'theme-vitesse/themes/vitesse-light.json'
 export default defineMonacoSetup((monaco) => {
   monaco.editor.defineTheme('vitesse-light', light as any)
   monaco.editor.defineTheme('vitesse-dark', dark as any)
+=======
+If you want to load custom themes:
+
+```ts
+import { defineMonacoSetup } from '@slidev/types'
+
+// change to your themes
+import dark from 'theme-vitesse/themes/vitesse-dark.json'
+import light from 'theme-vitesse/themes/vitesse-light.json'
+
+export default defineMonacoSetup((monaco) => {
+  monaco.editor.defineTheme('vitesse-light', light as any)
+  monaco.editor.defineTheme('vitesse-dark', dark as any)
+
+>>>>>>> 2afefee64ac67bac36a521f6fcda3a7af165d377
   return {
     theme: {
       light: 'vitesse-light',
@@ -103,4 +131,8 @@ export default defineMonacoSetup((monaco) => {
 })
 ```
 
+<<<<<<< HEAD
 > Wenn man ein Thema für Slidev erstellt, kann man den dynamischen `import()` innerhalb der Setup-Funktion nutzen, um bessere Ergebnisse bei der Code-Aufteilung zu erhalten.
+=======
+> If you are creating a theme for Slidev, use dynamic `import()` inside the setup function to get better tree-shaking and code-splitting results.
+>>>>>>> 2afefee64ac67bac36a521f6fcda3a7af165d377
