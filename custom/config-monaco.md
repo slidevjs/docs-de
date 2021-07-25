@@ -65,7 +65,7 @@ const counter = ref(0)
 //```
 ~~~
 
-Im obigen Beispiel muss man nur sicher gehen, dass `vue` und `@vueuse/core` local installiert sind (dependencies oder devDependencies) und Slidev handelt den Rest, damit der Editor funktioniert!
+Im obigen Beispiel muss man nur sicher gehen, dass `vue` und `@vueuse/core` lokal installiert sind (dependencies oder devDependencies) und Slidev handelt den Rest, damit der Editor funktioniert!
 
 ## Themen Konfigurieren
 
@@ -74,6 +74,7 @@ Das Thema wird von Slidev basierend auf dem Hell-/Dunkelmodus gesteuert. Wenn ma
 ```ts
 // ./setup/monaco.ts
 import { defineMonacoSetup } from '@slidev/types'
+
 export default defineMonacoSetup(() => {
   return {
     theme: {

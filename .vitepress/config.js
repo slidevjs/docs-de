@@ -89,7 +89,7 @@ const Translations = [
   {
     text: 'Việt Nam',
     link: 'https://vn.sli.dev{{pathname}}',
-  },
+  }
 ]
 
 const Customizations = [
