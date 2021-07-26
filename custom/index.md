@@ -19,14 +19,10 @@ titleTemplate: '%s - Slidev'
 download: true
 # Syntaxhervorheber, entweder 'prism' oder 'shiki'
 highlighter: 'prism'
-<<<<<<< HEAD
 # Monaco-Editor aktivieren, standardmäßig nur dev
-=======
-# show line numbers in code blocks
-lineNumbers: false
-# enable monaco editor, default to dev only
->>>>>>> 7fcdfb6d7dee75f411c762b8d223645a5b35ab29
 monaco: 'dev'
+# Zeilennummern in Codeblöcken anzeigen
+lineNumbers: false
 
 # Farbschema für die Folien erzwingen, kann 'auto', 'light' oder 'dark' sein
 colorSchema: 'auto'
@@ -56,11 +52,7 @@ info: |
 ---
 ```
 
-<<<<<<< HEAD
-Weitere Infornationen sind in den [Typdefinitionen](https://github.com/slidevjs/slidev/blob/main/packages/types/src/types.ts#L29) zu finden.
-=======
-Check out the [type definitions](https://github.com/slidevjs/slidev/blob/main/packages/types/src/config.ts) for more options.
->>>>>>> 7fcdfb6d7dee75f411c762b8d223645a5b35ab29
+Weitere Infornationen sind in den [Typdefinitionen](https://github.com/slidevjs/slidev/blob/main/packages/types/src/config.ts) zu finden.
 
 ## Ordner Struktur
 
