@@ -21,6 +21,8 @@ download: true
 highlighter: 'prism'
 # Monaco-Editor aktivieren, standardmäßig nur dev
 monaco: 'dev'
+# Zeilennummern in Codeblöcken anzeigen
+lineNumbers: false
 
 # Farbschema für die Folien erzwingen, kann 'auto', 'light' oder 'dark' sein
 colorSchema: 'auto'
@@ -50,7 +52,7 @@ info: |
 ---
 ```
 
-Weitere Infornationen sind in den [Typdefinitionen](https://github.com/slidevjs/slidev/blob/main/packages/types/src/types.ts#L29) zu finden.
+Weitere Infornationen sind in den [Typdefinitionen](https://github.com/slidevjs/slidev/blob/main/packages/types/src/config.ts) zu finden.
 
 ## Ordner Struktur
 
