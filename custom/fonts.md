@@ -4,11 +4,7 @@
 
 Während man HTML und CSS verwenden kann, um die Schriftarten und den Stil der Folien nach Belieben anzupassen, bietet Slidev auch eine bequeme Möglichkeit, Schriftarten und Stile mühelos zu verwenden.
 
-<<<<<<< HEAD
-Konfiguriere den Fontmatter wie folgt:
-=======
-In your frontmatter, configure as following
->>>>>>> d9b5a2ed4eea5c454b14f823f740a050ef45f079
+Konfiguriere den Frontmatter wie folgt:
 
 ```yaml
 ---
