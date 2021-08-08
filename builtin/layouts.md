@@ -1,131 +1,125 @@
 # Layouts
 
-## Built-in Layouts
+## Eingebaute Layouts
 
-<<<<<<< HEAD
-> Die Dokumentation ist in diesem Bereich noch in Bearbeitung. Schaue dir doch den [Quellcode](https://github.com/slidevjs/slidev/blob/main/packages/client/builtin) selbst an, bevor die Dokumentation fertig ist.
-=======
-> As themes may override layouts behaviour, the best way to know exactly the usage, parameters and examples is referring their documentation.
-
+> Da Themen eventuell Layouts überschreiben können, ist es am besten, die genaue Verwendung, Parameter und Beispiele in der jeweiligen Dokumentation nachzulesen.
 
 ### `center`
 
-Displays the content in the middle of the sreen.
+Zeigt den Inhalt in der Mitte des Bildschirms an.
 
 ### `cover`
 
-Used to display the cover page for the presentation, may contain the presentation title, contextualization, etc.
+Wird benutzt, um das Deckblatt der Präsentation anzuzeigen. Diese Folie kann auch den Titel und weitere Kontextualisierungen oder anderes enthalten.
 
 ### `default`
 
-The most baisc layout, to display any kind of content.
+Das standart Layout, um jegliche Art von Inhalt anzuzeigen.
 
 ### `end`
 
-The final page for the presentation.
+Die Abschlussfolie der Präsentation.
 
 ### `fact`
 
-To show some fact or data with a lot of prominence on the screen.
+Zeigt einen Fakt oder Daten mit sehr viel Aufmerksamkeit an.
 
 ### `full`
 
-Use all the space of the screen to display the content.
+Nutzt den gasamten Platz auf dem Bildschirm für die Darstellung von Inhalten aus.
 
 ### `image-left`
 
-Shows an image on the left side of the screen, the content will be placed on the right side.
+Zeig ein Bild auf der linken Seite des Bildschirms und rechts den Inhalt.
 
-#### Usage
+#### Verwendung
 
 ```yaml
 ---
 layout: image-left
 
-# the image source
-image: ./path/to/the/image
+# die Bildquelle
+image: ./pfad/zum/bild
 
-# a custom class name to the content
-class: my-cool-content-on-the-right
+# ein benutzerdefinierter Klassenname für den Inhalt
+class: mein-toller-inhalt-rechts
 ---
 ```
 
 ### `image-right`
 
-Shows an image on the right side of the screen, the content will be placed on the left side.
+Zeig ein Bild auf der rechten Seite des Bildschirms und links den Inhalt.
 
-#### Usage
+#### Verwendung
 
 ```yaml
 ---
 layout: image-right
 
-# the image source
-image: ./path/to/the/image
+# die Bildquelle
+image: ./pfad/zum/bild
 
-# a custom class name to the content
-class: my-cool-content-on-the-left
+# ein benutzerdefinierter Klassenname für den Inhalt
+class: mein-toller-inhalt-links
 ---
 ```
 
 ### `image`
 
-Shows an image as the main content of the page.
+Zeigt ein Bild als Hauptinhalt der Seite an.
 
-#### Usage
+#### Verwendung
 
 ```yaml
 ---
 layout: image
 
-# the image source
-image: ./path/to/the/image
+# die Bildquelle
+image: ./pfad/zum/bild
 ---
 ```
 
 ### `intro`
 
-To introduce the presentation, usually with the presentation title, a short description, the author, etc.
+Als Einstieg in die Präsentation, wird normalerweiße mit Titel, kurzer Beschreibung, Autor, usw. benutzt.
 
 ### `none`
 
-A layout without any existent styling.
+Ein Layout ohne jegliche Styles.
 
 ### `quote`
 
-To display a quotation with prominience.
+Um ein Zitat an hervorgehobener Stelle anzuzeigen.
 
 ### `section`
 
-Used to mark the beginning of a new presentation section.
+Wird benutzt, um den Anfang eines neuen Abschnitts in der Präsentation zu markieren.
 
 ### `statement`
 
-Make an affirmation/statement as the main page content.
+Mache eine Affirmation/Aussage zum Hauptinhalt der Seite.
 
 ### `two-cols`
 
-Separates the page content in two columns.
+Trennt den Seiteninhalt in zwei Spalten.
 
-#### Usage
-
+#### Verwendung
 
 ```md
 ---
 layout: two-cols
 ---
 
-# Left
+# Links
 
-This shows on the left
+Das wird links angezeigt
 
 ::right::
 
-# Right
+# Rechts
 
-This shows on the right
+Das wird rechts angezeigt
 ```
->>>>>>> 1167e7a94ea649de6b3cd27aec6585258f0d477e
 
 ## Eigene Layouts
 
