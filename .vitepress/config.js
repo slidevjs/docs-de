@@ -165,6 +165,10 @@ const Resources = [
     link: '/showcases',
   },
   {
+    text: 'Lernressourcen',
+    link: '/resources/learning',
+  },
+  {
     text: 'Gesammelte Titelbilder',
     link: '/resources/covers',
   },
