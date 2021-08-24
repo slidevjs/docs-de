@@ -293,9 +293,6 @@ export const community: ThemeInfo[] = [
       'light',
     ],
   },
-<<<<<<< HEAD
-  // Füge deins hier hinzu!
-=======
   {
     id: 'slidev-theme-takahashi',
     name: 'Takahashi',
@@ -318,8 +315,7 @@ export const community: ThemeInfo[] = [
       'light',
     ],
   },
-  // Add yours here!
->>>>>>> 3d7250800ddac904f7a1b1b24f2830f892a27a03
+  // Füge deins hier hinzu!
   {
     id: '',
     link: 'https://github.com/slidevjs/docs/edit/main/.vitepress/themes.ts',
