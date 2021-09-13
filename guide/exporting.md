@@ -39,6 +39,7 @@ $ slidev export --format png
 
 ## Single-Page Application (SPA)
 
+<<<<<<< HEAD
 Slidev Präsentationen können auch in eine selbst-hostbare SPA exportiert werden:
 
 ```bash
@@ -83,3 +84,6 @@ Hier sind ein paar Beispiele einer exportieren SPA:
 
 - [Starter Vorlage](https://sli.dev/demo/starter)
 - [Composable Vue](https://talks.antfu.me/2021/composable-vue) von [Anthony Fu](https://github.com/antfu)
+=======
+See [Static Hosting](/guide/hosting).
+>>>>>>> 565eb6709aa69ec36842f22c104f90ef741d9440
