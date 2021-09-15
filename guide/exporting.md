@@ -73,7 +73,7 @@ Man kann eine eigene URL zum herunterladen der PDF angeben. In diesem Fall wird 
 
 ```md
 ---
-download: 'https://meineseite.com/meine-präsentation.pdf'
+download: "https://meineseite.com/meine-präsentation.pdf"
 ---
 ```
 
@@ -83,3 +83,5 @@ Hier sind ein paar Beispiele einer exportieren SPA:
 
 - [Starter Vorlage](https://sli.dev/demo/starter)
 - [Composable Vue](https://talks.antfu.me/2021/composable-vue) von [Anthony Fu](https://github.com/antfu)
+
+Mehr Infos: [Statisches Hosting](/guide/hosting).

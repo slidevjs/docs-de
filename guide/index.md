@@ -16,6 +16,7 @@ Weitere Informationen über den Hintergrund von Slidev sind im [Warum Slidev](/g
 - 🌈 [**Stylish**](/guide/syntax.html#embedded-styles) - [Windi CSS](https://windicss.org/) on-demand utilities und einfach zu benutzende, eingebttete Stylesheets
 - 🤹 [**Interaktiv**](/custom/directory-structure.html#components) - eigene Vue Komponenten
 - 🎙 [**Moderatoren Modus**](/guide/presenter-mode.html) - nutze ein anderes Fenster oder deine Handy um deine Präsentation zu steuern
+- 🎨 [**Drawing**](/guide/drawing.html) - draw and annotate on your slides
 - 🧮 [**LaTeX**](/guide/syntax.html#latex) - integrierte Unterstützung für mathematische LaTeX Gleichungen
 - 📰 [**Diagramme**](/guide/syntax.html#diagrams) - erstelle Diagramme mit Beschriftungen
 - 🌟 [**Icons**](/guide/syntax.html#icons) - direkter Zugriff auf Icons von jedem Iconset
@@ -27,15 +28,16 @@ Weitere Informationen über den Hintergrund von Slidev sind im [Warum Slidev](/g
 
 ### Tech-Stack
 
-Slidev wird durch die Kombination dieser Tools und Technologien ermöglicht: 
+Slidev wird durch die Kombination dieser Tools und Technologien ermöglicht:
 
 - [Vite](https://vitejs.dev) - Ein extrem schnelles Frontend-Tool
 - [Vue 3](https://v3.vuejs.org/) powered [Markdown](https://daringfireball.net/projects/markdown/syntax) - Konzentriere dich auf den Inhalt, während die Power von HTML und Vue Komponenten immer an deiner Seite ist
 - [Windi CSS](https://github.com/windicss/windicss) - On-Demand Utility-First CSS Framework, style deine Folien mit einer Lichtigkeit
 - [Prism](https://github.com/PrismJS/prism), [Shiki](https://github.com/shikijs/shiki), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - Erstlassige Code-Snippet-Unterstützung mit Live-Coding Fähigkeit
 - [RecordRTC](https://recordrtc.org) - Integrierte Aufnahmeunterstützung mit Kameraansicht
-- [VueUse](https://vueuse.org) Familie -  [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), etc.
+- [VueUse](https://vueuse.org) Familie - [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), etc.
 - [Iconify](https://iconify.design/) - Iconset Sammlung.
+- [Drauu](https://github.com/antfu/drauu) - Drawing and annotations support
 - [KaTeX](https://katex.org/) - LaTeX Formeln rendern.
 - [Mermaid](https://mermaid-js.github.io/mermaid) - Textbasierte Diagramme.
 
@@ -57,7 +59,7 @@ Folge den Anweisungen und beginne mit dem Erstellen der Folien. Lies dir die [Sy
 
 ### Command Line Interface
 
-In einem Projekt, wo Slidev installiert ist, kann Slidev über den `slidev` Befehl in den npm Skripten verwendet werden. 
+In einem Projekt, wo Slidev installiert ist, kann Slidev über den `slidev` Befehl in den npm Skripten verwendet werden.
 
 ```json
 {
@@ -81,7 +83,7 @@ Führe `slidev --help` aus, um alle verfügbaren Optionen zu erhalten.
 
 Slidev liest die `slides.md` Datei in deinem Projektstamm und wandelt sie in eine Präsentation um. Bei Änderungen wird deine Präsentation sofort aktualisiert. Ein Beispiel:
 
-~~~md
+````md
 # Slidev
 
 Hallo Welt
@@ -92,13 +94,11 @@ Hallo Welt
 
 Codeblöcke zum direkten hervorheben verwenden
 
-//```ts
-console.log('Hallo, Welt!')
-//```
+//`ts console.log('Hallo, Welt!') //`
 
 ---
 
 # Seite 3
-~~~
+````
 
 Erfahre mehr über [Slidev's Markdown Syntax](/guide/syntax).

@@ -30,12 +30,20 @@ const Guide = [
     link: '/guide/exporting',
   },
   {
+    text: 'Statisches Hosting',
+    link: '/guide/hosting',
+  },
+  {
     text: 'Präsentation aufzeichnen',
     link: '/guide/recording',
   },
   {
     text: 'Moderatoren Modus',
     link: '/guide/presenter-mode',
+  },
+  {
+    text: 'Zeichnungen & Anmerkungen',
+    link: '/guide/drawing',
   },
   {
     text: 'Editor Integrationen',
