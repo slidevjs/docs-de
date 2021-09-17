@@ -14,7 +14,7 @@ Wird benutzt, um das Deckblatt der Präsentation anzuzeigen. Diese Folie kann au
 
 ### `default`
 
-Das standart Layout, um jegliche Art von Inhalt anzuzeigen.
+Das Standart Layout, um jegliche Art von Inhalt anzuzeigen.
 
 ### `end`
 
@@ -26,7 +26,7 @@ Zeigt einen Fakt oder Daten mit sehr viel Aufmerksamkeit an.
 
 ### `full`
 
-Nutzt den gasamten Platz auf dem Bildschirm für die Darstellung von Inhalten aus.
+Nutzt den gesamten Platz auf dem Bildschirm für die Darstellung von Inhalten aus.
 
 ### `image-left`
 
@@ -81,7 +81,7 @@ image: ./pfad/zum/bild
 
 ### `intro`
 
-Als Einstieg in die Präsentation, wird normalerweiße mit Titel, kurzer Beschreibung, Autor, usw. benutzt.
+Als Einstieg in die Präsentation, wird normalerweise mit Titel, kurzer Beschreibung, Autor, usw. benutzt.
 
 ### `none`
 
@@ -123,7 +123,7 @@ Das wird rechts angezeigt
 
 ## Eigene Layouts
 
-Erstelle einen Ordner `layouts/` im Ursprung deines Projektverzeichnises. Dort können eigene Vue Layout Komponenten erstellt werden.
+Erstelle einen Ordner `layouts/` im Ursprung deines Projektverzeichnisses. Dort können eigene Vue Layout Komponenten erstellt werden.
 
 Erfahre mehr unter [Individualisierung](/custom/directory-structure#layouts)
 

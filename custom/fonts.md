@@ -51,7 +51,7 @@ fonts:
 ---
 ```
 
-Diese Konfiguration gilt für alle Webfonts. Für eine feinere Steurung der Gewichte, müssen diese manuell mit [HTML](/custom/directory-structure.html#index-html) und CSS importiert werden.
+Diese Konfiguration gilt für alle Webfonts. Für eine feinere Steuerung der Gewichte, müssen diese manuell mit [HTML](/custom/directory-structure.html#index-html) und CSS importiert werden.
 
 ## Fallback Schriftarten
 
@@ -93,7 +93,7 @@ fonts:
 ## Anbieter
 
 - Optionen: `google` | `none`
-- Stadart: `google`
+- Standart: `google`
 
 Derzeit wird nur Google Fonts unterstützt, es ist geplant, in Zukunft weitere Anbieter hinzuzufügen. Mit der Angabe "none" wird die Funktion des automatischen Imports vollständig deaktiviert und alle Schriften werden lokal behandelt.
 

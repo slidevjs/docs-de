@@ -57,7 +57,7 @@ Das ist eine nach unten links ausgerichtete Fußzeile
 </div>
 ```
 
-Um die tatsächeliche Größe der Folie zu ändern, kann eine `canvasWidth` Option im ersten Formationsblock hinzugefügt werden:
+Um die Tatsächliche Größe der Folie zu ändern, kann eine `canvasWidth` Option im ersten Formationsblock hinzugefügt werden:
 
 ```yaml
 ---
@@ -67,7 +67,7 @@ canvasWidth: 800
 
 ## Schriftgröße
 
-Falls dir die Schriftgrößen auf den Folien zu klein sind, können diese in folgenden Wegen gändert werden:
+Falls dir die Schriftgrößen auf den Folien zu klein sind, können diese in folgenden Wegen geändert werden:
 
 ### Lokale Styles überschreiben
 
@@ -107,7 +107,7 @@ Erfahre mehr über [Globale Styles](/custom/directory-structure.html#style)
 
 ### Den Canvas skalieren
 
-Das Ändern der tatsächlichen Größe des Canvases skaliert alle Ihalte der Folien (Text, Bilder, Komponenten, ...) und Folien.
+Das Ändern der tatsächlichen Größe des Canvases skaliert alle Inhalte der Folien (Text, Bilder, Komponenten, ...) und Folien.
 
 ```yaml
 ---

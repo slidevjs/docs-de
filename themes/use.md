@@ -30,7 +30,7 @@ Wollen Sie ihr eigenes Thema entwerfen? Dann können Sie [lernen, wie man ein Th
 
 ## Thema "Eject"-en
 
-Sollten man die volle Kontrolle über das aktuelles Thema haben wollen, dann kann man das Thema mithilfe des foldendem Befehles in das lokales Dateisystem kopieren:
+Sollten man die volle Kontrolle über das aktuelles Thema haben wollen, dann kann man das Thema mithilfe des folgendem Befehles in das lokales Dateisystem kopieren:
 
 ```bash
 $ slidev theme eject

@@ -27,6 +27,6 @@ export default defineShortcutsSetup((nav: NavOperations) => {
 
 Mit diesem Setup können eigene Einstellungen für Tastenkürzel aus [Navigationen](/guide/navigation#navigation-bar) definiert werden. Das obige Beispiel führt die nächste Animation aus, wenn <kbd>enter</kbd> gedrückt wird und die letzte Animation, wenn <kbd>backspace</kbd> gedrückt wird.
 
-Die Konfigurations Funktion bekommt ein Objekt mit den Navigationsmethoden und gibt einen Array, welcher die Tastenkürzel und Konfigurationen enthält zurück. Weitere Informationen sind in den Typdefinitionen zu finden.
+Die Konfigurations-Funktion bekommt ein Objekt mit den Navigationsmethoden und gibt einen Array, welcher die Tastenkürzel und Konfigurationen enthält zurück. Weitere Informationen sind in den Typdefinitionen zu finden.
 
 Siehe [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) für mehr Informationen über das `keyPressed` Event.

@@ -6,7 +6,7 @@
 
 ## Eigene Komponenten
 
-Erstelle einen Ordner `components/` im Ursprung deines Projektverzeichnises. Dort können eigene Vue Komponenten erstellt werden, die dann ganz einfach in der Markdown Datei genutzt werden können.
+Erstelle einen Ordner `components/` im Ursprung deines Projektverzeichnisses. Dort können eigene Vue Komponenten erstellt werden, die dann ganz einfach in der Markdown Datei genutzt werden können.
 
 Erfahre mehr über [Individualisierung](/custom/directory-structure#components)
 

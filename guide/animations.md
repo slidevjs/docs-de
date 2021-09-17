@@ -73,7 +73,7 @@ clicks: 10
 
 ### Reihenfolge
 
-Wenn man einen Index der `v-click` Direktive überreicht, kann die Reihenfolge der Enthühllung angepasst werden.
+Wenn man einen Index der `v-click` Direktive überreicht, kann die Reihenfolge der Enthüllung angepasst werden.
 
 ```md
 <div v-click>1</div>
@@ -93,7 +93,7 @@ Wenn man einen Index der `v-click` Direktive überreicht, kann die Reihenfolge d
 clicks: 3
 ---
 
-<!-- Sichtabr nach 3 Klicks -->
+<!-- Sichtbar nach 3 Klicks -->
 <v-clicks at="3">
   <div>Hi</div>
 </v-clicks>

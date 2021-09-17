@@ -15,6 +15,6 @@ export default defineAppSetup(({ app, router }) => {
 })
 ```
 
-Diese Funktion kann auch als Eintrittspunkt der Slidev App genutzt werdern, um Initialisierungen durchzuführen, bevor die App startet.
+Diese Funktion kann auch als Eintrittspunkt der Slidev App genutzt werden, um Initialisierungen durchzuführen, bevor die App startet.
 
 Erfahre mehr: [Vue Application API](https://v3.vuejs.org/api/application-api.html#component).

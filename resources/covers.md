@@ -11,4 +11,4 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 ```
 
-Hier ist unsere [Unsplash Sammlung](https://unsplash.com/collections/94734566/slidev) mit Bildern und deren Authoren, falls dir welche von den Bildern gefallen.
+Hier ist unsere [Unsplash Sammlung](https://unsplash.com/collections/94734566/slidev) mit Bildern und deren Autoren, falls dir welche von den Bildern gefallen.

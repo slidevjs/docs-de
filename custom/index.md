@@ -10,7 +10,7 @@ Slidev kann im Frontmatterblock der ersten Folie konfiguriert werden. Folgende L
 ---
 # themen-id oder package name
 theme: 'default'
-# Titel der Folie (wird automatisch aus der ersten Überschrift abgeleited, wenn nicht angegeben)
+# Titel der Folie (wird automatisch aus der ersten Überschrift abgeleitet, wenn nicht angegeben)
 title: ''
 # titleTemplate für die Webseite, `%s` wird mit dem Folientitel ersetzt
 titleTemplate: '%s - Slidev'
@@ -26,7 +26,7 @@ lineNumbers: false
 
 # Farbschema für die Folien erzwingen, kann 'auto', 'light' oder 'dark' sein
 colorSchema: 'auto'
-# Router-Modus für Vue-Router, entwedere "history" oder "hash"
+# Router-Modus für Vue-Router, entweder "history" oder "hash"
 routerMode: 'history'
 # Seitenverhältnis der Folien
 aspectRatio: '16/9'
@@ -52,11 +52,11 @@ info: |
 ---
 ```
 
-Weitere Infornationen sind in den [Typdefinitionen](https://github.com/slidevjs/slidev/blob/main/packages/types/src/config.ts) zu finden.
+Weitere Informationen sind in den [Typdefinitionen](https://github.com/slidevjs/slidev/blob/main/packages/types/src/config.ts) zu finden.
 
 ## Ordner Struktur
 
-Slidev nutzt  Ordner-Struktur-Konvetionen, um die Konfigurationspberfläche minimal zu halten und Erweiterungen flexibel und intuitiv zu gestalten.
+Slidev nutzt  Ordner-Struktur-Konventionen, um die Konfigurationsoberfläche minimal zu halten und Erweiterungen flexibel und intuitiv zu gestalten.
 
 Siehe Abschnitt [Ordner Struktur](/custom/directory-structure).
 ## Tools Konfigurieren

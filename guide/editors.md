@@ -1,12 +1,12 @@
 # Editor Unterstützung
 
-Da Slidev Markdon als Informationsquelle nutzt, kann JEDER Editor genutzt werden.
+Da Slidev Markdown als Informationsquelle nutzt, kann JEDER Editor genutzt werden.
 
 Für das beste Folienmanagement, bieten wir auch folgende Editor Integrationen:
 
 ## Integrierter Editor
 
-Slidev wird mit einem integrierten [CodeMirror](https://codemirror.net/) Editor geliefert, in dem Änderungen an der Präsentation sofort nach dem Speichern sichtabr sind. 
+Slidev wird mit einem integrierten [CodeMirror](https://codemirror.net/) Editor geliefert, in dem Änderungen an der Präsentation sofort nach dem Speichern sichtbar sind. 
 
 Klicke den <carbon-edit class="inline-icon-btn"/> Button, um den CodeMirror Editor zu öffnen.
 
@@ -34,7 +34,7 @@ Die VS Code Erweiterung bietet ein paar Funktionen, die dabei helfen, die Folien
 
 - Folien werden im Seitenbereich angezeigt
 - Nächste / Vorherige Folien Buttons
-- Folien umsorteiren
+- Folien umsortieren
 - Code Folding für Folien Blöcke
 - Wandle Markdown in HTML um
 

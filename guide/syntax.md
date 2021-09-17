@@ -89,7 +89,7 @@ function addiere(
 //```
 ~~~
 
-Um die Hervorhebung in mehreren Schritten zu änderen, können mehrere Angaben mit `|` getrennt angegeben werden. Zum Beispiel:
+Um die Hervorhebung in mehreren Schritten zu ändern, können mehrere Angaben mit `|` getrennt angegeben werden. Zum Beispiel:
 
 ~~~ts
 //```ts {2-3|5|all}
@@ -137,7 +137,7 @@ h1 {
 Der `<style>` Tag ist immer [bereichsbezogen](https://vue-loader.vuejs.org/guide/scoped-css.html). Mehr über das Überschreiben von globalen Styles gibt es im Abschnitt [Individualisierung](/custom/directory-structure#style).
 
 
-Durch [Windi CSS](https://windicss.org), kann dirket verschachteltes CSS oder [Direktiven](https://windicss.org/features/directives.html) (z.B. `@apply`) genutzt werden.
+Durch [Windi CSS](https://windicss.org), kann direkt verschachteltes CSS oder [Direktiven](https://windicss.org/features/directives.html) (z.B. `@apply`) genutzt werden.
 
 ```md
 # Slidev
@@ -209,7 +209,7 @@ Das ist eine weitere Notiz
 
 In Slidev können fast alle Open-Source Inconsets dank [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) und [Iconify](https://iconify.design/) **direkt** in der Markdown Datei genutzt werden. 
 
-Die Benenung folgt den [Iconify](https://iconify.design/) Namenskonventionen `{iconset-name}-{icon-name}`. Zum Beispiel:
+Die Benennung folgt den [Iconify](https://iconify.design/) Namenskonventionen `{iconset-name}-{icon-name}`. Zum Beispiel:
 
 - `<mdi-account-circle />` - <mdi-account-circle /> von [Material Design Icons](https://github.com/Templarian/MaterialDesign)
 - `<carbon-badge />` - <carbon-badge /> von [Carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons)

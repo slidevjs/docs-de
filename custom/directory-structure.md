@@ -89,13 +89,13 @@ Verwende `<slot />` in der Layoutkomponente für den Folieninhalt. Zum Beispiel:
 
 ## Public
 
-Konvetionen: `./public/*`
+Konventionen: `./public/*`
 
 Assets in diesem Verzeichnis werden nach der Umwandlung in eine SPA im Wurzelpfad `/` bereitgestellt und in das Wurzelverzeichnis des Dist-Verzeichnisses kopiert. Lesen mehr über [Vites `public`-Verzeichnis](https://vitejs.dev/guide/assets.html#the-public-directory).
 
 ## Style
 
-Koventionen: `./style.css` | `./styles/index.{css,js,ts}`
+Konventionen: `./style.css` | `./styles/index.{css,js,ts}`
 
 Dateien, die dieser Konvention folgen, werden in das Stammverzeichnis der App injiziert. Wenn man mehrere css-Einträge importieren möchte, kann man die folgende Struktur erstellen und die Importreihenfolge selbst verwalten.
 
@@ -142,7 +142,7 @@ Stile werden von [Windi CSS](http://windicss.org/) und [PostCSS](https://postcss
 
 ## `index.html`
 
-Konvetionen: `index.html`
+Konventionen: `index.html`
 
 Die `index.html` bietet die Möglichkeit, Meta-Tags und/oder Skripte in die Haupt-`index.html` zu injizieren.
 
@@ -184,7 +184,7 @@ Die fertig gehostete `index.html` wird sein:
 
 ## Globale Ebenen
 
-Konvetionen: `global-top.vue` | `global-bottom.vue`
+Konventionen: `global-top.vue` | `global-bottom.vue`
 
 Erfahre mehr: [Globale Ebenen](/custom/global-layers)
 

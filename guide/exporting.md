@@ -23,7 +23,7 @@ Nach ein paar Sekunden wird die fertige Präsentation unter `./slides-exports.pd
 
 > Verfügbar seit v0.21
 
-Standartmäßig exportiert Slidev Präsentationen mit einer Seite pro Folie und deaktivierten Klickanimationen. Wenn die Präsentation mit mehreren Schritten pro Folien exportiert werden soll, muss die `--with-clicks` Option übergeben werden.
+Standardmäßig exportiert Slidev Präsentationen mit einer Seite pro Folie und deaktivierten Klick-Animationen. Wenn die Präsentation mit mehreren Schritten pro Folien exportiert werden soll, muss die `--with-clicks` Option übergeben werden.
 
 ```bash
 $ slidev export --with-clicks
@@ -45,11 +45,11 @@ Slidev Präsentationen können auch in eine selbst-hostbare SPA exportiert werde
 $ slidev build
 ```
 
-Die generierte Applikation befindet sich unter `dist/` und kann auf [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), oder wo auch immer man will gehosted werden. Jetzt kann man die Präsetation mit der ganzen Welt in nur einem Link teilen.
+Die generierte Applikation befindet sich unter `dist/` und kann auf [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), oder wo auch immer man will gehosted werden. Jetzt kann man die Präsentation mit der ganzen Welt in nur einem Link teilen.
 
 ### Basispfad
 
-Wenn die SPA auf Unterouten gehosted werden soll, muss die Option `--base` mit einem Pfad überrreicht werden:
+Wenn die SPA auf Unterouten gehosted werden soll, muss die Option `--base` mit einem Pfad überreicht werden:
 
 ```bash
 $ slidev build --base /präsentationen/meine-coole-präsentation/
@@ -57,7 +57,7 @@ $ slidev build --base /präsentationen/meine-coole-präsentation/
 
 Mehr Details gibt es auf der [Vite Dokumentation](https://vitejs.dev/guide/build.html#public-base-path).
 
-### Heruterladbares PDF bereitstellen
+### Herunterladbare PDF bereitstellen
 
 Man kann eine herunterladbare PDF für die Zuschauer der SPA bereitstellen. Mit der folgenden konfiguration wird diese Funktion aktiviert:
 
