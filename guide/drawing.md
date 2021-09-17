@@ -34,7 +34,7 @@ drawings:
 ---
 ```
 
-Nur im development:
+Nur während der Entwicklung:
 
 ```md
 ---
