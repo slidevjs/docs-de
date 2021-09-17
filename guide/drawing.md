@@ -1,44 +1,44 @@
-# Drawing & Annotations
+# Zeichnung & Anmerkungen
 
-> Available since v0.23
+> Verfügbar seit v0.23
 
-We have [drauu](https://github.com/antfu/drauu) built-in for drawing and annotation that could enhance your presentation further.
+Wir haben [drauu](https://github.com/antfu/drauu) für Zeichnungen und Anmerkungen eingebaut, damit deine Präsentation noch besser wird.
 
-To start, click the <carbon-pen class="inline-icon-btn"/> icon in the toolbar and start drawing. It's also available in the [Presenter Mode](/guide/presenter-mode). Drawings and annotations you created will be **synced up** automatically across all instances in real-time.
+Um zu starten, muss nur das <carbon-pen class="inline-icon-btn"/> Icon in der Menüleiste geklickt werden und schon geht's los. Das Zeichnen ist auch im [Präsentatoren Modus](/guide/presenter-mode) verfügbar. Zeichnung & Anmerkungen, die im Präsentationsmodus erstellt werden, werden automatisch in Echtzeit über alle Instanzen **synchronisiert**.
 
 <Tweet id="1424027510342250499" />
 
-## Use with Stylus Pen
+## Verwendung mit Stylus Stift
 
-When using a stylus pen on a tablet (for example, iPad with Apple Pencil), Slidev could smartly detect the input type. You can directly draw on your slides with the pen without turning on the drawing mode, while having your fingers or mouse control the navigation.
+Wenn ein Stylus Stift auf einem Tablet verwendet wird, erkennt Slidev das automatisch. Nun kann man direkt auf die Folien malen, ohne extra den Zeichenmodus zu aktivieren. Die Finger oder Maus können weiterhin zur navigation genutzt werden.
 
-## Persist Drawings
+## Zeichnungen Speichern
 
-The following frontmatter configuration allows you to persist your drawings as SVGs under `.slidev/drawings` directory and have them inside your exported pdf or hosted site.
+Mit der folgenden Frontmatter konfiguration werden Zeichnungen als SVGs im `.slidev/drawings` Ordner gespeichert. Dadurch können diese auch mit pdfs exportiert werden oder sind in der SPA zu sehen.
 
 ```md
 ---
-drawings: 
+drawings:
   persist: true
 ---
 ```
 
-## Disable Drawings
+## Zeichnungen deaktivieren
 
-Entirely:
+Vollständig:
 
 ```md
 ---
-drawings: 
+drawings:
   enabled: false
 ---
 ```
 
-Only in Development:
+Nur im development:
 
 ```md
 ---
-drawings: 
+drawings:
   enabled: dev
 ---
 ```
