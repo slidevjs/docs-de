@@ -42,3 +42,25 @@ drawings:
   enabled: dev
 ---
 ```
+
+Nur im Präsentationsmodus:
+
+```md
+---
+drawings:
+  presenterOnly: true
+---
+```
+
+## Zeichnung Synchronisierung
+
+Standartweiße werden alle Zeichnungen aller Instanzen miteinander synchronisiert. Wenn man eventuell seinen Präsentation anderen vorträgt, kann dies stören. Mit folgender Konfiguration kann die Synchronisierung ausgeschaltet werden.
+
+```md
+---
+drawings:
+  syncAll: false
+---
+```
+
+Wenn `syncAll` deaktiviert ist, werden trotzdem alle Zeichnungen von Präsentator der synchronisiert.
