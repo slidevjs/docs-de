@@ -41,23 +41,19 @@ Slidev wird durch die Kombination dieser Tools und Technologien ermöglicht:
 - [KaTeX](https://katex.org/) - LaTeX Formeln rendern.
 - [Mermaid](https://mermaid-js.github.io/mermaid) - Textbasierte Diagramme.
 
-### Die 1. Präsentation
-
-<<<<<<< HEAD
-Mit NPM:
-=======
 <br>
 
-#### Try it Online
+### Die 1. Präsentation
+
+#### Online ausprobieren
 
 [sli.dev/new](https://sli.dev/new)
 
 [![](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://sli.dev/new)
 
-#### Create Locally
+#### Lokal erstellen
 
-With NPM:
->>>>>>> 7dc63d28be77f9c3b208ece23969befdc0d99204
+Mit NPM:
 
 ```bash
 $ npm init slidev
@@ -97,7 +93,7 @@ Führe `slidev --help` aus, um alle verfügbaren Optionen zu erhalten.
 
 Slidev liest die `slides.md` Datei in deinem Projektstamm und wandelt sie in eine Präsentation um. Bei Änderungen wird deine Präsentation sofort aktualisiert. Ein Beispiel:
 
-````md
+```md
 # Slidev
 
 Hallo Welt
@@ -113,6 +109,6 @@ Codeblöcke zum direkten hervorheben verwenden
 ---
 
 # Seite 3
-````
+```
 
 Erfahre mehr über [Slidev's Markdown Syntax](/guide/syntax).
