@@ -75,7 +75,7 @@ status = 200;
 
 Gehe dann zu deinem Netlify Dashboard und erstelle eine neue Website mit dem Repository.
 
-## Vercel
+### Vercel
 
 - [Vercel](https://vercel.com/)
 
