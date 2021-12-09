@@ -14,7 +14,11 @@ Wird benutzt, um das Deckblatt der Präsentation anzuzeigen. Diese Folie kann au
 
 ### `default`
 
+<<<<<<< HEAD
 Das Standart Layout, um jegliche Art von Inhalt anzuzeigen.
+=======
+The most basic layout, to display any kind of content.
+>>>>>>> fbc97d802e30cc663321c93b32fff3cee9ca7ff9
 
 ### `end`
 
