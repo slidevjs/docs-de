@@ -6,7 +6,11 @@
 
 ### `center`
 
+<<<<<<< HEAD
 Zeigt den Inhalt in der Mitte des Bildschirms an.
+=======
+Displays the content in the middle of the screen.
+>>>>>>> 06ae2757fe5d59fbc9f2acd5867bba7521f3d679
 
 ### `cover`
 
@@ -14,7 +18,11 @@ Wird benutzt, um das Deckblatt der Präsentation anzuzeigen. Diese Folie kann au
 
 ### `default`
 
+<<<<<<< HEAD
 Das Standart Layout, um jegliche Art von Inhalt anzuzeigen.
+=======
+The most basic layout, to display any kind of content.
+>>>>>>> 06ae2757fe5d59fbc9f2acd5867bba7521f3d679
 
 ### `end`
 
