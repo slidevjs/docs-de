@@ -14,7 +14,7 @@ Wird benutzt, um das Deckblatt der Präsentation anzuzeigen. Diese Folie kann au
 
 ### `default`
 
-Das Standart Layout, um jegliche Art von Inhalt anzuzeigen.
+Das Standard Layout, um jegliche Art von Inhalt anzuzeigen.
 
 ### `end`
 
