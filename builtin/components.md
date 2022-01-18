@@ -4,47 +4,44 @@
 
 > Die Dokumentation ist in diesem Bereich noch in Bearbeitung. Schaue dir doch den [Quellcode](https://github.com/slidevjs/slidev/blob/main/packages/client/builtin) selbst an, bevor die Dokumentation fertig ist.
 
-<<<<<<< HEAD
-## Eigene Komponenten
-=======
 ### `TOC`
 
-Insert a Table Of Content.
+Fügt ein Inhaltsverzeichnis ein.
 
-Titles and title levels get automatically retrieved from the first title element of each slides.
+Titel und Titelebenen werden automatisch aus dem ersten Titelelement jeder Folie abgerufen.
 
-You can override this automatic behaviour for a slide by using the front matter syntax:
+Man kann das automatische Verhalten für eine Folie überschreiben, indem man den Frontmatter verwendet:
+
 ```yml
 ---
-title: Amazing slide title
+title: Eine Tolle Folie
 level: 2
 ---
 ```
 
-Or if you prefer the slide to not appear in the TOC at all, you can use:
+Oder, wenn eine Folie im Inhaltsverzeichnis ausgeblendet werden soll:
 ```yml
 ---
 hideInToc: true
 ---
 ```
 
-#### Usage
+#### Nutzung
 ~~~md
 <Toc />
 ~~~
 
-Parameters:
+Parameter:
 
-* `columns` (`string | number`, default: `1`): The number of columns of the display
-* `maxDepth` (`string | number`, default: `Infinity`): The maximum depth level of title to display
-* `minDepth` (`string | number`, default: `1`): The minimum depth level of title to display
+* `columns` (`string | number`, default: `1`): Die Anzahl der angezeigten Spalten
+* `maxDepth` (`string | number`, default: `Infinity`): Die maximale Tiefe des anzuzeigenden Titelebenen
+* `minDepth` (`string | number`, default: `1`): Die minimale Tiefe des anzuzeigenden Titelebenen
 * `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, default: `'all'`):
-  * `'all'`: Display all items
-  * `'onlyCurrentTree'`: Display only items that are in current tree (active item, parents and children of active item)
-  * `'onlySiblings'`: Display only items that are in current tree and their direct siblings
+  * `'all'`: Zeigt alle Items
+  * `'onlyCurrentTree'`: Zeigt nur Elemente, die sich im aktuellen Baum befinden (aktives Element, Eltern- und Kinderelemente des aktiven Elements)
+  * `'onlySiblings'`: Zeigt nur Elemente, die sich im aktuellen Baum und den direkten Kinderelementen befinden
 
-## Custom Components
->>>>>>> 06ae2757fe5d59fbc9f2acd5867bba7521f3d679
+## Eigene Komponenten
 
 Erstelle einen Ordner `components/` im Ursprung deines Projektverzeichnisses. Dort können eigene Vue Komponenten erstellt werden, die dann ganz einfach in der Markdown Datei genutzt werden können.
 
