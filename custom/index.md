@@ -33,8 +33,11 @@ aspectRatio: '16/9'
 # tatsächliche Breite des Canvases (Einheit in px)
 canvasWidth: 980
 
+# favicon: Kann ein lokaler Pfad oder eine URL sein.
+favicon: 'https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png'
+
 # Schriften werden automatisch von Google Fonts importiert
-# Erfahre mehr: https://sli.dev/custom/fonts
+# Erfahre mehr: https://de.sli.dev/custom/fonts
 fonts:
   sans: 'Roboto'
   serif: 'Roboto Slab'
