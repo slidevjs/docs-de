@@ -72,7 +72,11 @@ console.log('Hallo, Welt!')
 //```
 ~~~
 
+<<<<<<< HEAD
 Wir unterstützen [Prism](http://prismjs.com) und [Shiki](https://github.com/shiki/shiki) zu Syntaxhervorhebung. Mehr Informationen gibt es im [Abschnitt Highlighters](/custom/highlighters).
+=======
+We support [Prism](http://prismjs.com) and [Shiki](https://github.com/shikijs/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+>>>>>>> d68398ac58d3e8efc2f6d29119938f4a4382f617
 
 ### Zeilen Hervorhebung
 

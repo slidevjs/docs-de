@@ -19,7 +19,17 @@ $ slidev export
 
 Nach ein paar Sekunden wird die fertige Präsentation unter `./slides-exports.pdf` erscheinen.
 
+<<<<<<< HEAD
 ### Animationsschritte exportieren
+=======
+In case you want to export your slides using the dark version of the theme, use the `--dark` option:
+
+```bash
+$ slidev export --dark
+```
+
+### Export Clicks Steps
+>>>>>>> d68398ac58d3e8efc2f6d29119938f4a4382f617
 
 > Verfügbar seit v0.21
 
