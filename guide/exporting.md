@@ -17,7 +17,17 @@ Jetzt kann die Präsentation in PDF mit folgenden Befehl exportiert werden:
 $ slidev export
 ```
 
+<<<<<<< HEAD
 Nach ein paar Sekunden wird die fertige Präsentation unter `./slides-exports.pdf` erscheinen.
+=======
+After a few seconds, your slides will be ready at `./slides-export.pdf`.
+
+In case you want to export your slides using the dark version of the theme, use the `--dark` option:
+
+```bash
+$ slidev export --dark
+```
+>>>>>>> 9fa6829bca1bd8a2262cbc20eb2759d08a0f11fa
 
 ### Animationsschritte exportieren
 
