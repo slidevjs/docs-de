@@ -315,7 +315,34 @@ export const community: ThemeInfo[] = [
       'light',
     ],
   },
+<<<<<<< HEAD
   // Füge deins hier hinzu!
+=======
+  {
+    id: 'slidev-theme-academic',
+    name: 'Academic',
+    description: 'Academic presentations with Slidev made simple',
+    author: {
+      name: 'Alexander Eble',
+      link: 'https://github.com/alexanderdavide',
+    },
+    repo: 'https://github.com/alexanderdavide/slidev-theme-academic',
+    previews: [
+      'https://cdn.jsdelivr.net/gh/alexanderdavide/slidev-theme-academic@assets/example-export/01.png',
+      'https://cdn.jsdelivr.net/gh/alexanderdavide/slidev-theme-academic@assets/example-export/02.png',
+      'https://cdn.jsdelivr.net/gh/alexanderdavide/slidev-theme-academic@assets/example-export/03.png',
+      'https://cdn.jsdelivr.net/gh/alexanderdavide/slidev-theme-academic@assets/example-export/04.png',
+      'https://cdn.jsdelivr.net/gh/alexanderdavide/slidev-theme-academic@assets/example-export/05.png',
+      'https://cdn.jsdelivr.net/gh/alexanderdavide/slidev-theme-academic@assets/example-export/06.png',
+      'https://cdn.jsdelivr.net/gh/alexanderdavide/slidev-theme-academic@assets/example-export/07.png',
+    ],
+    tags: [
+      'dark',
+      'light',
+    ],
+  },
+  // Add yours here!
+>>>>>>> 37797ff651c1914f542e82bc6a10f8450281fad5
   {
     id: '',
     link: 'https://github.com/slidevjs/docs/edit/main/.vitepress/themes.ts',
