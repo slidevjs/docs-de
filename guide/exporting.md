@@ -19,6 +19,12 @@ $ slidev export
 
 Nach ein paar Sekunden wird die fertige Präsentation unter `./slides-exports.pdf` erscheinen.
 
+Falls du deine Folien mit der dunklen Version des Themes exportieren willst, kannst du die `--dark` option wählen:
+
+```bash
+$ slidev export --dark
+```
+
 ### Animationsschritte exportieren
 
 > Verfügbar seit v0.21

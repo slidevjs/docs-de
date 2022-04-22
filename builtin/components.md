@@ -4,13 +4,57 @@
 
 > Die Dokumentation ist in diesem Bereich noch in Bearbeitung. Schaue dir doch den [Quellcode](https://github.com/slidevjs/slidev/blob/main/packages/client/builtin) selbst an, bevor die Dokumentation fertig ist.
 
-### `TOC`
+### `Toc`
 
 Fügt ein Inhaltsverzeichnis ein.
 
-Titel und Titelebenen werden automatisch aus dem ersten Titelelement jeder Folie abgerufen.
+Wenn Folien nicht im Inhaltsverzeichnis erscheinen sollen, muss das im Frontmatter der Folie angegeben werden:
+```yml
+---
+hideInToc: true
+---
+```
 
-Man kann das automatische Verhalten für eine Folie überschreiben, indem man den Frontmatter verwendet:
+Titel werden durch die [`<Titles>` Komponente](#titles) angezeigt.
+
+#### Nutzung
+
+~~~md
+<Toc />
+~~~
+
+Parameter:
+
+* `columns` (`string | number`, standard: `1`): Die Anzahl an Spalten, die gezeigt werden soll
+* `listClass` (`string | string[]`, standard: `''`): Klassen, die der dem Inhaltsverzeichnis zugewiesen werden sollen
+* `maxDepth` (`string | number`, standard: `Infinity`): Die maximale Tiefe des anzuzeigenden Titels
+* `minDepth` (`string | number`, standard: `1`): Die minimale Tiefe des anzuzeigenden Titels
+* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, standard: `'all'`):
+  * `'all'`: Zeigt alle Einträge
+  * `'onlyCurrentTree'`: Zeigt nur Einträge, die sich im aktuellen Pfad befinden (aktive, Eltern und Kinder Einträge)
+  * `'onlySiblings'`: Zeigt nur Einträge aus dem aktuellen Pfad und die direkten Geschwister
+
+### `Link`
+
+Fügt einen Link ein, der zu einer Folie navigiert.
+
+#### Nutzung
+
+~~~md
+<Link to="42">Gehe zur Folie 42</Link>
+<Link to="42" title="Gehe zur Folie 42"/>
+~~~
+
+Parameter:
+
+* `to` (`string | number`): Der Pfad der Folie, zu der navigiert werden soll (Folien starten bei `1`)
+* `title` (`string`): Der anzuzeigende Titel
+
+### `Titles`
+
+Fügt den Haupttitel einer Folie als geparstes HTML ein.
+
+Titel und Titelebenen werden automatisch aus dem ersten Titelelement jeder Folie abgerufen.
 
 ```yml
 ---
@@ -19,27 +63,22 @@ level: 2
 ---
 ```
 
-Oder, wenn eine Folie im Inhaltsverzeichnis ausgeblendet werden soll:
-```yml
----
-hideInToc: true
----
+#### Nutzung
+
+Die `<Titles>` Komponente ist eine virtuelle Komponente, die wie folgend importiert werden kann:
+```js
+import Titles from '/@slidev/titles.md'
 ```
 
-#### Nutzung
+Dann kann man sie nutzen:
+
 ~~~md
-<Toc />
+<Titles no="42" />
 ~~~
 
 Parameter:
 
-* `columns` (`string | number`, default: `1`): Die Anzahl der angezeigten Spalten
-* `maxDepth` (`string | number`, default: `Infinity`): Die maximale Tiefe des anzuzeigenden Titelebenen
-* `minDepth` (`string | number`, default: `1`): Die minimale Tiefe des anzuzeigenden Titelebenen
-* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, default: `'all'`):
-  * `'all'`: Zeigt alle Items
-  * `'onlyCurrentTree'`: Zeigt nur Elemente, die sich im aktuellen Baum befinden (aktives Element, Eltern- und Kinderelemente des aktiven Elements)
-  * `'onlySiblings'`: Zeigt nur Elemente, die sich im aktuellen Baum und den direkten Kinderelementen befinden
+* `no` (`string | number`): Die Nummer der Folie, von der der Titel gezeigt werden soll (Folien starten bei `1`)
 
 ## Eigene Komponenten
 

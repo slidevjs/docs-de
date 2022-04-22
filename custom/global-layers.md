@@ -4,13 +4,17 @@
 
 Globale Ebenen erlauben es, Komponenten zu nutzten, die über Folien **bestehend** bleiben. Solche können zu Beispiel für Kopf- oder Fußzeilen, Folienübergreifende Animationen oder Globale Effekte nützlich sein. 
 
-Slidev bietet dafür 2 Ebenen. Erstelle eine `global-top.vue` oder `global-bottom.vue` Datei unter dem Projektstamm und die Ebenen werden automatisch aufgenommen.
+
+Slidev bietet dafür 3 Ebenen. Erstelle eine `global-top.vue`, `global-bottom.vue` oder `custom-nav-controls.vue` Datei unter dem Projektstamm und die Ebenen werden automatisch aufgenommen.
+
 
 Ebenenbeziehung:
 
 - Global Top (`global-top.vue`)
 - Slides
 - Global Bottom (`global-bottom.vue`)
+- NavControls
+  - Individualisierte Navigationsoberfläche (`custom-nav-controls.vue`)
 
 ## Beispiel
 
@@ -23,7 +27,18 @@ Ebenenbeziehung:
 
 Der Text `Dein Name` wird auf allen Folien erscheinen.
 
-Um es bedingt zu aktivieren, kann der [Vue Global Context](/custom/vue-context) angewendet werden.
+```html
+<!-- custom-nav-controls -->
+<template>
+  <button class="icon-btn" title="Next" @click="$slidev.nav.next">
+    <carbon:arrow-right />
+  </button>
+</template>
+```
+
+Der Button `Next` erscheint in der Navigationsoberfläche.
+
+Der [Vue Global Context](/custom/vue-context) kann angewendet werden, um diese bedingt zu aktivieren.
 
 ```html
 <!-- Fußzeile von Seite 4 ausblenden -->
@@ -58,5 +73,15 @@ Um es bedingt zu aktivieren, kann der [Vue Global Context](/custom/vue-context) 
   >
     {{ $slidev.nav.currentPage }} / {{ $slidev.nav.total }}
   </footer>
+</template>
+```
+
+```html
+<!-- custom-nav-controls -->
+<!-- verstecke den Button im Präsentationsmodus -->
+<template>
+  <button v-if="!$slidev.nav.isPresenter" class="icon-btn" title="Next" @click="$slidev.nav.next">
+    <carbon:arrow-right />
+  </button>
 </template>
 ```
