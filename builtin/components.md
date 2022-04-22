@@ -8,59 +8,53 @@
 
 Fügt ein Inhaltsverzeichnis ein.
 
-<<<<<<< HEAD
-Titel und Titelebenen werden automatisch aus dem ersten Titelelement jeder Folie abgerufen.
-
-Man kann das automatische Verhalten für eine Folie überschreiben, indem man den Frontmatter verwendet:
-=======
-If you want a slide to not appear in the `<Toc>` component, you can use in the front matter block of the slide:
+Wenn Folien nicht im Inhaltsverzeichnis erscheinen sollen, muss das im Frontmatter der Folie angegeben werden:
 ```yml
 ---
 hideInToc: true
 ---
 ```
 
-Titles are displayed using the [`<Titles>` component](#titles)
+Titel werden durch die [`<Titles>` Komponente](#titles) angezeigt.
 
-#### Usage
+#### Nutzung
 
 ~~~md
 <Toc />
 ~~~
 
-Parameters:
+Parameter:
 
-* `columns` (`string | number`, default: `1`): The number of columns of the display
-* `listClass` (`string | string[]`, default: `''`): Classes to apply to the table of contents list
-* `maxDepth` (`string | number`, default: `Infinity`): The maximum depth level of title to display
-* `minDepth` (`string | number`, default: `1`): The minimum depth level of title to display
-* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, default: `'all'`):
-  * `'all'`: Display all items
-  * `'onlyCurrentTree'`: Display only items that are in current tree (active item, parents and children of active item)
-  * `'onlySiblings'`: Display only items that are in current tree and their direct siblings
+* `columns` (`string | number`, standard: `1`): Die Anzahl an Spalten, die gezeigt werden soll
+* `listClass` (`string | string[]`, standard: `''`): Klassen, die der dem Inhaltsverzeichnis zugewiesen werden sollen
+* `maxDepth` (`string | number`, standard: `Infinity`): Die maximale Tiefe des anzuzeigenden Titels
+* `minDepth` (`string | number`, standard: `1`): Die minimale Tiefe des anzuzeigenden Titels
+* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, standard: `'all'`):
+  * `'all'`: Zeigt alle Einträge
+  * `'onlyCurrentTree'`: Zeigt nur Einträge, die sich im aktuellen Pfad befinden (aktive, Eltern und Kinder Einträge)
+  * `'onlySiblings'`: Zeigt nur Einträge aus dem aktuellen Pfad und die direkten Geschwister
 
 ### `Link`
 
-Insert a link you can use to navigate to a given slide.
+Fügt einen Link ein, der zu einer Folie navigiert.
 
-#### Usage
+#### Nutzung
 
 ~~~md
-<Link to="42">Go to slide 42</Link>
-<Link to="42" title="Go to slide 42"/>
+<Link to="42">Gehe zur Folie 42</Link>
+<Link to="42" title="Gehe zur Folie 42"/>
 ~~~
 
-Parameters:
+Parameter:
 
-* `to` (`string | number`): The path of the slide to navigate to (slides starts from `1`)
-* `title` (`string`): The title to display
+* `to` (`string | number`): Der Pfad der Folie, zu der navigiert werden soll (Folien starten bei `1`)
+* `title` (`string`): Der anzuzeigende Titel
 
 ### `Titles`
 
-Insert the main title from a slide parsed as HTML.
+Fügt den Haupttitel einer Folie als geparstes HTML ein.
 
-Titles and title levels get automatically retrieved from the first title element of each slides.
->>>>>>> 37797ff651c1914f542e82bc6a10f8450281fad5
+Titel und Titelebenen werden automatisch aus dem ersten Titelelement jeder Folie abgerufen.
 
 ```yml
 ---
@@ -69,42 +63,22 @@ level: 2
 ---
 ```
 
-<<<<<<< HEAD
-Oder, wenn eine Folie im Inhaltsverzeichnis ausgeblendet werden soll:
-```yml
----
-hideInToc: true
----
-```
-
 #### Nutzung
-=======
-#### Usage
 
-The `<Titles>` component is a virtual component you can import with:
+Die `<Titles>` Komponente ist eine virtuelle Komponente, die wie folgend importiert werden kann:
 ```js
 import Titles from '/@slidev/titles.md'
 ```
 
-Then you can use it with:
->>>>>>> 37797ff651c1914f542e82bc6a10f8450281fad5
+Dann kann man sie nutzen:
+
 ~~~md
 <Titles no="42" />
 ~~~
 
 Parameter:
 
-<<<<<<< HEAD
-* `columns` (`string | number`, default: `1`): Die Anzahl der angezeigten Spalten
-* `maxDepth` (`string | number`, default: `Infinity`): Die maximale Tiefe des anzuzeigenden Titelebenen
-* `minDepth` (`string | number`, default: `1`): Die minimale Tiefe des anzuzeigenden Titelebenen
-* `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, default: `'all'`):
-  * `'all'`: Zeigt alle Items
-  * `'onlyCurrentTree'`: Zeigt nur Elemente, die sich im aktuellen Baum befinden (aktives Element, Eltern- und Kinderelemente des aktiven Elements)
-  * `'onlySiblings'`: Zeigt nur Elemente, die sich im aktuellen Baum und den direkten Kinderelementen befinden
-=======
-* `no` (`string | number`): The number of the slide to display the title from (slides starts from `1`)
->>>>>>> 37797ff651c1914f542e82bc6a10f8450281fad5
+* `no` (`string | number`): Die Nummer der Folie, von der der Titel gezeigt werden soll (Folien starten bei `1`)
 
 ## Eigene Komponenten
 

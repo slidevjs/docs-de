@@ -63,14 +63,9 @@ Dieser Befehl versucht auch die lokale Version `@slidev/cli` zu nutzen, wenn sie
 
 ## Auf Docker installieren
 
-<<<<<<< HEAD
-Wenn ein schneller Weg benötigt wird, um Präsentationen auch auf Containern zu nutzen, kann das bereits fertige [Docker Image](https://hub.docker.com/r/stig124/slidev) verwendet werden, welches von [stig124](https://github.com/Stig124) gemaintained wird. Oder man baut sich sein eigenes Image.
+Wenn ein schneller Weg benötigt wird, um Präsentationen auch auf Containern zu nutzen, kann das bereits fertige [Docker Image](https://hub.docker.com/r/tangramor/slidev) verwendet werden, welches von [tangramor](https://github.com/tangramor) gemaintained wird. Oder man baut sich sein eigenes Image.
 
-Weitere Informationen sind im [slidevjs/container Repo](https://github.com/slidevjs/container) zu finden.
-=======
-If you need a rapid way to run a presentation with containers, you can use the prebuilt [docker](https://hub.docker.com/r/tangramor/slidev) image maintained by [tangramor](https://github.com/tangramor), or build your own.
-
-Just run following command in your work folder:
+Man muss nur folgenden Befehl im Projektordner ausführen:
 
 ```bash
 docker run --name slidev --rm -it \
@@ -80,14 +75,13 @@ docker run --name slidev --rm -it \
     tangramor/slidev:latest
 ```
 
-If your work folder is empty, it will generate a template `slides.md` and other related files under your work folder, and launch the server on port `3030`. 
+Wenn dein Projektordner leer ist, wird eine `slides.md` Vorlage und andere benötigte Dateien generiert und ein Server auf dem Port `3030` gestartet.
 
-You can access your slides from http://localhost:3030/
+Jetzt kannst du deine Präsentation hier finden: http://localhost:3030/
 
+### Baue ein deploy-bares Image
 
-### Build deployable image
-
-Or you can create your own slidev project to a docker image with Dockerfile:
+Oder du kreierst dein eigenes Projekt in einem Docker Image mit einer Dockerfile:
 
 ```Dockerfile
 FROM tangramor/slidev:latest
@@ -96,36 +90,35 @@ ADD . /slidev
 
 ```
 
-Create the docker image: `docker build -t myppt .`
+Baue das Image: `docker build -t meinePraesentation .`
 
-And run the container: `docker run --name myslides --rm --user node -p 3030:3030 myppt`
+Und Starte den Container: `docker run --name praesentation --rm --user node -p 3030:3030 meinePraesentation`
 
-You can visit your slides from http://localhost:3030/
-
-
-### Build hostable SPA (Single Page Application)
-
-Run command `docker exec -i slidev npx slidev build` on the running container `slidev`. It will generate static HTML files under `dist` folder.
+Nun findest du deine Präsentation unter http://localhost:3030/
 
 
-#### Host on Github Pages
+### Baue eine hostbare SPA (Single Page Application)
 
-You can host `dist` in a static web site such as [Github Pages](https://tangramor.github.io/slidev_docker/) or Gitlab Pages. 
-
-Because in Github pages the url may contain subfolder, so you need to modify the generated `index.html` to change `href="/assets/xxx` to `href="./assets/xxx`. Or you may use `--base=/<subfolder>/` option during the build process, such as: `docker exec -i slidev npx slidev build --base=/slidev_docker/`.
-
-And to avoid Jekyll build process, you need to add an empty file `.nojekyll`.
+Führe den Befehl `docker exec -i slidev npx slidev build` an einem Container aus, in dem  `slidev` läuft. Er wird die statischen HTML Dateien und den `dist`Ordner generieren,
 
 
-#### Host by docker
+#### Hosten auf Github Pages
 
-You can also host it by yourself with docker:
+Du kannst den `dist` Ordner als eine statische Webseite mit [Github Pages](https://tangramor.github.io/slidev_docker/) or Gitlab Pages hosten. 
+
+Weil der Github Pages URL eventuell einen Unterordner enthält, muss die generierte `index.html` angepasst werden. Entweder änderst du `href="/assets/xxx` zu `href="./assets/xxx` oder du übergibst eine `--base=/<subfolder>/` Option dem Build-Befehl, zum Beispiel: `docker exec -i slidev npx slidev build --base=/slidev_docker/`.
+
+Damit der Jekyll Bauprozess übersprungen wird, musst du eine leere `.nojekyll` Datei erstellen.
+
+#### Mit Docker Hosten
+
+Man kann die Webseite auch selber über Docker hosten:
 
 ```bash
 docker run --name myslides --rm -p 80:80 -v ${PWD}/dist:/usr/share/nginx/html nginx:alpine
 ```
 
-Or create a static image with following Dockerfile:
+Oder baue ein statische Image mit der folgenden Dockerfile:
 
 ```Dockerfile
 FROM nginx:alpine
@@ -134,12 +127,11 @@ COPY dist /usr/share/nginx/html
 
 ```
 
-Create the docker image: `docker build -t mystaticppt .`
+Baue das Docker Image: `docker build -t mystaticppt .`
 
-And run the container: `docker run --name myslides --rm -p 80:80 mystaticppt`
+Und starte de Container: `docker run --name myslides --rm -p 80:80 mystaticppt`
 
-You can visit your slides from http://localhost/
+Deine Webseite findes du hier: http://localhost/
 
 
-Refer to the [tangramor/slidev_docker](https://github.com/tangramor/slidev_docker) for more details.
->>>>>>> 37797ff651c1914f542e82bc6a10f8450281fad5
+Bei [tangramor/slidev_docker](https://github.com/tangramor/slidev_docker) findest du mehr Informationen.

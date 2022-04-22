@@ -315,9 +315,6 @@ export const community: ThemeInfo[] = [
       'light',
     ],
   },
-<<<<<<< HEAD
-  // Füge deins hier hinzu!
-=======
   {
     id: 'slidev-theme-academic',
     name: 'Academic',
@@ -341,8 +338,7 @@ export const community: ThemeInfo[] = [
       'light',
     ],
   },
-  // Add yours here!
->>>>>>> 37797ff651c1914f542e82bc6a10f8450281fad5
+  // Füge deins hier hinzu!
   {
     id: '',
     link: 'https://github.com/slidevjs/docs/edit/main/.vitepress/themes.ts',

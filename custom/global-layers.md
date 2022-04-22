@@ -4,11 +4,9 @@
 
 Globale Ebenen erlauben es, Komponenten zu nutzten, die über Folien **bestehend** bleiben. Solche können zu Beispiel für Kopf- oder Fußzeilen, Folienübergreifende Animationen oder Globale Effekte nützlich sein. 
 
-<<<<<<< HEAD
-Slidev bietet dafür 2 Ebenen. Erstelle eine `global-top.vue` oder `global-bottom.vue` Datei unter dem Projektstamm und die Ebenen werden automatisch aufgenommen.
-=======
-Slidev provides three layers for this usage, create `global-top.vue`, `global-bottom.vue` or `custom-nav-controls.vue` under your project root and it will pick up automatically.
->>>>>>> 37797ff651c1914f542e82bc6a10f8450281fad5
+
+Slidev bietet dafür 3 Ebenen. Erstelle eine `global-top.vue`, `global-bottom.vue` oder `custom-nav-controls.vue` Datei unter dem Projektstamm und die Ebenen werden automatisch aufgenommen.
+
 
 Ebenenbeziehung:
 
@@ -16,7 +14,7 @@ Ebenenbeziehung:
 - Slides
 - Global Bottom (`global-bottom.vue`)
 - NavControls
-  - Customized Navigation Controls (`custom-nav-controls.vue`)
+  - Individualisierte Navigationsoberfläche (`custom-nav-controls.vue`)
 
 ## Beispiel
 
@@ -29,9 +27,6 @@ Ebenenbeziehung:
 
 Der Text `Dein Name` wird auf allen Folien erscheinen.
 
-<<<<<<< HEAD
-Um es bedingt zu aktivieren, kann der [Vue Global Context](/custom/vue-context) angewendet werden.
-=======
 ```html
 <!-- custom-nav-controls -->
 <template>
@@ -41,10 +36,9 @@ Um es bedingt zu aktivieren, kann der [Vue Global Context](/custom/vue-context) 
 </template>
 ```
 
-The button `Next` will appear in NavControls.
+Der Button `Next` erscheint in der Navigationsoberfläche.
 
-To enabled it conditionally, you can apply it with the [Vue Global Context](/custom/vue-context).
->>>>>>> 37797ff651c1914f542e82bc6a10f8450281fad5
+Der [Vue Global Context](/custom/vue-context) kann angewendet werden, um diese bedingt zu aktivieren.
 
 ```html
 <!-- Fußzeile von Seite 4 ausblenden -->
@@ -84,7 +78,7 @@ To enabled it conditionally, you can apply it with the [Vue Global Context](/cus
 
 ```html
 <!-- custom-nav-controls -->
-<!-- hide the button in Presenter model -->
+<!-- verstecke den Button im Präsentationsmodus -->
 <template>
   <button v-if="!$slidev.nav.isPresenter" class="icon-btn" title="Next" @click="$slidev.nav.next">
     <carbon:arrow-right />
