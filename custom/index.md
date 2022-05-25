@@ -8,7 +8,12 @@ Slidev kann im Frontmatterblock der ersten Folie konfiguriert werden. Folgende L
 
 ```yaml
 ---
+<<<<<<< HEAD
 # themen-id oder package name
+=======
+# theme id or package name
+# Learn more: https://sli.dev/themes/use.html
+>>>>>>> 18216961c9b829103d7ee5bc6c426cb525c3d51c
 theme: 'default'
 # Titel der Folie (wird automatisch aus der ersten Überschrift abgeleitet, wenn nicht angegeben)
 title: 'Slidev'
