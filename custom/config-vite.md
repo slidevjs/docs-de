@@ -2,7 +2,11 @@
 
 <Environment type="node" />
 
+<<<<<<< HEAD
 Slidev läuft mit [Vite](http://vitejs.dev/) unter der Haube. Somit kann das großartige Plugin-System von Vite genutzt werden, um Präsentationen noch besser anzupassen.
+=======
+Slidev is powered by [Vite](https://vitejs.dev/) under the hood. This means you can leverage Vite's great plugin system to customize your slides even further.
+>>>>>>> 0d7183dcb5054d1cc1d9af406b951526a92f09b6
 
 Die `vite.config.ts` Datei wird genutzt, falls eine vorhanden ist.
 
