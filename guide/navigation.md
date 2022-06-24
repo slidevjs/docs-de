@@ -2,7 +2,11 @@
 
 ## Navigationsleiste
 
+<<<<<<< HEAD
 Bewege deine Maus zur linken unteren Ecke der Slidev Seite, damit die Navigationsleiste erscheint.
+=======
+Move your mouse to the bottom left corner of Slidev page to make the navigation bar appear.
+>>>>>>> c8121c161efd5a726d336648d2b101540c346dd2
 
 ![](/screenshots/navbar.png)
 
