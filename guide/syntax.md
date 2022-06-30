@@ -72,7 +72,11 @@ console.log('Hallo, Welt!')
 //```
 ~~~
 
+<<<<<<< HEAD
 Wir unterstützen [Prism](http://prismjs.com) und [Shiki](https://github.com/shikijs/shiki) zu Syntaxhervorhebung. Mehr Informationen gibt es im [Abschnitt Highlighters](/custom/highlighters).
+=======
+We support [Prism](https://prismjs.com) and [Shiki](https://github.com/shikijs/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+>>>>>>> eca0155fb4af5e8138c24bec4161ae66d22663fe
 
 ### Zeilen Hervorhebung
 
@@ -102,7 +106,24 @@ function add(
 //```
 ~~~
 
+<<<<<<< HEAD
 Hier wird zuerst `a: Ref<number> | number` und `b: Ref<number> | number`, einen Klick später `return computed(() => unref(a) + unref(b))` und nach dem letzten Klick wird der ganze Block hervorgehoben. Erfahre mehr über [Klicks und Animationen](/guide/animations).
+=======
+To skip highlighting any lines, you can set the line number to `0`. For example
+
+~~~ts {0}
+//```ts {0}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+//```
+~~~
+
+This will first highlight `a: Ref<number> | number` and `b: Ref<number> | number`, and then `return computed(() => unref(a) + unref(b))` after one click, and lastly, the whole block. Learn more in the [clicks animations guide](/guide/animations).
+>>>>>>> eca0155fb4af5e8138c24bec4161ae66d22663fe
 
 ### Monaco Editor
 
@@ -207,7 +228,11 @@ Das ist eine weitere Notiz
 
 ## Icons
 
+<<<<<<< HEAD
 In Slidev können fast alle Open-Source Inconsets dank [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) und [Iconify](https://iconify.design/) **direkt** in der Markdown Datei genutzt werden. 
+=======
+Slidev allows you to have the accessing to almost all the popular open-source iconsets **directly** in your markdown. Powered by [`unplugin-icons`](https://github.com/antfu/unplugin-icons) and [Iconify](https://iconify.design/).
+>>>>>>> eca0155fb4af5e8138c24bec4161ae66d22663fe
 
 Die Benennung folgt den [Iconify](https://iconify.design/) Namenskonventionen `{iconset-name}-{icon-name}`. Zum Beispiel:
 
