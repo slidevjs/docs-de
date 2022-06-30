@@ -29,4 +29,24 @@ Mit diesem Setup können eigene Einstellungen für Tastenkürzel aus [Navigation
 
 Die Konfigurations-Funktion bekommt ein Objekt mit den Navigationsmethoden und gibt einen Array, welcher die Tastenkürzel und Konfigurationen enthält zurück. Weitere Informationen sind in den Typdefinitionen zu finden.
 
+<<<<<<< HEAD
 Siehe [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) für mehr Informationen über das `keyPressed` Event.
+=======
+The `key` type only allows for strings, but you can still bind multiple keys by using following convention:
+
+```ts
+import { defineShortcutsSetup, NavOperations } from '@slidev/types'
+
+export default defineShortcutsSetup((nav: NavOperations) => {
+  return [
+    {
+      key: 'ShiftLeft+ArrowRight',
+      fn: () => nav.next(),
+      autoRepeat: true,
+    }
+  ]
+})
+```
+
+Refer to [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) for more details about key pressed event.
+>>>>>>> eca0155fb4af5e8138c24bec4161ae66d22663fe
