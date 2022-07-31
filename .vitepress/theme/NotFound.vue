@@ -2,11 +2,18 @@
   <div class="theme">
     <h1>404</h1>
     <blockquote>{{ getMsg() }}</blockquote>
+<<<<<<< HEAD
     <a :href="$site.base" aria-label="go to home">Zurück zum Start</a>
+=======
+    <a :href="site.base" aria-label="go to home">Take me home.</a>
+>>>>>>> e385300710ea3ef7a726c926b1933fd80d40744e
   </div>
 </template>
 
 <script setup lang="ts">
+import { useData } from 'vitepress';
+
+const {site} = useData()
 const msgs = [
   "Hier ist nichts.",
   "Wie sind wir denn hier hin gekommen?",
