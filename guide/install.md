@@ -18,6 +18,10 @@ Mit Yarn:
 $ yarn create slidev
 ```
 
+<<<<<<< HEAD
+=======
+Follow the prompts and it will open up the slideshow at `http://localhost:3030/` automatically for you.
+>>>>>>> 2b46447648e5687da75c541148acdffeeb2de2c6
 
 Folge den Anweisungen und die Präsentation öffnet sich auf http://localhost:3030/ automatisch.
 
@@ -77,7 +81,11 @@ docker run --name slidev --rm -it \
 
 Wenn dein Projektordner leer ist, wird eine `slides.md` Vorlage und andere benötigte Dateien generiert und ein Server auf dem Port `3030` gestartet.
 
+<<<<<<< HEAD
 Jetzt kannst du deine Präsentation hier finden: http://localhost:3030/
+=======
+You can access your slides from `http://localhost:3030/`
+>>>>>>> 2b46447648e5687da75c541148acdffeeb2de2c6
 
 ### Baue ein deploy-bares Image
 
@@ -94,7 +102,11 @@ Baue das Image: `docker build -t meinePraesentation .`
 
 Und Starte den Container: `docker run --name praesentation --rm --user node -p 3030:3030 meinePraesentation`
 
+<<<<<<< HEAD
 Nun findest du deine Präsentation unter http://localhost:3030/
+=======
+You can visit your slides from `http://localhost:3030/`
+>>>>>>> 2b46447648e5687da75c541148acdffeeb2de2c6
 
 
 ### Baue eine hostbare SPA (Single Page Application)
@@ -124,7 +136,6 @@ Oder baue ein statische Image mit der folgenden Dockerfile:
 FROM nginx:alpine
 
 COPY dist /usr/share/nginx/html
-
 ```
 
 Baue das Docker Image: `docker build -t mystaticppt .`
@@ -133,5 +144,95 @@ Und starte de Container: `docker run --name myslides --rm -p 80:80 mystaticppt`
 
 Deine Webseite findes du hier: http://localhost/
 
+<<<<<<< HEAD
 
 Bei [tangramor/slidev_docker](https://github.com/tangramor/slidev_docker) findest du mehr Informationen.
+=======
+Refer to the [tangramor/slidev_docker](https://github.com/tangramor/slidev_docker) for more details.
+
+## Command Line Interface (CLI)
+
+`@slidev/cli` Expose a few commands you can use with `npx slidev ...` or by adding scripts in your `package.json`:
+```json
+{
+  "script": {
+    "dev": "slidev"
+  }
+}
+```
+
+In that case you will be able to run `npm run dev`.
+
+You can pass options to any commands:
+
+* boolean option are `true` if they are present, false otherwise (example: `slidev --open`)
+* some options can have values you can add just after the option or by using the `=` character (example: `slidev --port 8080` or `slidev --port=8080`)
+
+If you use npm scripts, don't forget to add `--` after the npm command:
+```bash
+npm run slidev -- --open
+```
+
+### `slidev [entry]`
+
+Start a local server for Slidev.
+
+* `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
+
+Options:
+
+* `--port`, `-p` (`number`, default: `3030`): port number.
+* `--open`, `-o` (`boolean`, default: `false`): open in browser.
+* `--remote [password]` (`string`): listen to public host and enable remote control, if a value is passed then the presenter mode is private and only accessible by passing the given password in the URL query `password` parameter.
+* `--log` (`'error', 'warn', 'info', 'silent'`, default: `'warn'`): Log level.
+* `--force`, `-f` (`boolean`, default `false`): force the optimizer to ignore the cache and re-bundle.
+* `--theme`, `-t` (`string`): override theme.
+
+### `slidev build [entry]`
+
+Build hostable SPA.
+
+* `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
+
+Options:
+
+* `--watch`, `-w` (`boolean`, default: `false`): build watch.
+* `--out`, `-o` (`string`, default: `dist`): output dir.
+* `--base` (`string`, default: `/`): base URL (see https://cli.vuejs.org/config/#publicpath)
+* `--download` (`boolean`, default: `false`): allow to download the slides as PDF inside the SPA.
+* `--theme`, `-t` (`string`): override theme.
+
+### `slidev export [entry]`
+
+Export slides to PDF (or other format).
+
+* `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
+
+Options:
+
+* `--output` (`string`, default: use `exportFilename` (see https://sli.dev/custom/#frontmatter-configures) or use `[entry]-export`): path to the output.
+* `--base` (`'pdf', 'png', 'md'`, default: `'pdf'`): output format.
+* `--timeout` (`number`, default: `30000`): timeout for rendering the print page (see https://playwright.dev/docs/api/class-page#page-goto).
+* `--range` (`string`): page ranges to export (example: `'1,4-5,6'`).
+* `--dark` (`boolean`, default: `false`): export as dark theme.
+* `--with-clicks`, `-c` (`boolean`, default: `false`): export pages for every clicks (see https://sli.dev/guide/animations.html#click-animations).
+* `--theme`, `-t` (`string`): override theme.
+
+### `slidev format [entry]`
+
+Format the markdown file.
+
+* `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
+
+### `slidev theme [subcommand]`
+
+Theme related operations.
+
+Subcommands:
+
+* `eject [entry]`: Eject current theme into local file system
+  * `[entry]` (`string`, default: `slides.md`): path to the slides markdown entry.
+  * Options:
+    * `--dir` (`string`, default: `theme`): output dir.
+    * `--theme`, `-t` (`string`): override theme.
+>>>>>>> 2b46447648e5687da75c541148acdffeeb2de2c6

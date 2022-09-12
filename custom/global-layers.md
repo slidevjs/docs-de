@@ -38,7 +38,11 @@ Der Text `Dein Name` wird auf allen Folien erscheinen.
 
 Der Button `Next` erscheint in der Navigationsoberfläche.
 
+<<<<<<< HEAD
 Der [Vue Global Context](/custom/vue-context) kann angewendet werden, um diese bedingt zu aktivieren.
+=======
+To enable it conditionally, you can apply it with the [Vue Global Context](/custom/vue-context).
+>>>>>>> 2b46447648e5687da75c541148acdffeeb2de2c6
 
 ```html
 <!-- Fußzeile von Seite 4 ausblenden -->
