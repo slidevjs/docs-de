@@ -72,7 +72,11 @@ console.log('Hallo, Welt!')
 //```
 ~~~
 
+<<<<<<< HEAD
 Wir unterstützen [Prism](http://prismjs.com) und [Shiki](https://github.com/shikijs/shiki) zu Syntaxhervorhebung. Mehr Informationen gibt es im [Abschnitt Highlighters](/custom/highlighters).
+=======
+We support [Prism](https://prismjs.com) and [Shiki](https://github.com/shikijs/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+>>>>>>> f3e4a955d5078a735946ed1b8bb427dd5179d1cc
 
 ### Zeilen Hervorhebung
 
@@ -103,6 +107,35 @@ function add(
 ~~~
 
 Hier wird zuerst `a: Ref<number> | number` und `b: Ref<number> | number`, einen Klick später `return computed(() => unref(a) + unref(b))` und nach dem letzten Klick wird der ganze Block hervorgehoben. Erfahre mehr über [Klicks und Animationen](/guide/animations).
+
+To skip highlighting any lines, you can set the line number to `0`. For example
+
+~~~ts {0}
+//```ts {0}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+//```
+~~~
+
+If the code doesn't fit into one slide, you can pass an extra maxHeight option which will set fixed height
+and enable scrolling
+
+~~~ts {2|3|7|12}
+//```ts {2|3|7|12} {maxHeight:'100'}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+/// ...as many lines as you want
+const c = add(1, 2)
+//```
+~~~
 
 ### Monaco Editor
 
@@ -207,7 +240,11 @@ Das ist eine weitere Notiz
 
 ## Icons
 
+<<<<<<< HEAD
 In Slidev können fast alle Open-Source Inconsets dank [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) und [Iconify](https://iconify.design/) **direkt** in der Markdown Datei genutzt werden. 
+=======
+Slidev allows you to have the accessing to almost all the popular open-source iconsets **directly** in your markdown. Powered by [`unplugin-icons`](https://github.com/antfu/unplugin-icons) and [Iconify](https://iconify.design/).
+>>>>>>> f3e4a955d5078a735946ed1b8bb427dd5179d1cc
 
 Die Benennung folgt den [Iconify](https://iconify.design/) Namenskonventionen `{iconset-name}-{icon-name}`. Zum Beispiel:
 

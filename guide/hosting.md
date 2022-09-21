@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 # Statisches Hosting
+=======
+
+# Static Hosting
+>>>>>>> f3e4a955d5078a735946ed1b8bb427dd5179d1cc
 
 ## Erstellen von Single Page Applications (SPA)
 
@@ -93,7 +98,13 @@ Gehe dann zu deinem Vercel Dashboard und erstelle eine neue Seite mit dem Reposi
 
 - [GitHub Pages](https://pages.github.com/)
 
+<<<<<<< HEAD
 Erstelle eine `.github/workflows/deploy.yml` im Projektstamm mit folgendem Inhalt um deine Präsentation via Github Actions auf Github Pages bereitzustellen:
+=======
+To deploy your slides on GitHub Pages:
+- upload all the files of the project in your repo (i.e. named `name_of_repo`)
+- create `.github/workflows/deploy.yml` with following content to deploy your slides to GitHub Pages via GitHub Actions. In this file, replace `<name_of_repo>`with `name_of_repo`.
+>>>>>>> f3e4a955d5078a735946ed1b8bb427dd5179d1cc
 
 ```yaml
 name: Deploy pages
@@ -108,8 +119,10 @@ jobs:
           node-version: "14"
       - name: Install dependencies
         run: npm install
+      - name: Install slidev
+        run:  npm i -g @slidev/cli
       - name: Build
-        run: npm run build
+        run: slidev build --base <name_of_repo>
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
@@ -117,3 +130,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
+- In your repository, go to Setting>Pages. Under "Build and deployment", select "Deploy from a branch", select  "gh- pages" and "root". Click on save.
+- Finally, after all workflows is executed, a link to the slides should appear under Setting>Pages.
