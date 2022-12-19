@@ -1,6 +1,8 @@
 # Exportieren
 
-## PDF
+## Slides
+
+### PDF
 
 > Exportieren in PDF oder PNGs benötigt [Playwright](https://playwright.dev) zum rendern. Dafür muss [`playwright-chromium`](https://playwright.dev/docs/installation#download-single-browser-binary) installiert sein.
 > Falls das exportiren in einer CI Umgebung passiert, kann der [playright CI Guide](https://playwright.dev/docs/ci) hilfreich sein.
@@ -25,7 +27,11 @@ Falls du deine Folien mit der dunklen Version des Themes exportieren willst, kan
 $ slidev export --dark
 ```
 
+<<<<<<< HEAD
 ### Animationsschritte exportieren
+=======
+#### Export Clicks Steps
+>>>>>>> 5cffe3bca749ea2af7b370223f0f442d15d88d8e
 
 > Verfügbar seit v0.21
 
@@ -35,7 +41,7 @@ Standardmäßig exportiert Slidev Präsentationen mit einer Seite pro Folie und 
 $ slidev export --with-clicks
 ```
 
-## PNGs
+### PNGs
 
 Wenn die Option `--format png` überreicht wird, exportiert Slidev PNG Bilder für jeden Folie der Präsentation anstatt einer PDF.
 
@@ -43,8 +49,9 @@ Wenn die Option `--format png` überreicht wird, exportiert Slidev PNG Bilder f�
 $ slidev export --format png
 ```
 
-## Single-Page Application (SPA)
+### Single-Page Application (SPA)
 
+<<<<<<< HEAD
 Slidev Präsentationen können auch in eine selbst-hostbare SPA exportiert werden:
 
 ```bash
@@ -91,3 +98,16 @@ Hier sind ein paar Beispiele einer exportieren SPA:
 - [Composable Vue](https://talks.antfu.me/2021/composable-vue) von [Anthony Fu](https://github.com/antfu)
 
 Mehr Infos: [Statisches Hosting](/guide/hosting).
+=======
+See [Static Hosting](/guide/hosting).
+
+## Presenter notes
+
+> Available since v0.36.8
+
+Export only the presenter notes (the last comment block for each slide) into a text document in PDF.
+
+```bash
+$ slidev export-notes
+```
+>>>>>>> 5cffe3bca749ea2af7b370223f0f442d15d88d8e

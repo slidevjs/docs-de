@@ -193,6 +193,27 @@ export const community: ThemeInfo[] = [
     ],
   },
   {
+    id: 'slidev-theme-eloc',
+    name: 'Eloc',
+    description: 'Focus on writing, present in a concise style.',
+    author: {
+      name: 'Amio',
+      link: 'https://github.com/amio',
+    },
+    repo: 'https://github.com/zthxxx/slides/tree/master/packages/slidev-theme-eloc',
+    previews: [
+      'https://cdn.jsdelivr.net/gh/zthxxx/slides@master/packages/slidev-theme-eloc/screenshot/01.png',
+      'https://cdn.jsdelivr.net/gh/zthxxx/slides@master/packages/slidev-theme-eloc/screenshot/02.png',
+      'https://cdn.jsdelivr.net/gh/zthxxx/slides@master/packages/slidev-theme-eloc/screenshot/03.png',
+      'https://cdn.jsdelivr.net/gh/zthxxx/slides@master/packages/slidev-theme-eloc/screenshot/04.png',
+      'https://cdn.jsdelivr.net/gh/zthxxx/slides@master/packages/slidev-theme-eloc/screenshot/05.png',
+    ],
+    tags: [
+      'dark',
+      'light',
+    ],
+  },
+  {
     id: 'slidev-theme-purplin',
     name: 'Purplin',
     description: 'Theme with bar bottom component. Based on purple color',
@@ -338,7 +359,38 @@ export const community: ThemeInfo[] = [
       'light',
     ],
   },
+<<<<<<< HEAD
   // Füge deins hier hinzu!
+=======
+  {
+    id: 'slidev-theme-mokkapps',
+    name: 'Mokkapps',
+    description: 'A theme for my personal brand "Mokkapps"',
+    author: {
+      name: 'Michael Hoffmann',
+      link: 'https://github.com/mokkapps',
+    },
+    repo: 'https://github.com/mokkapps/slidev-theme-mokkapps',
+    previews: [
+      'https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/001.png',
+      'https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/002.png',
+      'https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/003.png',
+      'https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/004.png',
+      'https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/005.png',
+      'https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/006.png',
+      'https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/007.png',
+      'https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/008.png',
+      'https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/009.png',
+      'https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/010.png',
+      'https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/011.png',
+    ],
+    tags: [
+      'dark',
+      'light',
+    ],
+  },
+  // Add yours here!
+>>>>>>> 5cffe3bca749ea2af7b370223f0f442d15d88d8e
   {
     id: '',
     link: 'https://github.com/slidevjs/docs/edit/main/.vitepress/themes.ts',

@@ -19,7 +19,7 @@ Ebenenbeziehung:
 ## Beispiel
 
 ```html
-<!-- global-top.vue -->
+<!-- global-bottom.vue -->
 <template>
   <footer class="absolute bottom-0 left-0 right-0 p-2">Dein Name</footer>
 </template>
@@ -38,7 +38,11 @@ Der Text `Dein Name` wird auf allen Folien erscheinen.
 
 Der Button `Next` erscheint in der Navigationsoberfläche.
 
+<<<<<<< HEAD
 Der [Vue Global Context](/custom/vue-context) kann angewendet werden, um diese bedingt zu aktivieren.
+=======
+To enable it conditionally, you can apply it with the [Vue Global Context](/custom/vue-context).
+>>>>>>> 5cffe3bca749ea2af7b370223f0f442d15d88d8e
 
 ```html
 <!-- Fußzeile von Seite 4 ausblenden -->
