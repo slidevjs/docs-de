@@ -8,7 +8,12 @@ Slidev kann im Frontmatterblock der ersten Folie konfiguriert werden. Folgende L
 
 ```yaml
 ---
+<<<<<<< HEAD
 # themen-id oder package name
+=======
+# theme id or package name
+# Learn more: https://sli.dev/themes/use.html
+>>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
 theme: 'default'
 # Titel der Folie (wird automatisch aus der ersten Überschrift abgeleitet, wenn nicht angegeben)
 title: 'Slidev'
@@ -16,11 +21,22 @@ title: 'Slidev'
 titleTemplate: '%s - Slidev'
 # information for your slides, can be a markdown string
 info: false
+<<<<<<< HEAD
 # erlaube das Herunterladen einer PDF aus der SPA, kann auch ein eigener URL sein
 download: false
 # Dateiname der exportierten Datei
 exportFilename: 'slidev-exported.pdf'
 # Syntaxhervorheber, entweder 'prism' oder 'shiki'
+=======
+
+# enable presenter mode, can be boolean, 'dev' or 'build'
+presenter: true
+# enabled pdf downloading in SPA build, can also be a custom url
+download: false
+# filename of the export file
+exportFilename: 'slidev-exported'
+# syntax highlighter, can be 'prism' or 'shiki'
+>>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
 highlighter: 'prism'
 # Zeilennummern in Codeblöcken anzeigen
 lineNumbers: false

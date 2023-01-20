@@ -7,6 +7,7 @@ Der Grundaufbau ist wie folgt:
 
 ```bash
 your-slidev/
+<<<<<<< HEAD
   ├── components/       # eigene Komponenten
   ├── layouts/          # eigene Layouts
   ├── public/           # statische Assets
@@ -15,6 +16,16 @@ your-slidev/
   ├── index.html        # injektionen in index.html
   ├── slides.md         # Haupt-Eingangspunkt
   └── vite.config.ts    # vite-Konfiguration erweitern
+=======
+  ├── components/       # custom components
+  ├── layouts/          # custom layouts
+  ├── public/           # static assets
+  ├── setup/            # custom setup / hooks
+  ├── styles/           # custom style
+  ├── index.html        # injections to index.html
+  ├── slides.md         # the main slides entry
+  └── vite.config.ts    # extending vite config
+>>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
 ```
 
 Alle sind optional.
@@ -49,7 +60,11 @@ your-slidev/
 </hallo-welt>
 ```
 
+<<<<<<< HEAD
 Diese Funktion wird von [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components) bereitgestellt, erfahre dort mehr darüber.
+=======
+This feature is powered by [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components), learn more there.
+>>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
 
 Slidev stellt auch einige [eingebaute Komponenten](/builtin/components) zur Verfügung, die man verwenden kann.
 
@@ -117,8 +132,12 @@ import './code.css'
 import './layouts.css'
 ```
 
+<<<<<<< HEAD
 Stile werden von [Windi CSS](http://windicss.org/) und [PostCSS](https://postcss.org/) verarbeitet, so dass man css-Schachtelungen und [at-Direktiven](https://windicss.org/features/directives.html) out-of-box verwenden kann. Zum Beispiel:
 
+=======
+Styles will be processed by [Windi CSS](https://windicss.org/) and [PostCSS](https://postcss.org/), so you can use css nesting and [at-directives](https://windicss.org/features/directives.html) out-of-box. For example:
+>>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
 
 ```less
 .slidev-layout {
