@@ -80,24 +80,21 @@ Parameter:
 
 * `no` (`string | number`): Die Nummer der Folie, von der der Titel gezeigt werden soll (Folien starten bei `1`)
 
-<<<<<<< HEAD
-## Eigene Komponenten
-=======
 ### `LightOrDark`
 
-Use it to display one thing or another depending on the active light or dark theme.
+Kann verwendet werden, um je nach aktivem hellen oder dunklen Theme das eine oder andere anzuzeigen.
 
-#### Usage
+#### Verwendung
 
-Use it with the two named Slots `#dark` and `#light`:
+Verwendung mit den beiden benannten Slots `#dark` und `#light`:
 ~~~md
 <LightOrDark>
-  <template #dark>Dark mode is on</template>
-  <template #light>Light mode is on</template>
+  <template #dark>Dunkler Modus ist eingeschaltet</template>
+  <template #light>Heller Modus ist eingeschaltet</template>
 </LightOrDark>
 ~~~
 
-Provided props on `LightOrDark` component will be available using scoped slot props:
+Props, die von `LightOrDark` bereitgestellt werden, sind mit Hilfe von scoped slot props verfügbar:
 ~~~md
 <LightOrDark width="100" alt="some image">
   <template #dark="props">
@@ -109,7 +106,7 @@ Provided props on `LightOrDark` component will be available using scoped slot pr
 </LightOrDark>
 ~~~
 
-You can provide markdown in the slots, but you will need to surround the content with blank lines:
+In den Slots kann Markdown verwendet werden, muss aber mit einer freien Zeile umrandet werden:
 ~~~md
 <LightOrDark>
   <template #dark>
@@ -126,8 +123,7 @@ You can provide markdown in the slots, but you will need to surround the content
 ~~~
 
 
-## Custom Components
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
+## Eigene Komponenten
 
 Erstelle einen Ordner `components/` im Ursprung deines Projektverzeichnisses. Dort können eigene Vue Komponenten erstellt werden, die dann ganz einfach in der Markdown Datei genutzt werden können.
 

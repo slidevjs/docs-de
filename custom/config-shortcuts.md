@@ -6,13 +6,9 @@
 
 <Environment type="client" />
 
-<<<<<<< HEAD
-Erstelle eine `./setup/shortcuts.ts` Datei mit dem folgendem Inhalt:
-=======
-## Getting started
+## Erste Schritte
 
-Create `./setup/shortcuts.ts` with the following content:
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
+Erstelle eine `./setup/shortcuts.ts` Datei mit dem folgendem Inhalt:
 
 ```ts
 import type { NavOperations, ShortcutOptions } from '@slidev/types'
@@ -20,7 +16,7 @@ import { defineShortcutsSetup } from '@slidev/types'
 
 export default defineShortcutsSetup((nav: NavOperations, base: ShortcutOptions[]) => {
   return [
-    ...base, // keep the existing shortcuts
+    ...base, // behalte die bestehenden Shortcuts
     {
       key: 'enter',
       fn: () => nav.next(),
@@ -39,12 +35,9 @@ Mit diesem Setup können eigene Einstellungen für Tastenkürzel aus [Navigation
 
 Die Konfigurations-Funktion bekommt ein Objekt mit den Navigationsmethoden und gibt einen Array, welcher die Tastenkürzel und Konfigurationen enthält zurück. Weitere Informationen sind in den Typdefinitionen zu finden.
 
-<<<<<<< HEAD
-Siehe [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) für mehr Informationen über das `keyPressed` Event.
-=======
-## Advanced key binding
+## Erweiterte Shortcuts
 
-The `key` type only allows for strings, but you can still bind multiple keys by using following convention:
+Der Typ `key` erlaubt nur Strings, aber man kann trotzdem mehrere Tasten, mit Hilfe der folgenden Konvention binden:
 
 ```ts
 import type { NavOperations, ShortcutOptions } from '@slidev/types'
@@ -62,9 +55,10 @@ export default defineShortcutsSetup((nav: NavOperations, base: ShortcutOptions[]
 })
 ```
 
-## Advanced navigation features
+## Erweiterte Navigationsfunktionen
 
-The `nav` navigation operations allows you to access some functionalities than basic _next slide_ or _previous slide_. See the following for use-cases:
+Die `nav`-Navigationsoperationen ermöglichen den Zugriff auf einige Funktionen, die über die grundlegenden Funktionen _next slide_ oder _previous slide_ hinausgehen. Siehe die folgenden Anwendungsfälle:
+
 
 ```ts
 import { defineShortcutsSetup, NavOperations } from '@slidev/types'
@@ -74,9 +68,9 @@ export default defineShortcutsSetup((nav: NavOperations) => {
     {
       key: 'e',
       
-      // Set the `e` keyboard shortcut to be used as a bookmark
-      // or quick-access of sorts, to navigate specifically to
-      // slide number 42
+      // Die Tastenkombination "e" kann als eine Art Lesezeichen
+      // oder Schnellzugriff verwendet werden, 
+      // um speziell zur Folie Nummer 42 zu navigieren.
       fn: () => nav.go(42),
       autoRepeat: true,
     }
@@ -84,5 +78,4 @@ export default defineShortcutsSetup((nav: NavOperations) => {
 })
 ```
 
-Refer to [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) for more details about key pressed event.
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
+Siehe [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) für mehr Informationen über das `keyPressed` Event.
