@@ -57,7 +57,7 @@ const Guide = [
 
 const Theme = [
   {
-    text: 'Thema benutzen',
+    text: 'Theme benutzen',
     link: '/themes/use',
   },
   {
@@ -65,8 +65,19 @@ const Theme = [
     link: '/themes/gallery',
   },
   {
-    text: 'Thema erstellen',
+    text: 'Theme erstellen',
     link: '/themes/write-a-theme',
+  },
+]
+
+const Addon = [
+  {
+    text: 'Addon benutzen',
+    link: '/addons/use',
+  },
+  {
+    text: 'Addon erstellen',
+    link: '/addons/write-an-addon',
   },
 ]
 
@@ -158,6 +169,10 @@ const Customizations = [
     link: '/custom/config-mermaid',
   },
   {
+    text: 'Parser konfigurieren',
+    link: '/custom/config-parser',
+  },
+  {
     text: 'Shortcuts konfigurieren',
     link: '/custom/config-shortcuts',
   },
@@ -166,7 +181,7 @@ const Customizations = [
     link: '/custom/vue-context',
   },
   {
-    text: 'Globale Ebnen',
+    text: 'Globale Ebenen',
     link: '/custom/global-layers',
   }
 ]
@@ -194,6 +209,10 @@ const slidebars = [
   {
     text: 'Themen',
     children: Theme,
+  },
+  {
+    text: 'Addons',
+    children: Addon,
   },
   {
     text: 'Individualisierung',
@@ -241,7 +260,8 @@ module.exports = {
     editLinkText: 'Schlage Verbesserungen an dieser Seite vor',
 
     algolia: {
-      apiKey: '1a5c5a504139c58f428974c78c55291d',
+      appId: 'LCBV6MIFS6',
+      apiKey: '1ff173fe73b20edc962c1c24c0b1c160',
       indexName: 'slidev',
       searchParameters: {
         // for translations maintainers: change the filter to your locale code (subdomain name)
@@ -257,6 +277,10 @@ module.exports = {
       {
         text: 'Thema',
         items: Theme,
+      },
+      {
+        text: 'Addon',
+        items: Addon,
       },
       {
         text: 'Individualisieren',
@@ -275,6 +299,7 @@ module.exports = {
     sidebar: {
       '/guide/': slidebars,
       '/themes/': slidebars,
+      '/addons/': slidebars,
       '/custom/': slidebars,
       '/builtin/': slidebars,
       '/resources/': slidebars,

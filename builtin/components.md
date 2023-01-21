@@ -80,6 +80,49 @@ Parameter:
 
 * `no` (`string | number`): Die Nummer der Folie, von der der Titel gezeigt werden soll (Folien starten bei `1`)
 
+### `LightOrDark`
+
+Kann verwendet werden, um je nach aktivem hellen oder dunklen Theme das eine oder andere anzuzeigen.
+
+#### Verwendung
+
+Verwendung mit den beiden benannten Slots `#dark` und `#light`:
+~~~md
+<LightOrDark>
+  <template #dark>Dunkler Modus ist eingeschaltet</template>
+  <template #light>Heller Modus ist eingeschaltet</template>
+</LightOrDark>
+~~~
+
+Props, die von `LightOrDark` bereitgestellt werden, sind mit Hilfe von scoped slot props verfügbar:
+~~~md
+<LightOrDark width="100" alt="some image">
+  <template #dark="props">
+    <img src="/dark.png" v-bind="props"/>
+  </template>
+  <template #light="props">
+    <img src="/light.png" v-bind="props"/>
+  </template>
+</LightOrDark>
+~~~
+
+In den Slots kann Markdown verwendet werden, muss aber mit einer freien Zeile umrandet werden:
+~~~md
+<LightOrDark>
+  <template #dark>
+  
+![dark](/dark.png)
+
+  </template>
+  <template #light>
+  
+![light](/light.png)
+
+  </template>
+</LightOrDark>
+~~~
+
+
 ## Eigene Komponenten
 
 Erstelle einen Ordner `components/` im Ursprung deines Projektverzeichnisses. Dort können eigene Vue Komponenten erstellt werden, die dann ganz einfach in der Markdown Datei genutzt werden können.

@@ -13,7 +13,7 @@ Weitere Informationen über den Hintergrund von Slidev sind im [Warum Slidev](/g
 - 📝 [**Markdown-basiert**](/guide/syntax.html) - benutze deinen Lieblingseditor und Arbeitsablauf
 - 🧑‍💻 [**Entwickler freundlich**](/guide/syntax.html#code-blocks) - integrierte Syntax Hervorhebung, live Coding, etc.
 - 🎨 [**Anpassbarer Stil**](/themes/gallery.html) - Themen können geteilt und via npm packages genutzt werden
-- 🌈 [**Stylish**](/guide/syntax.html#embedded-styles) - [Windi CSS](https://windicss.org/) on-demand utilities und einfach zu benutzende, eingebttete Stylesheets
+- 🌈 [**Stylish**](/guide/syntax.html#embedded-styles) - [Windi CSS](https://windicss.org/) oder [UnoCSS](https://github.com/unocss/unocss) on-demand utilities und einfach zu benutzende, eingebttete Stylesheets
 - 🤹 [**Interaktiv**](/custom/directory-structure.html#components) - eigene Vue Komponenten
 - 🎙 [**Moderatoren Modus**](/guide/presenter-mode.html) - nutze ein anderes Fenster oder deine Handy um deine Präsentation zu steuern
 - 🎨 [**Drawing**](/guide/drawing.html) - draw and annotate on your slides
@@ -32,7 +32,7 @@ Slidev wird durch die Kombination dieser Tools und Technologien ermöglicht:
 
 - [Vite](https://vitejs.dev) - Ein extrem schnelles Frontend-Tool
 - [Vue 3](https://v3.vuejs.org/) powered [Markdown](https://daringfireball.net/projects/markdown/syntax) - Konzentriere dich auf den Inhalt, während die Power von HTML und Vue Komponenten immer an deiner Seite ist
-- [Windi CSS](https://github.com/windicss/windicss) - On-Demand Utility-First CSS Framework, style deine Folien mit einer Lichtigkeit
+- [Windi CSS](https://github.com/windicss/windicss) oder [UnoCSS](https://github.com/unocss/unocss) - On-Demand Utility-First CSS Framework, style deine Folien mit einer Lichtigkeit
 - [Prism](https://github.com/PrismJS/prism), [Shiki](https://github.com/shikijs/shiki), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - Erstlassige Code-Snippet-Unterstützung mit Live-Coding Fähigkeit
 - [RecordRTC](https://recordrtc.org) - Integrierte Aufnahmeunterstützung mit Kameraansicht
 - [VueUse](https://vueuse.org) Familie - [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), etc.

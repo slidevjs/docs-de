@@ -13,7 +13,7 @@ your-slidev/
   ├── setup/            # eigenes Setup / Hooks
   ├── styles/           # eigene Styles
   ├── index.html        # injektionen in index.html
-  ├── slides.md         # Haupt-Eingangspunkt
+  ├── slides.md         # Haupt-Eingangspunkt der Presentation
   └── vite.config.ts    # vite-Konfiguration erweitern
 ```
 
@@ -49,7 +49,7 @@ your-slidev/
 </hallo-welt>
 ```
 
-Diese Funktion wird von [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components) bereitgestellt, erfahre dort mehr darüber.
+Diese Funktion wird vom [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) bereitgestellt, erfahre dort mehr darüber.
 
 Slidev stellt auch einige [eingebaute Komponenten](/builtin/components) zur Verfügung, die man verwenden kann.
 

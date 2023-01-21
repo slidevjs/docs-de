@@ -72,7 +72,7 @@ console.log('Hallo, Welt!')
 //```
 ~~~
 
-Wir unterstützen [Prism](http://prismjs.com) und [Shiki](https://github.com/shikijs/shiki) zu Syntaxhervorhebung. Mehr Informationen gibt es im [Abschnitt Highlighters](/custom/highlighters).
+Wir unterstützen [Prism](http://prismjs.com) und [Shiki](https://github.com/shikijs/shiki) zur Syntaxhervorhebung. Mehr Informationen gibt es im [Abschnitt Highlighters](/custom/highlighters).
 
 ### Zeilen Hervorhebung
 
@@ -103,6 +103,34 @@ function add(
 ~~~
 
 Hier wird zuerst `a: Ref<number> | number` und `b: Ref<number> | number`, einen Klick später `return computed(() => unref(a) + unref(b))` und nach dem letzten Klick wird der ganze Block hervorgehoben. Erfahre mehr über [Klicks und Animationen](/guide/animations).
+
+Um die Hervorhebung von Zeilen zu überspringen, kann die Zeilennummer auf `0` gesetzt werden. Zum Beispiel
+
+~~~ts {0}
+//```ts {0}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+//```
+~~~
+
+Wenn der Code nicht in eine Folie passt, kann eine zusätzliche maxHeight-Option übergeben werden, die eine feste Höhe festlegt und das Scrollen ermöglicht:
+
+~~~ts {2|3|7|12}
+//```ts {2|3|7|12} {maxHeight:'100px'}
+function add(
+  a: Ref<number> | number,
+  b: Ref<number> | number
+) {
+  return computed(() => unref(a) + unref(b))
+}
+/// ...as many lines as you want
+const c = add(1, 2)
+//```
+~~~
 
 ### Monaco Editor
 
@@ -207,7 +235,7 @@ Das ist eine weitere Notiz
 
 ## Icons
 
-In Slidev können fast alle Open-Source Inconsets dank [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) und [Iconify](https://iconify.design/) **direkt** in der Markdown Datei genutzt werden. 
+In Slidev können fast alle Open-Source Incon-Sets dank [`unplugin-icons`](https://github.com/antfu/unplugin-icons) und [Iconify](https://iconify.design/) **direkt** in der Markdown Datei genutzt werden. 
 
 Die Benennung folgt den [Iconify](https://iconify.design/) Namenskonventionen `{iconset-name}-{icon-name}`. Zum Beispiel:
 
