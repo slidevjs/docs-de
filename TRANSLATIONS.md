@@ -80,8 +80,8 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 ### addons/
 
-- [ ] `use.md` - How to use Slidev addons
-- [ ] `write-an-addon.md` - Write your own addon
+- [x] `use.md` - How to use Slidev addons
+- [x] `write-an-addon.md` - Write your own addon
 
 ## Publishing your translations
 

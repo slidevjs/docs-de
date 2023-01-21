@@ -1,41 +1,43 @@
-# Write an Addon
+# Addon erstellen
 
-> Available since v0.32.1
+> Verfügbar seit v0.32.1
 
-## Capability
+## Fähigkeiten
 
-An addon can contribute to the following points:
+Addons können folgende Punkte beeinflussen:
 
-- Global styles (use with caution has it is more the role of [themes](/themes/use))
-- Provide custom layouts or override the existing one
-- Provide custom components or override the existing one
-- Extend Windi CSS configurations
-- Configure tools like Monaco and Prism
+- Globale Styles (mit Vorsicht zu verwenden, das ist eher die Rolle von [Themes](/themes/use))
+- Bereitstellen oder Überschreiben von vorhandenen Layouts
+- Bereitstellen oder Überschreiben von vorhandenen Komponenten
+- Erweitern der Windi CSS Konfiguration
+- Konfigurieren von Tools, wie Monaco oder Prism
 
-## Conventions
+## Konventionen
 
-Addons are published to npm registry, and they should follow the conventions below:
+Addons werden im npm-Registry veröffentlicht und sollten den unten stehenden Konventionen folgen:
 
-- Package name should start with `slidev-addon-`, for example: `slidev-addon-awesome`
-- Add `slidev-addon` and `slidev` in the `keywords` field of your `package.json`
+- der Paketname sollte mit `slidev-addon-` starten, zum Beispiel: `slidev-addon-awesome`
+- `slidev-addon` und `slidev` müssen im `keywords` Feld der `package.json` Datei stehen
 
-## Setup
+## Einrichtung
 
-### Initialization
+### Initialisierung
 
 To create your addon, start by creating a directory with create a `package.json` file (you can use `npm init`).
+Um ein Addon zu erstellen, muss zunächst ein Verzeichnis mit einer `package.json`-Datei erstellt werden (`npm init` kann dafür verwendet werden).
 
-Then, install slidev dependencies:
+
+Dann müssen die slidev Abhängigkeiten installiert werden:
 
 ```bash
 $ npm install -D @slidev/cli
 ```
 
-### Testing
+### Testen
 
-To set up the testing playground for your addon, you can create an `example.md` file with some content.
+Um eine Testumgebung für das Addon einzurichten, muss eine `example.md` Datei mit einigen Inhalten erstellt werden.
 
-And optionally, you can also add some scripts to your `packages.json`
+Optional können auch `scripts` zur `package.json` hinzugefügt werden:
 
 ```json
 // package.json
@@ -49,15 +51,15 @@ And optionally, you can also add some scripts to your `packages.json`
 }
 ```
 
-To publish your addon, simply run `npm publish` and you are good to go. There is no build process required (which means you can directly publish `.vue` and `.ts` files, Slidev is smart enough to understand them).
+Um ein Addon zu veröffentlichen, muss nur `npm publish` ausgeführt werden. Es ist kein Build-Prozess erforderlich (was bedeutet, dass direkt `.vue` und `.ts` Dateien veröffentlicht werden können, slidev ist intelligent genug, diese zu verarbeiten).
 
-Addon contribution points follow the same conventions as local customization, please refer to [the docs for the naming conventions](/custom/). 
+Das erstellen von Addons folgt den selben Contribution-Richtlinien wie lokale Konfigurationen, siehe [Dokumentation für Namenskonvektionen](/custom/)
 
-## Addon metadata
+## Addon Metadaten
 
 ### Slidev Version
 
-If the addon is relying on a specific feature of Slidev that are newly introduced, you can set the minimal Slidev version required to have your addon working properly:
+Wenn das Addon auf eine bestimmte Funktion von Slidev angewiesen ist, die neu eingeführt wurde, kann die minimale Slidev-Version festgeschrieben werden, die erforderlich ist, damit das Addon richtig funktioniert: 
 
 ```json
 // package.json
@@ -68,4 +70,5 @@ If the addon is relying on a specific feature of Slidev that are newly introduce
 }
 ```
 
-If users are using older versions of Slidev, an error will be thrown.
+Wenn Nutzer ältere Versionen von Slidev verwenden, wird eine Fehlermeldung ausgegeben.
+
