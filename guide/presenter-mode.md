@@ -27,7 +27,7 @@ In diesem Fall wird der Moderatorenmodus nur verfügbar sein, wenn `slidev` läu
 
 ## Eingeschränkter Fernzugriff
 
-Die Präsentation kann mit `slidev --remote` mit Fernzugriff ausgeführt werden.
+Die Präsentation kann mit `slidev --remote` mit remote erreichbar gemacht werden.
 
 In diesem Fall sollen vielleicht nur die Folien geteilt werden, allerdings sollen keinen anderen Personen Zugriff auf den Moderatorenmodus haben um die Presentation zu beeinflussen.
 

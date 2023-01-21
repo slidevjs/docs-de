@@ -7,8 +7,8 @@
 Addons können folgende Punkte beeinflussen:
 
 - Globale Styles (mit Vorsicht zu verwenden, das ist eher die Rolle von [Themes](/themes/use))
-- Bereitstellen oder Überschreiben von vorhandenen Layouts
-- Bereitstellen oder Überschreiben von vorhandenen Komponenten
+- Bereitstellen Layouts oder Überschreiben von vorhandenen Layouts
+- Bereitstellen Komponenten oder Überschreiben von vorhandenen Komponenten
 - Erweitern der Windi CSS Konfiguration
 - Konfigurieren von Tools, wie Monaco oder Prism
 
@@ -23,8 +23,7 @@ Addons werden im npm-Registry veröffentlicht und sollten den unten stehenden Ko
 
 ### Initialisierung
 
-To create your addon, start by creating a directory with create a `package.json` file (you can use `npm init`).
-Um ein Addon zu erstellen, muss zunächst ein Verzeichnis mit einer `package.json`-Datei erstellt werden (`npm init` kann dafür verwendet werden).
+Um ein Addon zu erstellen, muss zunächst ein Verzeichnis mit einer `package.json` Datei erstellt werden (`npm init` kann dafür verwendet werden).
 
 
 Dann müssen die slidev Abhängigkeiten installiert werden:
@@ -59,7 +58,7 @@ Das erstellen von Addons folgt den selben Contribution-Richtlinien wie lokale Ko
 
 ### Slidev Version
 
-Wenn das Addon auf eine bestimmte Funktion von Slidev angewiesen ist, die neu eingeführt wurde, kann die minimale Slidev-Version festgeschrieben werden, die erforderlich ist, damit das Addon richtig funktioniert: 
+Wenn das Addon auf eine bestimmte Funktion von Slidev angewiesen ist, die neu eingeführt wurde, kann die minimale Slidev-Version festgelegt werden, die erforderlich ist, damit das Addon richtig funktioniert: 
 
 ```json
 // package.json

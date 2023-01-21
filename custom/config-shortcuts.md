@@ -2,7 +2,8 @@
 
 > Available since v0.20
 
-> Since v0.35.6 (excluded), you decide which base shortcuts to keep (see `...base,` below).
+> Seit v0.35.6 (ausgenommen) entscheide, welche Basiskurzbefehle beibehalten werden sollen (siehe `...base`, unten).
+
 
 <Environment type="client" />
 
@@ -37,7 +38,7 @@ Die Konfigurations-Funktion bekommt ein Objekt mit den Navigationsmethoden und g
 
 ## Erweiterte Shortcuts
 
-Der Typ `key` erlaubt nur Strings, aber man kann trotzdem mehrere Tasten, mit Hilfe der folgenden Konvention binden:
+Der Typ `key` erlaubt nur Strings, aber man kann trotzdem an mehrere Tasten, mit Hilfe der folgenden Konvention binden:
 
 ```ts
 import type { NavOperations, ShortcutOptions } from '@slidev/types'

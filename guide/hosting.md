@@ -94,10 +94,6 @@ Gehe dann zu deinem Vercel Dashboard und erstelle eine neue Seite mit dem Reposi
 - [GitHub Pages](https://pages.github.com/)
 
 
-To deploy your slides on GitHub Pages:
-- upload all the files of the project in your repo (i.e. named `name_of_repo`)
-- create `.github/workflows/deploy.yml` with following content to deploy your slides to GitHub Pages via GitHub Actions. In this file, replace `<name_of_repo>` with `name_of_repo`.
-
 Um deine Präsentation auf GitHub Pages zu deployen:
 - lade alle Dateien des Projekts in das Repository hoch (zum Beispiel mit dem Namen  `Name_des_Repos`)
 - erstelle eine `.github/workflows/deploy.yml` im Projektstamm mit folgendem Inhalt um deine Präsentation via Github Actions auf Github Pages bereitzustellen. In dieser Datei ersetzte `<Name_des_Repos>` mit `Name_des_Repos`
@@ -128,4 +124,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 - In dem Repository, gehe zu Settings>Page. Unter "Build and deployment", wähle "Deploy from a branch", wähle "gh-pages" und "root". Klicke Speichern.
-- Nachdem alle Arbeitsabläufe ausgeführt wurden, sollte unter Settings>Page ein Link zu den Folien erscheinen.
+- Nachdem alle Arbeitsabläufe ausgeführt wurden, sollte unter Settings>Page ein Link zu der Präsentation erscheinen.

@@ -4,11 +4,10 @@ Addons sind zusätzliche Komponenten, Layouts, Styles, Konfigurationen... etc., 
 
 Sie sind ganz ähnlich wie [Themes](/themes/use), aber im Allgemeinen:
 
-* sie beeinflussen nicht die globalen Styles der Präsentation
-* es können mehrere Addons in einer Präsentation genutzt werden
+* beeinflussen sie nicht die globalen Styles der Präsentation
+* können mehrere Addons in einer Präsentation genutzt werden
 
-To use addons, you have to install them manually via:
-Um Addons benutzen zu können, müssen sie manuell installiert werden:
+Um Addons müssen manuell installiert werden, damit sie benutzt werden können:
 
 ```bash
 $ npm install [slidev-addon-package1] [slidev-addon-package2]
