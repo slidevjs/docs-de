@@ -359,9 +359,6 @@ export const community: ThemeInfo[] = [
       'light',
     ],
   },
-<<<<<<< HEAD
-  // Füge deins hier hinzu!
-=======
   {
     id: 'slidev-theme-mokkapps',
     name: 'Mokkapps',
@@ -389,8 +386,7 @@ export const community: ThemeInfo[] = [
       'light',
     ],
   },
-  // Add yours here!
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
+  // Füge deins hier hinzu!
   {
     id: '',
     link: 'https://github.com/slidevjs/docs/edit/main/.vitepress/themes.ts',

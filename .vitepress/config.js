@@ -57,7 +57,7 @@ const Guide = [
 
 const Theme = [
   {
-    text: 'Thema benutzen',
+    text: 'Theme benutzen',
     link: '/themes/use',
   },
   {
@@ -65,18 +65,18 @@ const Theme = [
     link: '/themes/gallery',
   },
   {
-    text: 'Thema erstellen',
+    text: 'Theme erstellen',
     link: '/themes/write-a-theme',
   },
 ]
 
 const Addon = [
   {
-    text: 'Use Addon',
+    text: 'Addon benutzen',
     link: '/addons/use',
   },
   {
-    text: 'Write an Addon',
+    text: 'Addon erstellen',
     link: '/addons/write-an-addon',
   },
 ]
@@ -169,15 +169,11 @@ const Customizations = [
     link: '/custom/config-mermaid',
   },
   {
-<<<<<<< HEAD
-    text: 'Shortcuts konfigurieren',
-=======
-    text: 'Configure Parser',
+    text: 'Parser konfigurieren',
     link: '/custom/config-parser',
   },
   {
-    text: 'Configure Shortcuts',
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
+    text: 'Shortcuts konfigurieren',
     link: '/custom/config-shortcuts',
   },
   {
@@ -185,7 +181,7 @@ const Customizations = [
     link: '/custom/vue-context',
   },
   {
-    text: 'Globale Ebnen',
+    text: 'Globale Ebenen',
     link: '/custom/global-layers',
   }
 ]
@@ -215,15 +211,11 @@ const slidebars = [
     children: Theme,
   },
   {
-<<<<<<< HEAD
-    text: 'Individualisierung',
-=======
     text: 'Addons',
     children: Addon,
   },
   {
-    text: 'Customizations',
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
+    text: 'Individualisierung',
     children: Customizations,
   },
   {
@@ -287,15 +279,11 @@ module.exports = {
         items: Theme,
       },
       {
-<<<<<<< HEAD
-        text: 'Individualisieren',
-=======
         text: 'Addon',
         items: Addon,
       },
       {
-        text: 'Customize',
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
+        text: 'Individualisieren',
         items: Customizations,
       },
       {

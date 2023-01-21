@@ -2,11 +2,7 @@
   <div class="theme">
     <h1>404</h1>
     <blockquote>{{ getMsg() }}</blockquote>
-<<<<<<< HEAD
-    <a :href="$site.base" aria-label="go to home">Zurück zum Start</a>
-=======
-    <a :href="site.base" aria-label="go to home">Take me home.</a>
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
+    <a :href="site.base" aria-label="go to home">Zurück zum Start</a>
   </div>
 </template>
 
@@ -17,7 +13,7 @@ const {site} = useData()
 const msgs = [
   "Hier ist nichts.",
   "Wie sind wir denn hier hin gekommen?",
-  // 'That\'s a Four-Oh-Four.',
+  "Ups - 404",
   "Sieht aus, als wären ein paar Links kaputt.",
 ];
 
