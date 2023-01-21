@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 # Statisches Hosting
-=======
-
-# Static Hosting
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
 
 ## Erstellen von Single Page Applications (SPA)
 
@@ -35,15 +30,9 @@ download: true
 ---
 ```
 
-<<<<<<< HEAD
 Slidev generiert automatisch mit der SPA eine PDF und in der SPA wird ein 'Download' Button angezeigt.
 
-Man kann auch eine eigene PDF zum herunterladen anbieten, in diesem Fall wird das generieren der PDF übersprungen.
-=======
-Slidev will generate a PDF file along with the build, and a download button will be displayed in the SPA.
-
-You can also provide a custom URL for the PDF. In that case, the rendering process will be skipped.
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
+Man kann auch eine eigene PDF zum herunterladen anbieten, in diesem Fall wird das Generieren der PDF übersprungen.
 
 ```md
 ---
@@ -62,11 +51,7 @@ Mehr ist in den [Beispielprojekten](/showcases) zu finden.
 
 ## Hosting
 
-<<<<<<< HEAD
 Wir empfehlen die Verwendung von `npm init slidev@lastest`, um das Projekt zu erstellen, somit werden die notwendigen Konfigurationsdateien für die Hosting-Dienste direkt mitgeliefert.
-=======
-We recommend to use `npm init slidev@latest` to scaffold your project, which contains the necessary configuration files for hosting services out-of-the-box.
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
 
 ### Netlify
 
@@ -88,11 +73,7 @@ to = "/index.html";
 status = 200;
 ```
 
-<<<<<<< HEAD
 Gehe dann zu deinem Netlify Dashboard und erstelle eine neue Website mit dem Repository.
-=======
-Then go to your Netlify dashboard and create a new site with the repository.
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
 
 ### Vercel
 
@@ -106,23 +87,21 @@ Erstelle eine `vercel.json` im Projektstamm mit folgendem Inhalt:
 }
 ```
 
-<<<<<<< HEAD
 Gehe dann zu deinem Vercel Dashboard und erstelle eine neue Seite mit dem Repository.
-=======
-Then go to your Vercel dashboard and create a new site with the repository.
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
 
 ## GitHub Pages
 
 - [GitHub Pages](https://pages.github.com/)
 
-<<<<<<< HEAD
-Erstelle eine `.github/workflows/deploy.yml` im Projektstamm mit folgendem Inhalt um deine Präsentation via Github Actions auf Github Pages bereitzustellen:
-=======
+
 To deploy your slides on GitHub Pages:
 - upload all the files of the project in your repo (i.e. named `name_of_repo`)
 - create `.github/workflows/deploy.yml` with following content to deploy your slides to GitHub Pages via GitHub Actions. In this file, replace `<name_of_repo>` with `name_of_repo`.
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
+
+Um deine Präsentation auf GitHub Pages zu deployen:
+- lade alle Dateien des Projekts in das Repository hoch (zum Beispiel mit dem Namen  `Name_des_Repos`)
+- erstelle eine `.github/workflows/deploy.yml` im Projektstamm mit folgendem Inhalt um deine Präsentation via Github Actions auf Github Pages bereitzustellen. In dieser Datei ersetzte `<Name_des_Repos>` mit `Name_des_Repos`
+
 
 ```yaml
 name: Deploy pages
@@ -140,7 +119,7 @@ jobs:
       - name: Install slidev
         run:  npm i -g @slidev/cli
       - name: Build
-        run: slidev build --base <name_of_repo>
+        run: slidev build --base <Name_des_Repos>
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
@@ -148,5 +127,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
-- In your repository, go to Settings>Pages. Under "Build and deployment", select "Deploy from a branch", select "gh-pages" and "root". Click on save.
-- Finally, after all workflows are executed, a link to the slides should appear under Settings>Pages.
+- In dem Repository, gehe zu Settings>Page. Unter "Build and deployment", wähle "Deploy from a branch", wähle "gh-pages" und "root". Klicke Speichern.
+- Nachdem alle Arbeitsabläufe ausgeführt wurden, sollte unter Settings>Page ein Link zu den Folien erscheinen.

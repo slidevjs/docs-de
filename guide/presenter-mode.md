@@ -1,18 +1,14 @@
 # Moderatoren Modus
 
-<<<<<<< HEAD
 Durch klicken des <carbon-user-speaker class="inline-icon-btn"/> Buttons in der Navigationsleiste wird der Moderatoren Modus gestartet. Alternativ kann man auch direkt http://localhost:3030/presenter manuell besuchen. Wenn der Moderatoren Modus geöffnet ist, bleiben andere Seiteninstanzen automatisch synchronisiert.
-=======
-Click the <carbon-user-speaker class="inline-icon-btn"/> button in the navigation panel, or visit `http://localhost:3030/presenter` manually, to enter the presenter mode. Whenever you enter the presenter mode, other page instances will automatically stay in sync with the presenter.
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
 
 ![](/screenshots/presenter-mode.png)
 
-## Disabling
+## Deaktivieren
 
-Presenter mode is enabled by default.
+Der Moderatorenmodus ist standardmäßig aktiviert.
 
-You can disable this feature with the following config:
+Er kann mit der folgenden Konfiguration deaktiviert werden:
 
 ```md
 ---
@@ -20,20 +16,21 @@ presenter: false
 ---
 ```
 
-Or you can enable it only for `dev` or `build` mode by setting the mode you want in the config:
+Oder nur für den `dev` oder `build` Modus aktiviert werden:  
+
 ```md
 ---
 presenter: dev
 ---
 ```
-In that case the presenter will only be available when running `slidev` but not when running `slidev build`.
+In diesem Fall wird der Moderatorenmodus nur verfügbar sein, wenn `slidev` läuft, aber nicht, wenn `slidev build` läuft.
 
-## Remote restricted access
+## Eingeschränkter Fernzugriff
 
-You can run your presentation with remote access by running `slidev --remote`.
+Die Präsentation kann mit `slidev --remote` mit Fernzugriff ausgeführt werden.
 
-In that case you may want to share the slides with other people but you don't want them to access the presenter mode to mess up your presentation.
+In diesem Fall sollen vielleicht nur die Folien geteilt werden, allerdings sollen keinen anderen Personen Zugriff auf den Moderatorenmodus haben um die Presentation zu beeinflussen.
 
-For this scenario you can provide a password for starting the server by running `slidev --remote=your_password`.
+Für dieses Szenario kann ein Passwort angelegt werden, indem der Slidev mit `slidev --remote=your_password` gestartet wird.
 
-In that case you will need to provide the password when accessing `/presenter/*` routes.
+In diesem Fall wird ein Passwort benötigt, um `/presenter/*` erreichen zu können.

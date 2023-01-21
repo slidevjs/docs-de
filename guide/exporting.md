@@ -1,6 +1,6 @@
 # Exportieren
 
-## Slides
+## Folien
 
 ### PDF
 
@@ -27,11 +27,7 @@ Falls du deine Folien mit der dunklen Version des Themes exportieren willst, kan
 $ slidev export --dark
 ```
 
-<<<<<<< HEAD
-### Animationsschritte exportieren
-=======
-#### Export Clicks Steps
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
+#### Animationsschritte exportieren
 
 > Verfügbar seit v0.21
 
@@ -51,7 +47,6 @@ $ slidev export --format png
 
 ### Single-Page Application (SPA)
 
-<<<<<<< HEAD
 Slidev Präsentationen können auch in eine selbst-hostbare SPA exportiert werden:
 
 ```bash
@@ -98,16 +93,14 @@ Hier sind ein paar Beispiele einer exportieren SPA:
 - [Composable Vue](https://talks.antfu.me/2021/composable-vue) von [Anthony Fu](https://github.com/antfu)
 
 Mehr Infos: [Statisches Hosting](/guide/hosting).
-=======
 See [Static Hosting](/guide/hosting).
 
-## Presenter notes
+## Moderator Notizen
 
-> Available since v0.36.8
+> Verfügbar seit v0.36.8
 
-Export only the presenter notes (the last comment block for each slide) into a text document in PDF.
+Es können auch nur die Notizen (der letzte Kommentarblock jeder Folien) in ein Textdokument (PDF) exportiert werden.
 
 ```bash
 $ slidev export-notes
 ```
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c

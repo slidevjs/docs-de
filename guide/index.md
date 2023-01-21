@@ -2,11 +2,7 @@
 
 ## Überblick
 
-<<<<<<< HEAD
 Slidev <sup>(slide + dev, `/slʌɪdɪv/`)</sup> ist ein Web-basiertes Tool zum Erstellen und Präsentieren von Präsentationen. Slidev wurde für Entwickler entwickelt und setzt den Fokus auf das Verfassen von Inhalten in Markdown, während HTML und leistungsfähige Vue Komponenten pixelgenaue Designs und Layouts mit eingebetteten interaktiven Demos für deine Präsentation liefern.
-=======
-Slidev <sup>(slide + dev, **/slʌɪdɪv/**)</sup> is a web-based slides maker and presenter. It's designed for developers to focus on writing content in Markdown while also having the power of HTML and Vue components to deliver pixel-perfect layouts and designs with embedded interactive demos in your presentations.
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
 
 Slidev verwendet eine funktionsreiche Markdown Datei um schöne Folien mit sofortigem Wiederladeerlebnis und vielen anderen Integrationen, wie Live-Coding, PDF-Export oder Präsentationsaufzeichnung zu generieren. Da Slidev über Web-Technologien läuft ist so gut wie alles möglich - die Möglichkeiten sind endlos.
 
@@ -14,21 +10,12 @@ Weitere Informationen über den Hintergrund von Slidev sind im [Warum Slidev](/g
 
 ### Funktionen
 
-<<<<<<< HEAD
 - 📝 [**Markdown-basiert**](/guide/syntax.html) - benutze deinen Lieblingseditor und Arbeitsablauf
 - 🧑‍💻 [**Entwickler freundlich**](/guide/syntax.html#code-blocks) - integrierte Syntax Hervorhebung, live Coding, etc.
 - 🎨 [**Anpassbarer Stil**](/themes/gallery.html) - Themen können geteilt und via npm packages genutzt werden
-- 🌈 [**Stylish**](/guide/syntax.html#embedded-styles) - [Windi CSS](https://windicss.org/) on-demand utilities und einfach zu benutzende, eingebttete Stylesheets
+- 🌈 [**Stylish**](/guide/syntax.html#embedded-styles) - [Windi CSS](https://windicss.org/) oder [UnoCSS](https://github.com/unocss/unocss) on-demand utilities und einfach zu benutzende, eingebttete Stylesheets
 - 🤹 [**Interaktiv**](/custom/directory-structure.html#components) - eigene Vue Komponenten
 - 🎙 [**Moderatoren Modus**](/guide/presenter-mode.html) - nutze ein anderes Fenster oder deine Handy um deine Präsentation zu steuern
-=======
-- 📝 [**Markdown-based**](/guide/syntax.html) - use your favorite editors and workflow
-- 🧑‍💻 [**Developer Friendly**](/guide/syntax.html#code-blocks) - built-in syntax highlighting, live coding, etc.
-- 🎨 [**Themable**](/themes/gallery.html) - theme can be shared and used with npm packages
-- 🌈 [**Stylish**](/guide/syntax.html#embedded-styles) - on-demand utilities via [Windi CSS](https://windicss.org/) or [UnoCSS](https://github.com/unocss/unocss).
-- 🤹 [**Interactive**](/custom/directory-structure.html#components) - embedding Vue components seamlessly
-- 🎙 [**Presenter Mode**](/guide/presenter-mode.html) - use another window, or even your phone to control your slides
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
 - 🎨 [**Drawing**](/guide/drawing.html) - draw and annotate on your slides
 - 🧮 [**LaTeX**](/guide/syntax.html#latex) - integrierte Unterstützung für mathematische LaTeX Gleichungen
 - 📰 [**Diagramme**](/guide/syntax.html#diagrams) - erstelle Diagramme mit Beschriftungen
@@ -43,23 +30,13 @@ Weitere Informationen über den Hintergrund von Slidev sind im [Warum Slidev](/g
 
 Slidev wird durch die Kombination dieser Tools und Technologien ermöglicht:
 
-<<<<<<< HEAD
 - [Vite](https://vitejs.dev) - Ein extrem schnelles Frontend-Tool
 - [Vue 3](https://v3.vuejs.org/) powered [Markdown](https://daringfireball.net/projects/markdown/syntax) - Konzentriere dich auf den Inhalt, während die Power von HTML und Vue Komponenten immer an deiner Seite ist
-- [Windi CSS](https://github.com/windicss/windicss) - On-Demand Utility-First CSS Framework, style deine Folien mit einer Lichtigkeit
+- [Windi CSS](https://github.com/windicss/windicss) oder [UnoCSS](https://github.com/unocss/unocss) - On-Demand Utility-First CSS Framework, style deine Folien mit einer Lichtigkeit
 - [Prism](https://github.com/PrismJS/prism), [Shiki](https://github.com/shikijs/shiki), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - Erstlassige Code-Snippet-Unterstützung mit Live-Coding Fähigkeit
 - [RecordRTC](https://recordrtc.org) - Integrierte Aufnahmeunterstützung mit Kameraansicht
 - [VueUse](https://vueuse.org) Familie - [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), etc.
 - [Iconify](https://iconify.design/) - Iconset Sammlung.
-=======
-- [Vite](https://vitejs.dev) - An extremely fast frontend tooling
-- [Vue 3](https://v3.vuejs.org/) powered [Markdown](https://daringfireball.net/projects/markdown/syntax) - Focus on the content while having the power of HTML and Vue components whenever needed
-- [Windi CSS](https://github.com/windicss/windicss) or [UnoCSS](https://github.com/unocss/unocss) - On-demand utility-first CSS framework, style your slides at ease
-- [Prism](https://github.com/PrismJS/prism), [Shiki](https://github.com/shikijs/shiki), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - First-class code snippets support with live coding capability
-- [RecordRTC](https://recordrtc.org) - Built-in recording and camera view
-- [VueUse](https://vueuse.org) family -  [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), etc.
-- [Iconify](https://iconify.design/) - Iconsets collection.
->>>>>>> 9477d414697bced184348cd18c6374f1bbd82a5c
 - [Drauu](https://github.com/antfu/drauu) - Drawing and annotations support
 - [KaTeX](https://katex.org/) - LaTeX Formeln rendern.
 - [Mermaid](https://mermaid-js.github.io/mermaid) - Textbasierte Diagramme.
