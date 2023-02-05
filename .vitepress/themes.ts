@@ -386,7 +386,30 @@ export const community: ThemeInfo[] = [
       'light',
     ],
   },
+<<<<<<< HEAD
   // Füge deins hier hinzu!
+=======
+  {
+    id: 'slidev-theme-the-unnamed',
+    name: 'The unnamed',
+    description: 'A theme based on The unnamed VS Code theme',
+    author: {
+      name: 'Elio Struyf',
+      link: 'https://elio.dev',
+    },
+    repo: 'https://github.com/estruyf/slidev-theme-the-unnamed',
+    previews: [
+      'https://cdn.jsdelivr.net/gh/estruyf/slidev-theme-the-unnamed@main/assets/cover.png',
+      'https://cdn.jsdelivr.net/gh/estruyf/slidev-theme-the-unnamed@main/assets/about-me.png',
+      'https://cdn.jsdelivr.net/gh/estruyf/slidev-theme-the-unnamed@main/assets/default.png',
+      'https://cdn.jsdelivr.net/gh/estruyf/slidev-theme-the-unnamed@main/assets/section.png',
+    ],
+    tags: [
+      'dark'
+    ],
+  },
+  // Add yours here!
+>>>>>>> 8ffa1fd2a7c795eb019785595170c2cc8d47c39b
   {
     id: '',
     link: 'https://github.com/slidevjs/docs/edit/main/.vitepress/themes.ts',
