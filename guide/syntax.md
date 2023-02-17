@@ -162,7 +162,11 @@ h1 {
 # Die nächste Folie wird nicht beeinflusst
 ```
 
+<<<<<<< HEAD
 Der `<style>` Tag ist immer [bereichsbezogen](https://vue-loader.vuejs.org/guide/scoped-css.html). Mehr über das Überschreiben von globalen Styles gibt es im Abschnitt [Individualisierung](/custom/directory-structure#style).
+=======
+`<style>` tag in Markdown is always [scoped](https://vuejs.org/api/sfc-css-features.html#scoped-css). As an outstanding result, a selector with the child combinator (`.a > .b`) is unusable as such; see the previous link. To have global style overrides, check out the [customization section](/custom/directory-structure#style).
+>>>>>>> 7f25ea87516174a4aad5140a81bf55677df906c1
 
 
 Durch [Windi CSS](https://windicss.org), kann direkt verschachteltes CSS oder [Direktiven](https://windicss.org/features/directives.html) (z.B. `@apply`) genutzt werden.
