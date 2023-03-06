@@ -19,11 +19,26 @@ titleTemplate: '%s - Slidev'
 info: false
 # erlaube das Herunterladen einer PDF aus der SPA, kann auch ein eigener URL sein
 download: false
+<<<<<<< HEAD
 # Präsentationsmodus aktivieren, kann boolean, 'dev' oder 'build' sein
 presenter: true
 # Dateiname der exportierten Datei
 exportFilename: 'slidev-exported.pdf'
 # Syntaxhervorheber, entweder 'prism' oder 'shiki'
+=======
+# filename of the export file
+exportFilename: 'slidev-exported'
+# export options
+# use export CLI options in camelCase format
+# Learn more: https://sli.dev/guide/exporting.html
+export:
+  format: pdf
+  timeout: 30000
+  dark: false
+  withClicks: false
+  withToc: false
+# syntax highlighter, can be 'prism' or 'shiki'
+>>>>>>> 46f11048bbcb1c239aeff6e3b8061dbba0f779ed
 highlighter: 'prism'
 # Zeilennummern in Codeblöcken anzeigen
 lineNumbers: false
