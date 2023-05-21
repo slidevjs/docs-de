@@ -63,7 +63,7 @@ Ein Thema kann [Standardkonfigurationen](/custom/#frontmatter-configures) in der
 // package.json
 {
   "slidev": {
-    "default": {
+    "defaults": {
       "aspectRatio": "16/9",
       "canvasWidth": 980,
       "fonts": {
@@ -127,7 +127,11 @@ Denke auch daran, unterstützte Highlighters in der `package.json` Datei anzugeb
 // package.json
 {
   "slidev": {
+<<<<<<< HEAD
     "highlighter": "shiki" // oder "prism" oder "all"
+=======
+    "highlighter": "shiki" // or "prism" or "both"
+>>>>>>> d29625cb3633171f7cf2087a777e68a1cd76ea6f
   }
 }
 ```
