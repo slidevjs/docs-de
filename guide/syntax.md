@@ -2,7 +2,11 @@
 
 Alle Folien der Präsentation sind in einer **einzelnen Markdown Datei** untergebracht (Standartweiße `./slides.md`).
 
+<<<<<<< HEAD
 Es können alle [Markdown Funktionen](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) wie normal genutzt werden. Zusätzlich können auch noch HTML und Vue Komponenten oder Styles mit der Hilfe von [Windi CSS](https://windicss.org) genutzt werden. Folien sind durch `---` zusammen mit einer neuen Zeile getrennt.
+=======
+You can use [the Markdown features](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) as you normally would, with the additional support of inlined HTML and Vue Components. Styling using [UnoCSS](/custom/config-unocss) is also supported. Use `---` padded with a new line to separate your slides. 
+>>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
 
 ~~~md
 # Slidev
@@ -144,6 +148,26 @@ console.log('Hallo, Welt!')
 
 Wie man [Monaco konfiguriert](/custom/config-monaco).
 
+### Monaco diff
+
+Monaco can also generate a diff between two code blocks. Use `{monaco-diff}` to turn the block into a [diff Monaco editor](https://microsoft.github.io/monaco-editor/playground.html?source=v0.36.1#example-creating-the-diffeditor-multi-line-example) and use `~~~` to separate both original and modified version of the code!
+
+```md
+//```ts {monaco-diff}
+This line is removed on the right.
+just some text
+abcd
+efgh
+Some more text
+~~~
+just some text
+abcz
+zzzzefgh
+Some more text.
+This line is removed on the left.
+//```
+```
+
 ## Embedded Styles
 
 Man kann den `<style>` Tag nutzen, um direkt in der Markdowndatei Styles für die **aktuelle Folie** zu überschreiben.
@@ -162,10 +186,16 @@ h1 {
 # Die nächste Folie wird nicht beeinflusst
 ```
 
+<<<<<<< HEAD
 Der `<style>` Tag ist immer [bereichsbezogen](https://vue-loader.vuejs.org/guide/scoped-css.html). Mehr über das Überschreiben von globalen Styles gibt es im Abschnitt [Individualisierung](/custom/directory-structure#style).
 
 
 Durch [Windi CSS](https://windicss.org), kann direkt verschachteltes CSS oder [Direktiven](https://windicss.org/features/directives.html) (z.B. `@apply`) genutzt werden.
+=======
+`<style>` tag in Markdown is always [scoped](https://vuejs.org/api/sfc-css-features.html#scoped-css). As an outstanding result, a selector with the child combinator (`.a > .b`) is unusable as such; see the previous link. To have global style overrides, check out the [customization section](/custom/directory-structure#style).
+
+Powered by [UnoCSS](/custom/config-unocss), you can directly use nested css and [directives](https://windicss.org/features/directives.html) (e.g. `@apply`)
+>>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
 
 ```md
 # Slidev

@@ -10,12 +10,21 @@ Weitere Informationen über den Hintergrund von Slidev sind im [Warum Slidev](/g
 
 ### Funktionen
 
+<<<<<<< HEAD
 - 📝 [**Markdown-basiert**](/guide/syntax.html) - benutze deinen Lieblingseditor und Arbeitsablauf
 - 🧑‍💻 [**Entwickler freundlich**](/guide/syntax.html#code-blocks) - integrierte Syntax Hervorhebung, live Coding, etc.
 - 🎨 [**Anpassbarer Stil**](/themes/gallery.html) - Themen können geteilt und via npm packages genutzt werden
 - 🌈 [**Stylish**](/guide/syntax.html#embedded-styles) - [Windi CSS](https://windicss.org/) oder [UnoCSS](https://github.com/unocss/unocss) on-demand utilities und einfach zu benutzende, eingebttete Stylesheets
 - 🤹 [**Interaktiv**](/custom/directory-structure.html#components) - eigene Vue Komponenten
 - 🎙 [**Moderatoren Modus**](/guide/presenter-mode.html) - nutze ein anderes Fenster oder deine Handy um deine Präsentation zu steuern
+=======
+- 📝 [**Markdown-based**](/guide/syntax.html) - use your favorite editors and workflow
+- 🧑‍💻 [**Developer Friendly**](/guide/syntax.html#code-blocks) - built-in syntax highlighting, live coding, etc.
+- 🎨 [**Themable**](/themes/gallery.html) - theme can be shared and used with npm packages
+- 🌈 [**Stylish**](/guide/syntax.html#embedded-styles) - on-demand utilities via [UnoCSS](https://github.com/unocss/unocss) or [Windi CSS](https://windicss.org/).
+- 🤹 [**Interactive**](/custom/directory-structure.html#components) - embedding Vue components seamlessly
+- 🎙 [**Presenter Mode**](/guide/presenter-mode.html) - use another window, or even your phone to control your slides
+>>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
 - 🎨 [**Drawing**](/guide/drawing.html) - draw and annotate on your slides
 - 🧮 [**LaTeX**](/guide/syntax.html#latex) - integrierte Unterstützung für mathematische LaTeX Gleichungen
 - 📰 [**Diagramme**](/guide/syntax.html#diagrams) - erstelle Diagramme mit Beschriftungen
@@ -65,7 +74,17 @@ Mit Yarn:
 $ yarn create slidev
 ```
 
+<<<<<<< HEAD
 Folge den Anweisungen und beginne mit dem Erstellen der Folien. Lies dir die [Syntaxanleitung](/guide/syntax) für mehr Informationen über den Syntax durch.
+=======
+With pnpm:
+
+```bash
+$ pnpm create slidev
+```
+
+Follow the prompts and start making your slides now! For more details about the markdown syntax, read through the [syntax guide](/guide/syntax).
+>>>>>>> 19d3ad78801d41f8e35b2c2f4cbeecc8b90afaea
 
 ### Command Line Interface
 
