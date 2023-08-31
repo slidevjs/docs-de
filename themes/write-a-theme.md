@@ -12,12 +12,21 @@ Jetzt kann man alles verändern und mit dem code spielen. Man kann sich auch auf
 
 Ein Thema kann folgende Punkte anpassen:
 
+<<<<<<< HEAD
 - Globale Styles
 - Standardkonfigurationen bereitstellen (Schriften, Farbschema, Highlighters, etc.)
 - benutzerdefinierte Layouts bereitstellen oder vorhandene überschreiben
 - benutzerdefinierte Komponenten bereitstellen oder vorhandene überschreiben
 - Windi CSS-Konfigurationen erweitern
 - Tools wie Monaco und Prism konfigurieren
+=======
+- Global styles
+- Provide default configurations (fonts, color schema, highlighters, etc.)
+- Provide custom layouts or override the existing one
+- Provide custom components or override the existing one
+- Extend UnoCSS/Windi CSS configurations
+- Configure tools like Monaco and Prism
+>>>>>>> 8024ec4e94d2cd81bc6d4a3efee822dde30d9054
 
 ## Konventionen
 
@@ -63,7 +72,7 @@ Ein Thema kann [Standardkonfigurationen](/custom/#frontmatter-configures) in der
 // package.json
 {
   "slidev": {
-    "default": {
+    "defaults": {
       "aspectRatio": "16/9",
       "canvasWidth": 980,
       "fonts": {
@@ -127,7 +136,11 @@ Denke auch daran, unterstützte Highlighters in der `package.json` Datei anzugeb
 // package.json
 {
   "slidev": {
+<<<<<<< HEAD
     "highlighter": "shiki" // oder "prism" oder "all"
+=======
+    "highlighter": "shiki" // or "prism" or "both"
+>>>>>>> 8024ec4e94d2cd81bc6d4a3efee822dde30d9054
   }
 }
 ```
