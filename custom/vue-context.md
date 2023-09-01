@@ -25,6 +25,14 @@ Die aktuelle Folie ist: {{ $slidev.nav.currentPage }}
 
 ## Eigenschaften
 
+### `$clicks`
+
+`$clicks` hold a number of clicks on the current slide. Can be used conditionally to show different content on clicks.
+
+```html
+<div v-if="$clicks > 3">Content</div>
+```
+
 ### `$slidev.nav`
 
 Ein reaktives Objekt, das die Eigenschaften und Steuerelemente der Foliennavigation enthält. Zum Beispiel:
@@ -41,13 +49,19 @@ $slidev.nav.go(10) // gehe zu Folie #10
 ```js
 $slidev.nav.currentPage // aktuelle Foliennummer
 
+<<<<<<< HEAD
 $slidev.nav.currentLayout // aktuelle Layout-ID
 
 $slidev.nav.clicks // aktuelle Anzahl der Klicks
+=======
+$slidev.nav.currentLayout // current layout id
+>>>>>>> 2fe32c406cbcd27bcfe2100a4d8c08d7cc42adc4
 ```
 
 Weitere verfügbare Eigenschaften sind in den [nav.ts](https://github.com/slidevjs/slidev/blob/main/packages/client/logic/nav.ts) Exporten zu finden.
 
+
+> Note: `$slidev.nav.clicks` is a global state while `$clicks` is local to each slide. It's recommended to **use `$clicks` over `$slidev.nav.clicks`** to avoid clicks changed been triggered on page transitions.
 
 ### `$slidev.configs`
 
@@ -79,3 +93,9 @@ themeConfig:
 ```
 {{ $slidev.themeConfigs.primary }} // '#213435'
 ```
+
+### `$nav`
+
+> Available since v0.43.0
+
+A shorthand of `$slidev.nav`.
