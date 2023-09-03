@@ -32,7 +32,11 @@ Lerne mehr über [Highlighters](/custom/highlighters) und die Konfiguration des 
 
 ## Blitzschnell
 
+<<<<<<< HEAD
 Slidev läuft über [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) und [Windi CSS](https://windicss.org/). Diese Tools sorgen für eine wundervollste Autorenerfahrung. Jede Änderung wird **sofort** auf den Folien sichtbar.
+=======
+Slidev is powered by [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) and [UnoCSS](https://unocss.dev/), which give you the most wonderful authoring experience. Every change you made will reflect to your slides **instantly**.
+>>>>>>> 6e0af1f2744db999dfeb58e8528478dea41a1240
 
 Entdecke unseren [Tech-Stack](/guide/#tech-stack).
 
