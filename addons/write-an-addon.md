@@ -6,11 +6,19 @@
 
 Addons können folgende Punkte beeinflussen:
 
+<<<<<<< HEAD
 - Globale Styles (mit Vorsicht zu verwenden, das ist eher die Rolle von [Themes](/themes/use))
 - Bereitstellen Layouts oder Überschreiben von vorhandenen Layouts
 - Bereitstellen Komponenten oder Überschreiben von vorhandenen Komponenten
 - Erweitern der Windi CSS Konfiguration
 - Konfigurieren von Tools, wie Monaco oder Prism
+=======
+- Global styles (use with caution has it is more the role of [themes](/themes/use))
+- Provide custom layouts or override the existing one
+- Provide custom components or override the existing one
+- Extend UnoCSS/Windi CSS configurations
+- Configure tools like Monaco and Prism
+>>>>>>> 11d34750b965b68677cad6bd79bec396dc878cea
 
 ## Konventionen
 
