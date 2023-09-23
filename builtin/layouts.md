@@ -174,7 +174,38 @@ Das wird links angezeigt
 Das wird rechts angezeigt
 ```
 
+<<<<<<< HEAD
 ## Eigene Layouts
+=======
+### `two-cols-header`
+
+Separates the upper and lower lines of the page content, and the second line separates the left and right columns.
+
+#### Usage
+
+
+```md
+---
+layout: two-cols-header
+---
+
+This spans both
+
+::left::
+
+# Left
+
+This shows on the left
+
+::right::
+
+# Right
+
+This shows on the right
+```
+
+## Custom Layouts
+>>>>>>> 0c897047096b0c05c5b5d3c2a8c99912c5a33056
 
 Erstelle einen Ordner `layouts/` im Ursprung deines Projektverzeichnisses. Dort können eigene Vue Layout Komponenten erstellt werden.
 
