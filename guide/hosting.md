@@ -8,7 +8,15 @@ Man kann Slidev Präsentation als selbst-hostbare SPA exportieren:
 $ slidev build
 ```
 
+<<<<<<< HEAD
 Die erstellte SPA ist im `dist/` Ordner verfügbar und kann mit [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/) oder mit was auch immer man will gehostet werden. Nun kann man seine Präsentation mit nur einem link mit der ganzen Welt teilen.
+=======
+The generated application will be available under `dist/`.
+
+You can test the generated build using a web server (Apache, NGINX, Caddy...etc.) or in the project you can directly run: `npx vite preview`.
+
+Then you can host it on [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), or whatever you want. Now you can share your slides with the rest of the world with a single link.
+>>>>>>> 0c897047096b0c05c5b5d3c2a8c99912c5a33056
 
 ### Basispfad
 
@@ -40,7 +48,54 @@ download: "https://meine-seite.de/vortrag.pdf"
 ---
 ```
 
+<<<<<<< HEAD
 ## Beispiele
+=======
+This can also be done with the CLI option `--download` (`boolean` only).
+
+```bash
+$ slidev build --download
+```
+
+When using the download option, you can also provide the export options:
+
+* By using [CLI export options](/guide/exporting.html)
+* Or [frontmatter export options](/custom/#frontmatter-configures)
+
+### Output directory
+
+You can change the output directory using `--out`.
+
+```bash
+$ slidev build --out my-build-folder
+```
+
+### Watch mode
+
+By passing the `--watch` option the build will run in watch mode and will rebuild anytime the source changes.
+
+```bash
+$ slidev build --watch
+```
+
+### Multiple entries
+
+You can also build multiple slides at once.
+
+```bash
+$ slidev build slides1.md slides1.md
+```
+
+Or
+
+```bash
+$ slidev build *.md
+```
+
+In this case, each input file will generate a folder containing the build in the output directory.
+
+## Examples
+>>>>>>> 0c897047096b0c05c5b5d3c2a8c99912c5a33056
 
 Hier sind einige Beispiele für die exportierte SPA:
 
@@ -101,27 +156,66 @@ Um deine Präsentation auf GitHub Pages zu deployen:
 
 ```yaml
 name: Deploy pages
-on: push
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
         with:
+<<<<<<< HEAD
           node-version: "14"
+=======
+          node-version: 'lts/*'
+
+>>>>>>> 0c897047096b0c05c5b5d3c2a8c99912c5a33056
       - name: Install dependencies
         run: npm install
+
       - name: Install slidev
         run:  npm i -g @slidev/cli
+
       - name: Build
+<<<<<<< HEAD
         run: slidev build --base <Name_des_Repos>
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2
+=======
+        run: slidev build --base <name_of_repo>
+
+      - uses: actions/configure-pages@v3
+
+      - uses: actions/upload-pages-artifact@v1
+>>>>>>> 0c897047096b0c05c5b5d3c2a8c99912c5a33056
         with:
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: dist
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v2
 ```
+<<<<<<< HEAD
 - In dem Repository, gehe zu Settings>Page. Unter "Build and deployment", wähle "Deploy from a branch", wähle "gh-pages" und "root". Klicke Speichern.
 - Nachdem alle Arbeitsabläufe ausgeführt wurden, sollte unter Settings>Page ein Link zu der Präsentation erscheinen.
+=======
+- In your repository, go to Settings>Pages. Under "Build and deployment", select "Github Actions".
+- Finally, after all workflows are executed, a link to the slides should appear under Settings>Pages.
+>>>>>>> 0c897047096b0c05c5b5d3c2a8c99912c5a33056
