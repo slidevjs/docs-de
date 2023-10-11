@@ -117,8 +117,12 @@ import './code.css'
 import './layouts.css'
 ```
 
+<<<<<<< HEAD
 Stile werden von [Windi CSS](http://windicss.org/) und [PostCSS](https://postcss.org/) verarbeitet, so dass man css-Schachtelungen und [at-Direktiven](https://windicss.org/features/directives.html) out-of-box verwenden kann. Zum Beispiel:
 
+=======
+Styles will be processed by [UnoCSS](https://unocss.dev/) and [PostCSS](https://postcss.org/), so you can use css nesting and [at-directives](https://windicss.org/features/directives.html) out-of-box. For example:
+>>>>>>> b67d676136c95f0c62ed494856d5c2e15901838e
 
 ```less
 .slidev-layout {
