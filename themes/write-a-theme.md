@@ -12,12 +12,21 @@ Jetzt kann man alles verändern und mit dem code spielen. Man kann sich auch auf
 
 Ein Thema kann folgende Punkte anpassen:
 
+<<<<<<< HEAD
 - Globale Styles
 - Standardkonfigurationen bereitstellen (Schriften, Farbschema, Highlighters, etc.)
 - benutzerdefinierte Layouts bereitstellen oder vorhandene überschreiben
 - benutzerdefinierte Komponenten bereitstellen oder vorhandene überschreiben
 - Windi CSS-Konfigurationen erweitern
 - Tools wie Monaco und Prism konfigurieren
+=======
+- Global styles
+- Provide default configurations (fonts, color schema, highlighters, etc.)
+- Provide custom layouts or override the existing one
+- Provide custom components or override the existing one
+- Extend UnoCSS/Windi CSS configurations
+- Configure tools like Monaco and Prism
+>>>>>>> 0ef9dde3b1b07a8fc34763e4b83520b893460024
 
 ## Konventionen
 
@@ -63,7 +72,7 @@ Ein Thema kann [Standardkonfigurationen](/custom/#frontmatter-configures) in der
 // package.json
 {
   "slidev": {
-    "default": {
+    "defaults": {
       "aspectRatio": "16/9",
       "canvasWidth": 980,
       "fonts": {
@@ -117,7 +126,11 @@ Slidev schaltet die `dark` CSS Klasse am `html` Element der Seite um, um das Far
 
 ### Highlighter
 
+<<<<<<< HEAD
 Syntaxhervorhebungs-Farben können auch im Thema bereit gestellt werden. Wir unterstützen sowohl [Prism](https://prismjs.com/) als auch [Shiki](https://github.com/shikijs/shiki). Weitere Informationen sind in den [Syntax-Highlighting Dokumentationen](/custom/highlighters).
+=======
+Syntax highlighting colors are also provided in the theme. We support both [Prism](https://prismjs.com/), [Shiki](https://github.com/shikijs/shiki) and [Shikiji](https://github.com/antfu/shikiji). For more information please refer to [the syntax highlighting docs](/custom/highlighters).
+>>>>>>> 0ef9dde3b1b07a8fc34763e4b83520b893460024
 
 Dein Thema kann entweder einen der beide oder beide unterstützen. Konfigurationsbeispiele sind im Standard-Thema [`./styles/code.css`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/styles/code.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/setup/shiki.ts) zu finden. 
 
@@ -127,7 +140,11 @@ Denke auch daran, unterstützte Highlighters in der `package.json` Datei anzugeb
 // package.json
 {
   "slidev": {
+<<<<<<< HEAD
     "highlighter": "shiki" // oder "prism" oder "all"
+=======
+    "highlighter": "shiki" // or "prism" or "both"
+>>>>>>> 0ef9dde3b1b07a8fc34763e4b83520b893460024
   }
 }
 ```
