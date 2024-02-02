@@ -6,7 +6,7 @@ Slidev hat eine integrierte Aufnahme- und Kameraansicht. Diese kann genutzt werd
 
 Klicke den <carbon-user-avatar class="inline-icon-btn"/> Button in der Navigationsleiste um die Kameraansicht in der Präsentation zu öffnen. Die Kameraansicht kann auf dem Bildschirm umher geschoben werden und mittels des Handlers in der rechten unteren Ecke in der Größe verändert werden. Die Größe und Position wird im `localStorage` gespeichert und bei den nächsten Präsentation erneut angewendet.
 
-<Tweet id="1395006771027120133" />
+<TheTweet id="1395006771027120133" />
 
 ## Aufzeichnung
 
