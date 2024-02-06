@@ -28,6 +28,10 @@ Bewege deine Maus zur linken unteren Ecke der Slidev Seite, damit die Navigation
 
 ## Folienübersicht
 
+<<<<<<< HEAD
 Durch drücken der <kbd>o</kbd> Taste oder des <carbon-apps class="inline-icon-btn"/> Buttons in der Navigationsleiste, kann die Folienübersicht geöffnet werden. Dort kann man problemlos zwischen Folien hin und her wechseln.
+=======
+By pressing <kbd>o</kbd> or clicking the <carbon-apps class="inline-icon-btn"/> button in the navigation bar, you can have the overview of your slides so you can jump between them easily.
+>>>>>>> e52d01f8924fc2746acb41ca2510db795a7b0c4a
 
 ![](/screenshots/slides-overview.png)
