@@ -2,7 +2,11 @@
 
 Es gibt eine Menge funktionsreiche, universelle, WYSIWYG (man kriegt was man sieht) Programme zum erstellen von Präsentationen, wie zum Beispiel [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) und [Apple Keynote](https://www.apple.com/keynote/). Mit ihnen kann man super Präsentationen mit Animationen, Diagrammen und vielen anderen tollen Funktionen erstellen. Dazu sind sie noch intuitiv und einfach zu lernen. Warum sollte man sich da die Mühe machen und Slidev entwickeln?
 
+<<<<<<< HEAD
 Slidev versucht Entwicklern Flexibilität und Interaktivität zu bieten und hilft ihnen dabei ihre Präsentationen noch interessanter, ausdrucksvoller und attraktiver zu gestalten, indem man die Technologien und Tools zur Verfügung stellt, die sie bereits kennen.
+=======
+Slidev aims to provide the flexibility and interactivity for developers to make their presentations even more interesting, expressive, and attractive by using the tools and technologies they are already familiar with.
+>>>>>>> e52d01f8924fc2746acb41ca2510db795a7b0c4a
 
 Bei der Arbeit mit WYSIWYG Programmen kann man sich schnell in den ganzen Styling-Optionen verlieren. Slidev eliminiert solche Ablenkungen, indem Inhalt und Styling strikt getrennt sind. Dadurch kann man sich besser auf nur eine Sache konzentrieren und gleichzeitig Themen aus der Community wiederverwenden. Slidev versucht nicht alle anderen Programme zu ersetzen, sondern konzentriert sich vielmehr darauf, die Entwickler Community zu bedienen.
 
@@ -32,7 +36,11 @@ Lerne mehr über [Highlighters](/custom/highlighters) und die Konfiguration des 
 
 ## Blitzschnell
 
+<<<<<<< HEAD
 Slidev läuft über [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) und [Windi CSS](https://windicss.org/). Diese Tools sorgen für eine wundervollste Autorenerfahrung. Jede Änderung wird **sofort** auf den Folien sichtbar.
+=======
+Slidev is powered by [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) and [UnoCSS](https://unocss.dev/), which give you the most wonderful authoring experience. Every change you made will reflect to your slides **instantly**.
+>>>>>>> e52d01f8924fc2746acb41ca2510db795a7b0c4a
 
 Entdecke unseren [Tech-Stack](/guide/#tech-stack).
 
@@ -67,6 +75,4 @@ $ npm init slidev
 
 Oder sieh dir eine kurze Vorschau an:
 
-<div class="aspect-9/16 relative">
-<iframe class="rounded w-full shadow-md border-none" src="https://www.youtube.com/embed/eW7v-2ZKZOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<iframe class="aspect-16/9 rounded-xl w-full shadow-md border-none" src="https://www.youtube.com/embed/eW7v-2ZKZOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
