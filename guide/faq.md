@@ -4,7 +4,11 @@
 
 Da Slidev Webbasiert ist, können Grid-Layouts genutzt werden. [CSS Grids](https://css-tricks.com/snippets/css/complete-guide-grid/), [Flexboxen](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), oder sogar [CSS Masonry Layouts](https://css-tricks.com/native-css-masonry-layout-in-css-grid/), die volle Kontrolle liegt bei dir!
 
+<<<<<<< HEAD
 Da wir [Windi CSS](https://windicss.org/) integriert haben, geht es ganz einfach, wie hier:
+=======
+Since we have [UnoCSS](https://unocss.dev/) built-in, here is one simple way for you to reference:
+>>>>>>> dbfb0168dc2a10c37d04f991ec135a402b411f02
 
 ```html
 <div class="grid grid-cols-2 gap-4">
@@ -24,7 +28,7 @@ Die zweite Spalte
 Weiter, kann die Größe jeder einzelnen Spalte angepasst werden:
 
 ```html
-<div class="grid grid-cols-[200px,1fr,10%] gap-4">
+<div class="grid grid-cols-[200px_1fr_10%] gap-4">
 <div>
 
 Die erste Spalte (200px)
@@ -43,9 +47,13 @@ Die dritte Spalte (10% Breite des übergeordneten Containers)
 </div>
 ```
 
+<<<<<<< HEAD
 Erfahre mehr über [Windi CSS Grids](https://windicss.org/utilities/grid.html).
 
 ## Positionierung
+=======
+## Positioning
+>>>>>>> dbfb0168dc2a10c37d04f991ec135a402b411f02
 
 Folien werden mit festen Größen definiert (Standart: `980x552px`) und so skaliert, dass sie mit der Breite des Benutzerbildschirms übereinstimmen. Somit können Elemente problemlos absolut positioniert werden, ohne sich Gedanken über das Skalieren zumachen. Da die gesamten Folien skaliert werden, werden auch die einzelnen Elemente mit skaliert.
 
@@ -96,7 +104,7 @@ Erfahre mehr über [Embedded Styles](/guide/syntax.html#embedded-styles)
 Man kann eigene globale Styles in der `./style.css` Datei bereitstellen, zum Beispiel:
 
 ```css
-/* style.css */ 
+/* style.css */
 
 h1 {
   font-size: 10em !important;
