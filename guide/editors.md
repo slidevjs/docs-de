@@ -6,7 +6,11 @@ Für das beste Folienmanagement, bieten wir auch folgende Editor Integrationen:
 
 ## Integrierter Editor
 
+<<<<<<< HEAD
 Slidev wird mit einem integrierten [CodeMirror](https://codemirror.net/) Editor geliefert, in dem Änderungen an der Präsentation sofort nach dem Speichern sichtbar sind. 
+=======
+Slidev comes with an integrated [CodeMirror](https://codemirror.net/) editor that will instantly reload and save the changes to your file.
+>>>>>>> dbfb0168dc2a10c37d04f991ec135a402b411f02
 
 Klicke den <carbon-edit class="inline-icon-btn"/> Button, um den CodeMirror Editor zu öffnen.
 
@@ -40,4 +44,4 @@ Die VS Code Erweiterung bietet ein paar Funktionen, die dabei helfen, die Folien
 
 ![](https://user-images.githubusercontent.com/11247099/116809994-cc2caa00-ab73-11eb-879f-60585747c3c9.png)
 
-<Tweet id="1395333405345148930" />
+<TheTweet id="1395333405345148930" />
