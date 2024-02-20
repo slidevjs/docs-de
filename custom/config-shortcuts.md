@@ -62,16 +62,23 @@ Die `nav`-Navigationsoperationen ermöglichen den Zugriff auf einige Funktionen,
 
 
 ```ts
-import { defineShortcutsSetup, NavOperations } from '@slidev/types'
+import { NavOperations, defineShortcutsSetup } from '@slidev/types'
 
 export default defineShortcutsSetup((nav: NavOperations) => {
   return [
     {
       key: 'e',
+<<<<<<< HEAD
       
       // Die Tastenkombination "e" kann als eine Art Lesezeichen
       // oder Schnellzugriff verwendet werden, 
       // um speziell zur Folie Nummer 42 zu navigieren.
+=======
+
+      // Set the `e` keyboard shortcut to be used as a bookmark
+      // or quick-access of sorts, to navigate specifically to
+      // slide number 42
+>>>>>>> 7a04557f35275398f1e4314e782f6a42936f7152
       fn: () => nav.go(42),
       autoRepeat: true,
     }

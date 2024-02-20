@@ -18,28 +18,28 @@ Erfahre mehr über die [Konfiguration von Monaco](https://github.com/Microsoft/m
 
 Um Monaco in den Folien zu nutzen, muss nur `{monaco}` zu einem Code Snipped hinzugefügt werden.
 
-~~~js
-//```js
+~~~md
+```js
 const count = ref(1)
 const plusOne = computed(() => count.value + 1)
 
 console.log(plusOne.value) // 2
 
 plusOne.value++ // error
-//```
+```
 ~~~
 
 zu
 
-~~~js
-//```js {monaco}
+~~~md
+```js {monaco}
 const count = ref(1)
 const plusOne = computed(() => count.value + 1)
 
 console.log(plusOne.value) // 2
 
 plusOne.value++ // error
-//```
+```
 ~~~
 
 ## Exportieren
@@ -56,13 +56,13 @@ monaco: true # standart: "dev"
 
 Wenn TypeScript mit Monaco genutzt wird, werden Typen für Abhängigkeiten automatisch auf der Clientseite installiert.
 
-~~~ts
-//```ts {monaco}
+~~~md
+```ts {monaco}
 import { ref } from 'vue'
 import { useMouse } from '@vueuse/core'
 
 const counter = ref(0)
-//```
+```
 ~~~
 
 Im obigen Beispiel muss man nur sicher gehen, dass `vue` und `@vueuse/core` lokal installiert sind (dependencies oder devDependencies) und Slidev handelt den Rest, damit der Editor funktioniert!
@@ -104,4 +104,35 @@ export default defineMonacoSetup((monaco) => {
 })
 ```
 
+<<<<<<< HEAD
 > Wenn man ein Thema für Slidev erstellt, kann man den dynamischen `import()` innerhalb der Setup-Funktion nutzen, um bessere Ergebnisse bei der Code-Aufteilung zu erhalten.
+=======
+> If you are creating a theme for Slidev, use dynamic `import()` inside the setup function to get better tree-shaking and code-splitting results.
+
+## Configure the Editor
+
+> Available since v0.43.0
+
+If you would like to customize the Monaco editor you may pass an `editorOptions` object that matches the [Monaco IEditorOptions](https://microsoft.github.io/monaco-editor/docs.html#interfaces/editor.IEditorOptions.html) definition.
+
+~~~md
+```ts {monaco} { editorOptions: { wordWrap:'on'} }
+console.log('HelloWorld')
+```
+~~~
+
+Alternatively if you would like these options to be applied to every Monaco instance, you can return them in the `defineMonacoSetup` function
+
+```ts
+// ./setup/monaco.ts
+import { defineMonacoSetup } from '@slidev/types'
+
+export default defineMonacoSetup(() => {
+  return {
+    editorOptions: {
+      wordWrap: 'on'
+    }
+  }
+})
+```
+>>>>>>> 7a04557f35275398f1e4314e782f6a42936f7152
