@@ -1,6 +1,10 @@
 # Anpassungen
 
+<<<<<<< HEAD
 Slidev ist vollständig anpassbar, vom Styling bis zur Tools-konfiguration. Slidev ermöglicht darunter liegende Tools zu konfigurieren ([Vite](/custom/config-vite), [Windi CSS](/custom/config-windicss), [Monaco](/custom/config-monaco), etc.)
+=======
+Slidev is fully customizable, from styling to tooling configurations. It allows you to configure the tools underneath ([Vite](/custom/config-vite), [UnoCSS](/custom/config-unocss), [Monaco](/custom/config-monaco), etc.)
+>>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
 
 ## Frontmatter Konfigurationen
 
@@ -8,15 +12,25 @@ Slidev kann im Frontmatterblock der ersten Folie konfiguriert werden. Folgende L
 
 ```yaml
 ---
+<<<<<<< HEAD
 # theme-id oder package name
 # Mehr unter: https://sli.dev/themes/use.html
 theme: 'default'
 # Titel der Folie (wird automatisch aus der ersten Überschrift abgeleitet, wenn nicht angegeben)
 title: 'Slidev'
 # titleTemplate für die Webseite, `%s` wird mit dem Folientitel ersetzt
+=======
+# theme id or package name
+# Learn more: https://sli.dev/themes/use.html
+theme: default
+# title of your slide, will auto infer from the first header if not specified
+title: Slidev
+# titleTemplate for the webpage, `%s` will be replaced by the page's title
+>>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
 titleTemplate: '%s - Slidev'
-# information for your slides, can be a markdown string
+# information for your slides, can be a markdown string.
 info: false
+<<<<<<< HEAD
 # erlaube das Herunterladen einer PDF aus der SPA, kann auch ein eigener URL sein
 download: false
 # Präsentationsmodus aktivieren, kann boolean, 'dev' oder 'build' sein
@@ -30,9 +44,39 @@ lineNumbers: false
 # Monaco-Editor aktivieren, standardmäßig nur dev
 monaco: 'dev'
 # Remote-Assets lokal mit vite-plugin-remote-assets herunterladen, kann ein  boolean, 'dev' oder 'build' sein
+=======
+# author field for exported PDF
+author: Your Name Here
+# keywords field for exported PDF, comma-delimited.
+keywords: keyword1,keyword2
+
+# enable presenter mode, can be boolean, 'dev' or 'build'
+presenter: true
+# enabled pdf downloading in SPA build, can also be a custom url
+download: false
+# filename of the export file
+exportFilename: slidev-exported
+# export options
+# use export CLI options in camelCase format
+# Learn more: https://sli.dev/guide/exporting.html
+export:
+  format: pdf
+  timeout: 30000
+  dark: false
+  withClicks: false
+  withToc: false
+# syntax highlighter, can be 'prism', 'shiki'
+highlighter: shiki
+# show line numbers in code blocks
+lineNumbers: false
+# enable monaco editor, can be boolean, 'dev' or 'build'
+monaco: dev
+# download remote assets in local using vite-plugin-remote-assets, can be boolean, 'dev' or 'build'
+>>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
 remoteAssets: false
 # gibt an, ob Text in den Folien auswählbar ist
 selectable: true
+<<<<<<< HEAD
 # Folienaufzeichnung aktivieren, kann ein boolean, 'dev' oder 'build' sein
 record: 'dev'
 
@@ -43,6 +87,18 @@ routerMode: 'history'
 # Seitenverhältnis der Folien
 aspectRatio: '16/9'
 # tatsächliche Breite des Canvases (Einheit in px)
+=======
+# enable slide recording, can be boolean, 'dev' or 'build'
+record: dev
+
+# force color schema for the slides, can be 'auto', 'light', or 'dark'
+colorSchema: auto
+# router mode for vue-router, can be "history" or "hash"
+routerMode: history
+# aspect ratio for the slides
+aspectRatio: 16/9
+# real width of the canvas, unit in px
+>>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
 canvasWidth: 980
 # passe Theme Designs an, fügt Root-Styles `--slidev-theme-x` für das Attribut `x` ein
 themeConfig:
@@ -56,13 +112,13 @@ plantUmlServer: 'https://www.plantuml.com/plantuml'
 # Schriften werden automatisch von Google Fonts importiert
 # Erfahre mehr: https://de.sli.dev/custom/fonts
 fonts:
-  sans: 'Roboto'
-  serif: 'Roboto Slab'
-  mono: 'Fira Code'
+  sans: Roboto
+  serif: Roboto Slab
+  mono: Fira Code
 
 # Standard-Frontmatter, gilt für alle Folien
 defaults:
-  layout: 'default'
+  layout: default
   # ...
 
 
@@ -73,12 +129,38 @@ drawings:
   persist: false
   presenterOnly: false
   syncAll: true
+
+# HTML tag attributes
+htmlAttrs:
+  dir: ltr
+  lang: en
 ---
 ```
 
 Weitere Informationen sind in den [Typdefinitionen](https://github.com/slidevjs/slidev/blob/main/packages/types/src/config.ts) zu finden.
 
+<<<<<<< HEAD
 ## Ordner Struktur
+=======
+## Per slide configuration
+
+In addition, every slide accepts the following configuration in the Frontmatter block:
+
+* `clicks` (`number`): Custom clicks count (learn more [here](/guide/animations.html#custom-total-clicks-count)).
+* `disabled` (`boolean`): Completely disable and hide the slide.
+* `hide` (`boolean`): The same as `disabled`.
+* `hideInToc` (`boolean`): Hide the slide for the `<Toc>` components (learn more [here](/builtin/components.html#toc)).
+* `layout` (`string`): Defines the layout component applied to the slide (learn more [here](/guide/syntax.html#front-matter-layouts) and [here](/builtin/layouts.html)).
+* `level` (`number`): Override the title level for the `<Title>` and `<Toc>` components (only if `title` has also been declared, learn more [here](/builtin/components.html#titles)).
+* `preload` (`boolean`, default `true`): Preload the next slide (learn more [here](/guide/animations.html#motion)).
+* `routeAlias` (`string`): Create a route alias that can be used in the URL or with the `<Link>` component (learn more [here](/builtin/components.html#link)).
+* `src` (`string`): Includes a markdown file (learn more [here](/guide/syntax.html#multiple-entries)).
+* `title` (`string`): Override the title for the `<Title>` and `<Toc>` components (learn more [here](/builtin/components.html#titles)).
+* `transition` (`string | TransitionProps`): Defines the transition between the slide and the next one (learn more [here](/guide/animations.html#slide-transitions)).
+* `zoom` (`number`): Custom zoom scale. Useful for slides with a lot of content.
+
+## Directory Structure
+>>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
 
 Slidev nutzt  Ordner-Struktur-Konventionen, um die Konfigurationsoberfläche minimal zu halten und Erweiterungen flexibel und intuitiv zu gestalten.
 
@@ -86,9 +168,18 @@ Siehe Abschnitt [Ordner Struktur](/custom/directory-structure).
 ## Tools Konfigurieren
 
 - [Highlighters](/custom/highlighters)
+<<<<<<< HEAD
 - [Vue konfigurieren](/custom/config-vue)
 - [Vite konfigurieren](/custom/config-vite)
 - [Windi CSS konfigurieren](/custom/config-windicss)
 - [Monaco konfigurieren](/custom/config-monaco)
 - [KaTeX konfigurieren](/custom/config-katex)
 - [Mermaid konfigurieren](/custom/config-mermaid)
+=======
+- [Configure Vue](/custom/config-vue)
+- [Configure Vite](/custom/config-vite)
+- [Configure UnoCSS](/custom/config-unocss)
+- [Configure Monaco](/custom/config-monaco)
+- [Configure KaTeX](/custom/config-katex)
+- [Configure Mermaid](/custom/config-mermaid)
+>>>>>>> aa8c4cadc05aeca1e672a8297d644c558b294402
