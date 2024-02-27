@@ -9,12 +9,21 @@ Konfiguriere den Frontmatter wie folgt:
 ```yaml
 ---
 fonts:
+<<<<<<< HEAD
   # grundsätzlicher Text
   sans: 'Robot'
   # Verwendung mit `font-serif` css-Klasse aus windicss
   serif: 'Robot Slab'
   # für Code-Blöcke, Inline-Code, etc.
   mono: 'Fira Code'
+=======
+  # basically the text
+  sans: Robot
+  # use with `font-serif` css class from UnoCSS
+  serif: Robot Slab
+  # for code blocks, inline code, etc.
+  mono: Fira Code
+>>>>>>> 55df176a16c5693491d5823c68f1af798e1f718f
 ---
 ```
 
@@ -24,15 +33,24 @@ Schriftarten werden **automatisch von [Google Fonts](https://fonts.google.com/)*
 
 ## Lokale Schriftarten
 
+<<<<<<< HEAD
 Standardmäßig nimmt Slidev an, dass alle über die `fonts`-Konfigurationen angegebenen Schriftarten von Google Fonts stammen. Wenn man lokale Schriftarten verwenden möchte, gibt man `fonts.local` an, um den Auto-Import zu deaktivieren. 
+=======
+By default, Slidev assumes all the fonts specified via `fonts` configurations come from Google Fonts. If you want to use local fonts, specify the `fonts.local` to opt-out the auto-importing.
+>>>>>>> 55df176a16c5693491d5823c68f1af798e1f718f
 
 ```yaml
 ---
 fonts:
   # wie font-family in css kann ein Komma (`,`) genutzt werden um Fallback Schriftarten anzugeben
   sans: 'Helvetica Neue,Robot'
+<<<<<<< HEAD
   # "Helvetica Neue" als lokale Schrift markieren
   local: 'Helvetica Neue'
+=======
+  # mark 'Helvetica Neue' as local font
+  local: Helvetica Neue
+>>>>>>> 55df176a16c5693491d5823c68f1af798e1f718f
 ---
 ```
 
@@ -43,8 +61,13 @@ Standardmäßig importiert Slidev drei Gewichte `200`,`400`,`600` für jede Schr
 ```yaml
 ---
 fonts:
+<<<<<<< HEAD
   sans: 'Robot'
   # Standart
+=======
+  sans: Robot
+  # default
+>>>>>>> 55df176a16c5693491d5823c68f1af798e1f718f
   weights: '200,400,600'
   # importiere kursive Schriftarten, Voreinstellung `false`
   italic: false
@@ -60,13 +83,17 @@ Für die meisten Szenarien muss man nur die "spezielle Schriftart" angeben, und 
 ```yaml
 ---
 fonts:
-  sans: 'Robot'
-  serif: 'Robot Slab'
-  mono: 'Fira Code'
+  sans: Robot
+  serif: Robot Slab
+  mono: Fira Code
 ---
 ```
 
+<<<<<<< HEAD
 wird
+=======
+will result in
+>>>>>>> 55df176a16c5693491d5823c68f1af798e1f718f
 
 ```css
 .font-sans {
@@ -86,7 +113,7 @@ Wenn man die Fallback-Schriftarten deaktivieren möchte, muss das ganze wie folg
 ---
 fonts:
   mono: 'Fira Code, monospace'
-  fallback: false
+  fallbacks: false
 ---
 ```
 
@@ -100,8 +127,6 @@ Derzeit wird nur Google Fonts unterstützt, es ist geplant, in Zukunft weitere A
 ```yaml
 ---
 fonts:
-  provider: 'none'
+  provider: none
 ---
 ```
-
-
