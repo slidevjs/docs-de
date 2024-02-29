@@ -2,8 +2,11 @@
 
 ## Eingebaute Layouts
 
+<<<<<<< HEAD
 > Da Themen eventuell Layouts überschreiben können, ist es am besten, die genaue Verwendung, Parameter und Beispiele in der jeweiligen Dokumentation nachzulesen.
 
+=======
+>>>>>>> 15820b064d1f419ed06cd798ae4b6dfe0c230e94
 ### `center`
 
 Zeigt den Inhalt in der Mitte des Bildschirms an.
@@ -79,6 +82,23 @@ image: ./pfad/zum/bild
 ---
 ```
 
+You can change the default background size (`cover`) by adding the `backgroundSize` attribute:
+
+```yaml
+---
+layout: image
+image: ./path/to/the/image
+backgroundSize: contain
+---
+```
+
+```yaml
+---
+layout: image-left
+image: ./path/to/the/image
+backgroundSize: 20em 70%
+---
+```
 
 ### `iframe-left`
 
@@ -131,7 +151,6 @@ url: https://github.com/slidevjs/slidev
 ---
 ```
 
-
 ### `intro`
 
 Als Einstieg in die Präsentation, wird normalerweise mit Titel, kurzer Beschreibung, Autor, usw. benutzt.
@@ -156,8 +175,11 @@ Mache eine Affirmation/Aussage zum Hauptinhalt der Seite.
 
 Trennt den Seiteninhalt in zwei Spalten.
 
+<<<<<<< HEAD
 #### Verwendung
 
+=======
+>>>>>>> 15820b064d1f419ed06cd798ae4b6dfe0c230e94
 ```md
 ---
 layout: two-cols
@@ -174,7 +196,37 @@ Das wird links angezeigt
 Das wird rechts angezeigt
 ```
 
+<<<<<<< HEAD
 ## Eigene Layouts
+=======
+### `two-cols-header`
+
+Separates the upper and lower lines of the page content, and the second line separates the left and right columns.
+
+#### Usage
+
+```md
+---
+layout: two-cols-header
+---
+
+This spans both
+
+::left::
+
+# Left
+
+This shows on the left
+
+::right::
+
+# Right
+
+This shows on the right
+```
+
+## Custom Layouts
+>>>>>>> 15820b064d1f419ed06cd798ae4b6dfe0c230e94
 
 Erstelle einen Ordner `layouts/` im Ursprung deines Projektverzeichnisses. Dort können eigene Vue Layout Komponenten erstellt werden.
 

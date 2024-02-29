@@ -22,11 +22,10 @@ Der Preparser (Schritt 1 oben) ist hochgradig erweiterbar und erlaubt es, eigene
 
 Um ihn anzupassen, muss eine `./setup/preparser.ts` Datei mit folgendem Inhalt:
 
-
 ```ts
 import { definePreparserSetup } from '@slidev/types'
 
-export default definePreparserSetup(({filepath, headmatter}) => {
+export default definePreparserSetup(({ filepath, headmatter }) => {
   return [
     {
       transformRawLines(lines) {
@@ -56,7 +55,6 @@ Dieses Beispiel ersetzt systematisch jede `@@@`-Zeile durch eine Zeile mit `hell
 In einer Situation, in der (ein Teil) der Präsentation hauptsächlich Cover-Bilder zeigt und andere md-Dateien enthält, kann eine kompakte Notation wünschenswert sein, in der zum Beispiel (ein Teil der) `slides.md` wie folgt aussieht:
 
 ```md
-
 @cover: /nice.jpg
 # Willkommen
 @src: page1.md
@@ -64,12 +62,20 @@ In einer Situation, in der (ein Teil) der Präsentation hauptsächlich Cover-Bil
 @cover: /break.jpg
 @src: pages3-4.md
 @cover: https://source.unsplash.com/collection/94734566/1920x1080
+<<<<<<< HEAD
 # Frage?
 Bis zu nächsten mal!
 
 ```
 
 Um den `@src:` und `@cover:` Syntax zu erlauben, muss eine `./setup/preparser.ts` Datei mit folgendem Inhalt erstellt werden:
+=======
+# Questions?
+see you next time
+```
+
+To allow these `@src:` and `@cover:` syntaxes, create a `./setup/preparser.ts` file with the following content:
+>>>>>>> 15820b064d1f419ed06cd798ae4b6dfe0c230e94
 
 ```ts
 import { definePreparserSetup } from '@slidev/types'
@@ -82,20 +88,26 @@ export default definePreparserSetup(() => {
         while (i < lines.length) {
           const l = lines[i]
           if (l.match(/^@cover:/i)) {
-            lines.splice(i, 1,
+            lines.splice(
+              i,
+              1,
               '---',
               'layout: cover',
               `background: ${l.replace(/^@cover: */i, '')}`,
               '---',
-              '')
+              ''
+            )
             continue
           }
           if (l.match(/^@src:/i)) {
-            lines.splice(i, 1,
+            lines.splice(
+              i,
+              1,
               '---',
               `src: ${l.replace(/^@src: */i, '')}`,
               '---',
-              '')
+              ''
+            )
             continue
           }
           i++
@@ -108,16 +120,17 @@ export default definePreparserSetup(() => {
 
 Und das war's!
 
+<<<<<<< HEAD
 
 ### Anwendungsfall 2: Verwendung von benutzerdefinierten Frontmatter-Blöcken
+=======
+### Use case 2: using custom frontmatter to wrap slides
+>>>>>>> 15820b064d1f419ed06cd798ae4b6dfe0c230e94
 
 In einem Fall, in dem Folien oft skaliert werden müssen, aber eine Vielzahl an bestehender Layouts verwendet wird, ist die Erstellung eines neuen Layouts nicht geeignet.
 Zum Beispiel könnte die `slides.md` wie folgt aussehen:
 
 ```md
-
-
-
 ---
 layout: quote
 _scale: 0.75
@@ -140,15 +153,23 @@ _scale: 4
 layout: center
 _scale: 2.5
 ---
+<<<<<<< HEAD
 # Fragen?
 Bis zum nächsten mal!
 
+=======
+# Questions?
+see you next time
+>>>>>>> 15820b064d1f419ed06cd798ae4b6dfe0c230e94
 ```
 
 Hier wir ein Unterstrich in `_scale` verwendet, um mögliche Konflikte mit bestehenden Frontmatter-Eigenschaften zu vermeiden (tatsächlich würde der Fall von `scale` ohne Unterstrich potentielle Probleme verursachen).
 
+<<<<<<< HEAD
 Um dem `_scale: ...` Syntax im Frontmatter behandeln zu können, wird eine `./setup/preparser.ts` Datei mit folgendem Inhalt benötigt:
-
+=======
+To handle this `_scale: ...` syntax in the frontmatter, create a `./setup/preparser.ts` file with the following content:
+>>>>>>> 15820b064d1f419ed06cd798ae4b6dfe0c230e94
 
 ```ts
 import { definePreparserSetup } from '@slidev/types'
@@ -159,7 +180,7 @@ export default definePreparserSetup(() => {
       transformSlide(content, frontmatter) {
         if ('_scale' in frontmatter) {
           return [
-            `<Transform :scale=${frontmatter['_scale']}>`,
+            `<Transform :scale=${frontmatter._scale}>`,
             '',
             content,
             '',
