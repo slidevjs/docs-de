@@ -117,19 +117,23 @@ import './code.css'
 import './layouts.css'
 ```
 
+<<<<<<< HEAD
 Stile werden von [Windi CSS](http://windicss.org/) und [PostCSS](https://postcss.org/) verarbeitet, so dass man css-Schachtelungen und [at-Direktiven](https://windicss.org/features/directives.html) out-of-box verwenden kann. Zum Beispiel:
 
+=======
+Styles will be processed by [UnoCSS](https://unocss.dev/) and [PostCSS](https://postcss.org/), so you can use css nesting and [at-directives](https://unocss.dev/transformers/directives#apply) out-of-box. For example:
+>>>>>>> e8054222645741a1f15a6138c2b0b6a091fb43a1
 
 ```less
 .slidev-layout {
-  @apply px-14 py-10 text-[1.1rem];
+  --uno: px-14 py-10 text-[1.1rem];
 
   h1, h2, h3, h4, p, div {
-    @apply select-none;
+    --uno: select-none;
   }
 
   pre, code {
-    @apply select-text;
+    --uno: select-text;
   }
 
   a {
@@ -138,7 +142,11 @@ Stile werden von [Windi CSS](http://windicss.org/) und [PostCSS](https://postcss
 }
 ```
 
+<<<<<<< HEAD
 [Erfahre mehr über den Syntax](https://windicss.org/features/directives.html).
+=======
+[Learn more about the syntax](https://unocss.dev/transformers/directives#apply).
+>>>>>>> e8054222645741a1f15a6138c2b0b6a091fb43a1
 
 ## `index.html`
 
@@ -186,5 +194,9 @@ Die fertig gehostete `index.html` wird sein:
 
 Konventionen: `global-top.vue` | `global-bottom.vue`
 
+<<<<<<< HEAD
 Erfahre mehr: [Globale Ebenen](/custom/global-layers)
 
+=======
+Learn more: [Global Layers](/custom/global-layers)
+>>>>>>> e8054222645741a1f15a6138c2b0b6a091fb43a1

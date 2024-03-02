@@ -31,7 +31,7 @@ Oder in der `package.json`:
   "slidev": {
     "addons": [
       "slidev-addon-package1",
-      "slidev-addon-package2",
+      "slidev-addon-package2"
     ]
   }
 }
