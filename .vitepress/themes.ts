@@ -128,26 +128,6 @@ export const official: ThemeInfo[] = [
 
 export const community: ThemeInfo[] = [
   {
-    id: 'slidev-theme-flayyer',
-    name: 'Flayyer',
-    description: 'This theme is inspired by the layout of Flayyer and the way that it works.',
-    author: {
-      name: 'Daniel Esteves',
-      link: 'https://github.com/danestves',
-    },
-    repo: 'https://github.com/danestves/slidev-theme-flayyer',
-    previews: [
-      'https://i.imgur.com/grKiGIK.png',
-      'https://i.imgur.com/tAvcf5S.png',
-      'https://i.imgur.com/mj42LcL.png',
-      'https://i.imgur.com/41QWv3c.png',
-    ],
-    tags: [
-      'dark',
-      'light',
-    ],
-  },
-  {
     id: 'slidev-theme-geist',
     name: 'Vercel',
     description: 'A theme based on Vercel\'s design system.',
@@ -386,7 +366,71 @@ export const community: ThemeInfo[] = [
       'light',
     ],
   },
+<<<<<<< HEAD
   // Füge deins hier hinzu!
+=======
+  {
+    id: 'slidev-theme-the-unnamed',
+    name: 'The unnamed',
+    description: 'A theme based on The unnamed VS Code theme',
+    author: {
+      name: 'Elio Struyf',
+      link: 'https://elio.dev',
+    },
+    repo: 'https://github.com/estruyf/slidev-theme-the-unnamed',
+    previews: [
+      'https://cdn.jsdelivr.net/gh/estruyf/slidev-theme-the-unnamed@main/assets/cover.png',
+      'https://cdn.jsdelivr.net/gh/estruyf/slidev-theme-the-unnamed@main/assets/about-me.png',
+      'https://cdn.jsdelivr.net/gh/estruyf/slidev-theme-the-unnamed@main/assets/default.png',
+      'https://cdn.jsdelivr.net/gh/estruyf/slidev-theme-the-unnamed@main/assets/section.png',
+    ],
+    tags: [
+      'dark',
+    ],
+  },
+  {
+    id: 'slidev-theme-dracula',
+    name: 'Dracula',
+    description: 'One the best dark theme meets slidev',
+    author: {
+      name: 'JD Solanki (jd-solanki)',
+      link: 'https://github.com/jd-solanki',
+    },
+    repo: 'https://github.com/jd-solanki/slidev-theme-dracula',
+    previews: [
+      'https://cdn.jsdelivr.net/gh/jd-solanki/slidev-theme-dracula/screenshots/screenshot-1.png',
+      'https://cdn.jsdelivr.net/gh/jd-solanki/slidev-theme-dracula/screenshots/screenshot-2.png',
+      'https://cdn.jsdelivr.net/gh/jd-solanki/slidev-theme-dracula/screenshots/screenshot-3.png',
+      'https://cdn.jsdelivr.net/gh/jd-solanki/slidev-theme-dracula/screenshots/screenshot-4.png',
+      'https://cdn.jsdelivr.net/gh/jd-solanki/slidev-theme-dracula/screenshots/screenshot-5.png',
+    ],
+    tags: [
+      'dark',
+      'minimalism',
+    ],
+  },
+  {
+    id: 'slidev-theme-frankfurt',
+    name: 'Frankfurt',
+    description: 'Inspired by the Beamer theme Frankfurt',
+    author: {
+      name: 'Mu-Tsun Tsai',
+      link: 'https://github.com/MuTsunTsai',
+    },
+    repo: 'https://github.com/MuTsunTsai/slidev-theme-frankfurt',
+    previews: [
+      'https://cdn.jsdelivr.net/gh/MuTsunTsai/slidev-theme-frankfurt/screenshots/01.png',
+      'https://cdn.jsdelivr.net/gh/MuTsunTsai/slidev-theme-frankfurt/screenshots/04.png',
+      'https://cdn.jsdelivr.net/gh/MuTsunTsai/slidev-theme-frankfurt/screenshots/06.png',
+      'https://cdn.jsdelivr.net/gh/MuTsunTsai/slidev-theme-frankfurt/screenshots/07.png',
+    ],
+    tags: [
+      'dark',
+      'light',
+    ],
+  },
+  // Add yours here!
+>>>>>>> ee683ae81a2021c44b278d720a418ee0c6ddb537
   {
     id: '',
     link: 'https://github.com/slidevjs/docs/edit/main/.vitepress/themes.ts',
