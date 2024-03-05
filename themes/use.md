@@ -8,7 +8,14 @@ theme: seriph
 ---
 ```
 
+<<<<<<< HEAD
 Wenn man den Server startet, fragt Slidev einen automatisch, ob man das ausgewählte Thema installieren möchte:
+=======
+> **Note**
+> To install a theme from a scoped package, you will have to give the full namespace e.g `@organization/slidev-theme-name`
+
+You can start the server, which will prompt you to install the theme automatically
+>>>>>>> 4ee072e055e04965fad621e5941c6905ef2a2be0
 
 <div class="language-md">
 <pre>
@@ -36,9 +43,13 @@ Sollten man die volle Kontrolle über das aktuelles Thema haben wollen, dann kan
 $ slidev theme eject
 ```
 
+<<<<<<< HEAD
 Jetzt befindet sich das Thema in `./theme`.
 
 Die Referenz zum Thema, die sich in der Hauptdatei des Projektes befindet, wird automatisch aktualisiert.
+=======
+It will eject the theme you are using currently into `./theme`, and changed your frontmatter to
+>>>>>>> 4ee072e055e04965fad621e5941c6905ef2a2be0
 
 ```yaml
 ---
