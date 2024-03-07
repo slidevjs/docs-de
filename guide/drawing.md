@@ -6,7 +6,7 @@ Wir haben [drauu](https://github.com/antfu/drauu) für Zeichnungen und Anmerkung
 
 Um zu starten, muss nur das <carbon-pen class="inline-icon-btn"/> Icon in der Menüleiste geklickt werden und schon geht's los. Das Zeichnen ist auch im [Präsentatoren Modus](/guide/presenter-mode) verfügbar. Zeichnung & Anmerkungen, die im Präsentationsmodus erstellt werden, werden automatisch in Echtzeit über alle Instanzen **synchronisiert**.
 
-<Tweet id="1424027510342250499" />
+<TheTweet id="1424027510342250499" />
 
 ## Verwendung mit Stylus Stift
 
@@ -63,4 +63,8 @@ drawings:
 ---
 ```
 
+<<<<<<< HEAD
 Wenn `syncAll` deaktiviert ist, werden trotzdem alle Zeichnungen von Präsentator der synchronisiert.
+=======
+With this config, only the drawing from the presenter instance will be able to sync with others.
+>>>>>>> 948b75ddb1f4429a20b0d68bd24bebbaedf0bcd2
