@@ -6,11 +6,19 @@
 
 Addons können folgende Punkte beeinflussen:
 
+<<<<<<< HEAD
 - Globale Styles (mit Vorsicht zu verwenden, das ist eher die Rolle von [Themes](/themes/use))
 - Bereitstellen Layouts oder Überschreiben von vorhandenen Layouts
 - Bereitstellen Komponenten oder Überschreiben von vorhandenen Komponenten
 - Erweitern der Windi CSS Konfiguration
 - Konfigurieren von Tools, wie Monaco oder Prism
+=======
+- Global styles (use with caution has it is more the role of [themes](/themes/use))
+- Provide custom layouts or override the existing one
+- Provide custom components or override the existing one
+- Extend UnoCSS/Windi CSS configurations
+- Configure tools like Monaco and Prism
+>>>>>>> 69e1142c6f07cb04fb7fea7f396de60cd1f0538f
 
 ## Konventionen
 
@@ -52,7 +60,11 @@ Optional können auch `scripts` zur `package.json` hinzugefügt werden:
 
 Um ein Addon zu veröffentlichen, muss nur `npm publish` ausgeführt werden. Es ist kein Build-Prozess erforderlich (was bedeutet, dass direkt `.vue` und `.ts` Dateien veröffentlicht werden können, slidev ist intelligent genug, diese zu verarbeiten).
 
+<<<<<<< HEAD
 Das erstellen von Addons folgt den selben Contribution-Richtlinien wie lokale Konfigurationen, siehe [Dokumentation für Namenskonvektionen](/custom/)
+=======
+Addon contribution points follow the same conventions as local customization, please refer to [the docs for the naming conventions](/custom/).
+>>>>>>> 69e1142c6f07cb04fb7fea7f396de60cd1f0538f
 
 ## Addon Metadaten
 

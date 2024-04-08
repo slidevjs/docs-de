@@ -16,14 +16,23 @@ presenter: false
 ---
 ```
 
+<<<<<<< HEAD
 Oder nur für den `dev` oder `build` Modus aktiviert werden:  
+=======
+Or you can enable it only for `dev` or `build` mode by setting the mode you want in the config:
+>>>>>>> 69e1142c6f07cb04fb7fea7f396de60cd1f0538f
 
 ```md
 ---
 presenter: dev
 ---
 ```
+<<<<<<< HEAD
 In diesem Fall wird der Moderatorenmodus nur verfügbar sein, wenn `slidev` läuft, aber nicht, wenn `slidev build` läuft.
+=======
+
+In that case the presenter will only be available when running `slidev` but not when running `slidev build`.
+>>>>>>> 69e1142c6f07cb04fb7fea7f396de60cd1f0538f
 
 ## Eingeschränkter Fernzugriff
 
