@@ -2,8 +2,11 @@
 
 ## Eingebaute Layouts
 
+<<<<<<< HEAD
 > Da Themen eventuell Layouts überschreiben können, ist es am besten, die genaue Verwendung, Parameter und Beispiele in der jeweiligen Dokumentation nachzulesen.
 
+=======
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 ### `center`
 
 Zeigt den Inhalt in der Mitte des Bildschirms an.
@@ -38,8 +41,13 @@ Zeig ein Bild auf der linken Seite des Bildschirms und rechts den Inhalt.
 ---
 layout: image-left
 
+<<<<<<< HEAD
 # die Bildquelle
 image: ./pfad/zum/bild
+=======
+# the image source
+image: /path/to/the/image
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 # ein benutzerdefinierter Klassenname für den Inhalt
 class: mein-toller-inhalt-rechts
@@ -56,8 +64,13 @@ Zeig ein Bild auf der rechten Seite des Bildschirms und links den Inhalt.
 ---
 layout: image-right
 
+<<<<<<< HEAD
 # die Bildquelle
 image: ./pfad/zum/bild
+=======
+# the image source
+image: /path/to/the/image
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 # ein benutzerdefinierter Klassenname für den Inhalt
 class: mein-toller-inhalt-links
@@ -74,11 +87,33 @@ Zeigt ein Bild als Hauptinhalt der Seite an.
 ---
 layout: image
 
+<<<<<<< HEAD
 # die Bildquelle
 image: ./pfad/zum/bild
+=======
+# the image source
+image: /path/to/the/image
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 ---
 ```
 
+You can change the default background size (`cover`) by adding the `backgroundSize` attribute:
+
+```yaml
+---
+layout: image
+image: /path/to/the/image
+backgroundSize: contain
+---
+```
+
+```yaml
+---
+layout: image-left
+image: /path/to/the/image
+backgroundSize: 20em 70%
+---
+```
 
 ### `iframe-left`
 
@@ -131,7 +166,6 @@ url: https://github.com/slidevjs/slidev
 ---
 ```
 
-
 ### `intro`
 
 Als Einstieg in die Präsentation, wird normalerweise mit Titel, kurzer Beschreibung, Autor, usw. benutzt.
@@ -156,8 +190,11 @@ Mache eine Affirmation/Aussage zum Hauptinhalt der Seite.
 
 Trennt den Seiteninhalt in zwei Spalten.
 
+<<<<<<< HEAD
 #### Verwendung
 
+=======
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 ```md
 ---
 layout: two-cols
@@ -174,7 +211,37 @@ Das wird links angezeigt
 Das wird rechts angezeigt
 ```
 
+<<<<<<< HEAD
 ## Eigene Layouts
+=======
+### `two-cols-header`
+
+Separates the upper and lower lines of the page content, and the second line separates the left and right columns.
+
+#### Usage
+
+```md
+---
+layout: two-cols-header
+---
+
+This spans both
+
+::left::
+
+# Left
+
+This shows on the left
+
+::right::
+
+# Right
+
+This shows on the right
+```
+
+## Custom Layouts
+>>>>>>> 21fdadc17cd2018f65c637e5727de640db5036e3
 
 Erstelle einen Ordner `layouts/` im Ursprung deines Projektverzeichnisses. Dort können eigene Vue Layout Komponenten erstellt werden.
 
