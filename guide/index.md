@@ -65,7 +65,17 @@ Mit Yarn:
 $ yarn create slidev
 ```
 
+<<<<<<< HEAD
 Folge den Anweisungen und beginne mit dem Erstellen der Folien. Lies dir die [Syntaxanleitung](/guide/syntax) für mehr Informationen über den Syntax durch.
+=======
+With pnpm:
+
+```bash
+$ pnpm create slidev
+```
+
+Follow the prompts and start making your slides now! For more details about the markdown syntax, read through the [syntax guide](/guide/syntax).
+>>>>>>> c2931a4b1de23de51866bfc76636cc1667f323b4
 
 ### Command Line Interface
 
