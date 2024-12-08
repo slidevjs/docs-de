@@ -24,7 +24,7 @@ Die zweite Spalte
 Weiter, kann die Größe jeder einzelnen Spalte angepasst werden:
 
 ```html
-<div class="grid grid-cols-[200px,1fr,10%] gap-4">
+<div class="grid grid-cols-[200px_1fr_10%] gap-4">
 <div>
 
 Die erste Spalte (200px)
@@ -43,7 +43,11 @@ Die dritte Spalte (10% Breite des übergeordneten Containers)
 </div>
 ```
 
+<<<<<<< HEAD
 Erfahre mehr über [Windi CSS Grids](https://windicss.org/utilities/grid.html).
+=======
+Learn more about [Windi CSS Grids](https://windicss.org/utilities/layout/grid.html).
+>>>>>>> d29625cb3633171f7cf2087a777e68a1cd76ea6f
 
 ## Positionierung
 
