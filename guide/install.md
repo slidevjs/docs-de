@@ -18,6 +18,16 @@ Mit Yarn:
 $ yarn create slidev
 ```
 
+<<<<<<< HEAD
+=======
+With PNPM:
+
+```bash
+$ pnpm create slidev
+```
+
+Follow the prompts and it will open up the slideshow at `http://localhost:3030/` automatically for you.
+>>>>>>> c608c011ffbff72d267a0c074a4bfa5ff4b601a7
 
 Folge den Anweisungen und die Präsentation öffnet sich auf `http://localhost:3030/` automatisch.
 
@@ -197,6 +207,7 @@ Exportiere die Präsentation als PDF (oder ein anderes Format).
 
 Optionen:
 
+<<<<<<< HEAD
 * `--output` (`string`, default: nutzt `exportFilename` (siehe https://sli.dev/custom/#frontmatter-configures) oder nutze `[entry]-export`): Pfad zur exportierten Präsentation
 * `--base` (`'pdf', 'png', 'md'`, default: `'pdf'`): Exportformat
 * `--timeout` (`number`, default: `30000`): Timeout für die Darstellung der Druckseite (see https://playwright.dev/docs/api/class-page#page-goto).
@@ -204,6 +215,15 @@ Optionen:
 * `--dark` (`boolean`, default: `false`): exportiere im Dunklen Theme
 * `--with-clicks`, `-c` (`boolean`, default: `false`): Seiten für alle Klicks exportieren (see https://sli.dev/guide/animations.html#click-animations).
 * `--theme`, `-t` (`string`): überschreibe das Theme
+=======
+* `--output` (`string`, default: use `exportFilename` (see https://sli.dev/custom/#frontmatter-configures) or use `[entry]-export`): path to the output.
+* `--format` (`'pdf', 'png', 'md'`, default: `'pdf'`): output format.
+* `--timeout` (`number`, default: `30000`): timeout for rendering the print page (see https://playwright.dev/docs/api/class-page#page-goto).
+* `--range` (`string`): page ranges to export (example: `'1,4-5,6'`).
+* `--dark` (`boolean`, default: `false`): export as dark theme.
+* `--with-clicks`, `-c` (`boolean`, default: `false`): export pages for every clicks (see https://sli.dev/guide/animations.html#click-animations).
+* `--theme`, `-t` (`string`): override theme.
+>>>>>>> c608c011ffbff72d267a0c074a4bfa5ff4b601a7
 
 ### `slidev format [entry]`
 
