@@ -386,7 +386,51 @@ export const community: ThemeInfo[] = [
       'light',
     ],
   },
+<<<<<<< HEAD
   // Füge deins hier hinzu!
+=======
+  {
+    id: 'slidev-theme-the-unnamed',
+    name: 'The unnamed',
+    description: 'A theme based on The unnamed VS Code theme',
+    author: {
+      name: 'Elio Struyf',
+      link: 'https://elio.dev',
+    },
+    repo: 'https://github.com/estruyf/slidev-theme-the-unnamed',
+    previews: [
+      'https://cdn.jsdelivr.net/gh/estruyf/slidev-theme-the-unnamed@main/assets/cover.png',
+      'https://cdn.jsdelivr.net/gh/estruyf/slidev-theme-the-unnamed@main/assets/about-me.png',
+      'https://cdn.jsdelivr.net/gh/estruyf/slidev-theme-the-unnamed@main/assets/default.png',
+      'https://cdn.jsdelivr.net/gh/estruyf/slidev-theme-the-unnamed@main/assets/section.png',
+    ],
+    tags: [
+      'dark'
+    ],
+  },
+  {
+    id: 'slidev-theme-dracula',
+    name: 'Dracula',
+    description: 'One the best dark theme meets slidev',
+    author: {
+      name: 'JD Solanki (jd-solanki)',
+      link: 'https://github.com/jd-solanki',
+    },
+    repo: 'https://github.com/jd-solanki/slidev-theme-dracula',
+    previews: [
+      'https://cdn.jsdelivr.net/gh/jd-solanki/slidev-theme-dracula/screenshots/screenshot-1.png',
+      'https://cdn.jsdelivr.net/gh/jd-solanki/slidev-theme-dracula/screenshots/screenshot-2.png',
+      'https://cdn.jsdelivr.net/gh/jd-solanki/slidev-theme-dracula/screenshots/screenshot-3.png',
+      'https://cdn.jsdelivr.net/gh/jd-solanki/slidev-theme-dracula/screenshots/screenshot-4.png',
+      'https://cdn.jsdelivr.net/gh/jd-solanki/slidev-theme-dracula/screenshots/screenshot-5.png',
+    ],
+    tags: [
+      'dark',
+      'minimalism',
+    ],
+  },
+  // Add yours here!
+>>>>>>> 1317cbcaae63868c5cfbb66bcf4560be7f9c5fbf
   {
     id: '',
     link: 'https://github.com/slidevjs/docs/edit/main/.vitepress/themes.ts',

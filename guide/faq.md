@@ -43,7 +43,11 @@ Die dritte Spalte (10% Breite des übergeordneten Containers)
 </div>
 ```
 
+<<<<<<< HEAD
 Erfahre mehr über [Windi CSS Grids](https://windicss.org/utilities/grid.html).
+=======
+Learn more about [Windi CSS Grids](https://windicss.org/utilities/layout/grid.html).
+>>>>>>> 1317cbcaae63868c5cfbb66bcf4560be7f9c5fbf
 
 ## Positionierung
 
