@@ -4,7 +4,11 @@
 
 Da Slidev Webbasiert ist, können Grid-Layouts genutzt werden. [CSS Grids](https://css-tricks.com/snippets/css/complete-guide-grid/), [Flexboxen](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), oder sogar [CSS Masonry Layouts](https://css-tricks.com/native-css-masonry-layout-in-css-grid/), die volle Kontrolle liegt bei dir!
 
+<<<<<<< HEAD
 Da wir [Windi CSS](https://windicss.org/) integriert haben, geht es ganz einfach, wie hier:
+=======
+Since we have [UnoCSS](https://windicss.org/) built-in, here is one simple way for you to reference:
+>>>>>>> 281e164b346b52adc3a71e21d96d17965b799d59
 
 ```html
 <div class="grid grid-cols-2 gap-4">
@@ -24,7 +28,7 @@ Die zweite Spalte
 Weiter, kann die Größe jeder einzelnen Spalte angepasst werden:
 
 ```html
-<div class="grid grid-cols-[200px,1fr,10%] gap-4">
+<div class="grid grid-cols-[200px_1fr_10%] gap-4">
 <div>
 
 Die erste Spalte (200px)
@@ -43,7 +47,11 @@ Die dritte Spalte (10% Breite des übergeordneten Containers)
 </div>
 ```
 
+<<<<<<< HEAD
 Erfahre mehr über [Windi CSS Grids](https://windicss.org/utilities/grid.html).
+=======
+Learn more about [Windi CSS Grids](https://windicss.org/utilities/layout/grid.html).
+>>>>>>> 281e164b346b52adc3a71e21d96d17965b799d59
 
 ## Positionierung
 
