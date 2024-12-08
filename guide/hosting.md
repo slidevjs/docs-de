@@ -8,7 +8,15 @@ Man kann Slidev Präsentation als selbst-hostbare SPA exportieren:
 $ slidev build
 ```
 
+<<<<<<< HEAD
 Die erstellte SPA ist im `dist/` Ordner verfügbar und kann mit [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/) oder mit was auch immer man will gehostet werden. Nun kann man seine Präsentation mit nur einem link mit der ganzen Welt teilen.
+=======
+The generated application will be available under `dist/`.
+
+You can test the generated build using a web server (Apache, NGINX, Caddy...etc.) or in the project you can directly run: `npx vite preview`.
+
+Then you can host it on [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), or whatever you want. Now you can share your slides with the rest of the world with a single link.
+>>>>>>> 46f11048bbcb1c239aeff6e3b8061dbba0f779ed
 
 ### Basispfad
 
@@ -40,7 +48,38 @@ download: "https://meine-seite.de/vortrag.pdf"
 ---
 ```
 
+<<<<<<< HEAD
 ## Beispiele
+=======
+This can also be done with the CLI option `--download` (`boolean` only).
+
+```bash
+$ slidev build --download
+```
+
+When using the download option, you can also provide the export options:
+
+* By using [CLI export options](/guide/exporting.html)
+* Or [frontmatter export options](/custom/#frontmatter-configures)
+
+### Output directory
+
+You can change the output directory using `--out`.
+
+```bash
+$ slidev build --out my-build-folder
+```
+
+### Watch mode
+
+By passing the `--watch` option the build will run in watch mode and will rebuild anytime the source changes.
+
+```bash
+$ slidev build --watch
+```
+
+## Examples
+>>>>>>> 46f11048bbcb1c239aeff6e3b8061dbba0f779ed
 
 Hier sind einige Beispiele für die exportierte SPA:
 
